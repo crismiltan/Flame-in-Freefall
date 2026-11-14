@@ -254,5 +254,6 @@ async function init() {
     document.querySelectorAll(".panel").forEach((p) => p.classList.toggle("active", p.id === b.dataset.tab));
   }));
   renderExperiments(); renderMethod(); applyEnv();
+  if (window.initMonitor) initMonitor();
 }
 init();

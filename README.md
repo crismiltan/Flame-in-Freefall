@@ -1,10 +1,23 @@
 # Flame in Freefall
 
-Simulador web para **prevenir, detectar y extinguir** incendios en hábitats espaciales (ISS, cápsulas de exploración, Luna y Marte), basado en 857 pruebas reales de combustión en microgravedad de [NASA Physical Science Informatics](https://psi.nasa.gov/).
+Monitor y simulador web para **prevenir, detectar y extinguir** incendios en hábitats espaciales (ISS, cápsulas de exploración, Luna y Marte), basado en 857 pruebas reales de combustión en microgravedad de [NASA Physical Science Informatics](https://psi.nasa.gov/).
 
 Proyecto para el reto *Flame in Freefall* del NASA Space Apps Challenge 2026.
 
 ## Qué hace
+
+### Monitor del hábitat (pestaña principal)
+
+Un panel de control que vigila cada zona del hábitat (módulo de mando, laboratorio, dormitorios, cocina, almacén, soporte vital y esclusa) con sensores de O₂, presión, ventilación, temperatura, CO y humo.
+
+- Cada zona muestra su **riesgo de combustión sostenida** si algo prende, calculado en cada lectura con las pruebas reales de PSI más parecidas a sus condiciones y a su material principal.
+- Las alertas se agrupan en los tres pilares: **prevenir** (O₂ fuera de consigna, subida de riesgo), **detectar** (señal temprana de CO, humo o calor; ventilación detenida, que en microgravedad impide que el humo llegue a los detectores) y **extinguir** (cortar la ventilación, diluir el O₂ hasta el umbral que dan los datos, agente recomendado).
+- Hábitats: base lunar (8.2 psi, 34 % O₂, 0.17 g), estación espacial (aire, 0 g) y base en Marte.
+- Botones para simular incidentes: fuga de O₂ de un traje en la esclusa, fallo de ventilación en dormitorios y cable sobrecalentado en soporte vital.
+
+Las lecturas de los sensores son **simuladas** (no hay datos de sensores reales en PSI). El riesgo y las recomendaciones salen de los datos reales.
+
+### Simulador de escenarios
 
 1. Eliges un entorno y un material (tejido de algodón, PMMA, Nomex, silicona, combustibles líquidos o gases), o ajustas a mano O₂, presión, ventilación y gravedad.
 2. La herramienta busca las 15 pruebas más parecidas del catálogo y calcula el riesgo de que el fuego se mantenga.

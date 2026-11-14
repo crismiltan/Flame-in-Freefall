@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Flame in Freefall</title>
-<meta name="description" content="Simulador de riesgo de incendio en hábitats espaciales basado en datos de combustión en microgravedad de NASA PSI.">
+<meta name="description" content="Monitor y simulador de riesgo de incendio en hábitats espaciales basado en datos de combustión en microgravedad de NASA PSI.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,14 +17,37 @@
     </div>
   </div>
   <nav class="tabs" role="tablist">
-    <button role="tab" class="tab active" data-tab="sim">Simulador</button>
+    <button role="tab" class="tab active" data-tab="mon">Monitor</button>
+    <button role="tab" class="tab" data-tab="sim">Simulador</button>
     <button role="tab" class="tab" data-tab="exp">Experimentos</button>
     <button role="tab" class="tab" data-tab="about">Método</button>
   </nav>
 </header>
 
 <main>
-<section id="sim" class="panel active">
+<section id="mon" class="panel active">
+  <div class="card mbar">
+    <label>Hábitat <select id="mHab"></select></label>
+    <span id="mClock" class="clock">T+00:00</span>
+    <span class="badge">DATOS SIMULADOS</span>
+    <div id="mSummary" class="msum"></div>
+  </div>
+  <div class="card">
+    <h2>Simular un incidente</h2>
+    <p class="hint">Los sensores son simulados. El riesgo de cada zona se calcula con las pruebas reales de PSI más parecidas a sus condiciones.</p>
+    <div id="mIncidents" class="incidents"></div>
+  </div>
+  <div class="mgrid">
+    <div class="card"><h2>Plano del hábitat</h2><div id="mMap" class="map"></div></div>
+    <div class="card" id="mDetail"></div>
+  </div>
+  <div class="card">
+    <h2>Registro de eventos</h2>
+    <div class="tablewrap"><table class="log"><thead><tr><th>Hora</th><th>Nivel</th><th>Zona</th><th>Evento</th></tr></thead><tbody id="mLog"></tbody></table></div>
+  </div>
+</section>
+
+<section id="sim" class="panel">
   <form id="scenario" class="card inputs" onsubmit="return false">
     <h2>1. Define el escenario</h2>
     <label>Entorno
@@ -91,6 +114,7 @@
 </main>
 
 <footer>Datos: NASA Physical Science Informatics (psi.nasa.gov). Demo para NASA Space Apps Challenge 2026. No es una herramienta certificada de seguridad.</footer>
+<script src="monitor.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
