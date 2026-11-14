@@ -226,16 +226,28 @@ function render() {
       <td><a href="${docLink(t.experiment_group)}" target="_blank" rel="noopener">PSI</a></td></tr>`).join("");
 }
 
+function niceStep(span, n) {
+  const raw = span / n, p = 10 ** Math.floor(Math.log10(raw)), f = raw / p;
+  return (f <= 1 ? 1 : f <= 2 ? 2 : f <= 5 ? 5 : 10) * p;
+}
 function drawChart(E, s) {
-  // O2 vs pressure scatter in plain SVG (no external dependencies)
+  // O2 vs pressure scatter in plain SVG (no external dependencies).
+  // Axes zoom to the tests used for this material and widen only if the scenario falls outside them.
   const W = 640, H = 280, m = { l: 48, r: 12, t: 12, b: 36 };
-  const x = (v) => m.l + (v - 10) / 32 * (W - m.l - m.r), y = (v) => H - m.b - (v - 40) / 280 * (H - m.t - m.b);
+  const o2s = E.P.tests.map((t) => t.o2_pct).concat(s.o2), ps = E.P.tests.map((t) => t.pressure_kpa || 101.3).concat(s.p);
+  let [x0, x1] = [Math.min(...o2s), Math.max(...o2s)], [y0, y1] = [Math.min(...ps), Math.max(...ps)];
+  const padX = Math.max(1, (x1 - x0) * 0.08), padY = Math.max(8, (y1 - y0) * 0.1);
+  x0 -= padX; x1 += padX; y0 = Math.max(0, y0 - padY); y1 += padY;
+  const sx = niceStep(x1 - x0, 6), sy = niceStep(y1 - y0, 5);
+  x0 = Math.floor(x0 / sx) * sx; x1 = Math.ceil(x1 / sx) * sx; y0 = Math.floor(y0 / sy) * sy; y1 = Math.ceil(y1 / sy) * sy;
+  const x = (v) => m.l + (v - x0) / (x1 - x0) * (W - m.l - m.r), y = (v) => H - m.b - (v - y0) / (y1 - y0) * (H - m.t - m.b);
+  const dec = (st) => st < 1 ? 1 : 0;
   let g = "";
-  for (let v = 10; v <= 42; v += 5) g += `<line x1="${x(v)}" x2="${x(v)}" y1="${m.t}" y2="${H - m.b}" class="grid"/><text x="${x(v)}" y="${H - m.b + 16}" class="tick" text-anchor="middle">${v}</text>`;
-  for (let v = 50; v <= 320; v += 50) g += `<line x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}" class="grid"/><text x="${m.l - 6}" y="${y(v) + 4}" class="tick" text-anchor="end">${v}</text>`;
+  for (let v = x0; v <= x1 + 1e-9; v += sx) g += `<line x1="${x(v)}" x2="${x(v)}" y1="${m.t}" y2="${H - m.b}" class="grid"/><text x="${x(v)}" y="${H - m.b + 16}" class="tick" text-anchor="middle">${v.toFixed(dec(sx))}</text>`;
+  for (let v = y0; v <= y1 + 1e-9; v += sy) g += `<line x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}" class="grid"/><text x="${m.l - 6}" y="${y(v) + 4}" class="tick" text-anchor="end">${v.toFixed(dec(sy))}</text>`;
   const jitter = (i) => ((i * 9301 + 49297) % 233280) / 233280 - 0.5;
-  const pts = E.P.tests.map((t, i) => `<circle cx="${x(t.o2_pct) + jitter(i) * 4}" cy="${y(t.pressure_kpa) + jitter(i + 7) * 6}" r="3.2" fill="var(--${cls(t.outcome)})" fill-opacity=".75"><title>${t.experiment} ${t.test_id}: ${OUTCOME_TXT[t.outcome]}</title></circle>`).join("");
-  const ux = x(Math.min(42, s.o2)), uy = y(Math.min(320, Math.max(40, s.p)));
+  const pts = E.P.tests.map((t, i) => `<circle cx="${x(t.o2_pct) + jitter(i) * 4}" cy="${y(t.pressure_kpa || 101.3) + jitter(i + 7) * 6}" r="3.2" fill="var(--${cls(t.outcome)})" fill-opacity=".75"><title>${t.experiment} ${t.test_id}: ${OUTCOME_TXT[t.outcome]}</title></circle>`).join("");
+  const ux = x(s.o2), uy = y(s.p);
   const you = `<g class="you"><line x1="${ux - 8}" x2="${ux + 8}" y1="${uy - 8}" y2="${uy + 8}"/><line x1="${ux - 8}" x2="${ux + 8}" y1="${uy + 8}" y2="${uy - 8}"/><circle cx="${ux}" cy="${uy}" r="13" fill="none"/></g>`;
   const labels = `<text x="${(W + m.l) / 2}" y="${H - 4}" class="axis" text-anchor="middle">O₂ (%)</text><text transform="translate(12 ${(H - m.b) / 2}) rotate(-90)" class="axis" text-anchor="middle">Pressure (kPa)</text>`;
   $("chart").innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Tests by O2 and pressure">${g}${pts}${you}${labels}</svg>`;
