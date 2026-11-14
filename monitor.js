@@ -4,6 +4,7 @@
 const HABITATS = {
   moon: { label: "Base lunar (8.2 psi, 34 % O₂)", o2: 34, p: 56.5, g: 0.165 },
   iss: { label: "Estación espacial (aire, 0 g)", o2: 21, p: 101.3, g: 0 },
+  rover: { label: "Rover presurizado lunar (10.2 psi, 30 % O₂)", o2: 30, p: 70.3, g: 0.165 },
   mars: { label: "Hábitat en Marte (10.2 psi, 26.5 % O₂)", o2: 26.5, p: 70.3, g: 0.38 },
 };
 

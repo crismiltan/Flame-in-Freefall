@@ -8,6 +8,8 @@ const ENVS = [
     note: "Atmósfera de exploración propuesta por la NASA para acortar la preparación de los paseos espaciales." },
   { id: "moon", label: "Base lunar (8.2 psi, 34 % O₂)", o2: 34, p: 56.5, flow: 5, g: 0.165,
     note: "Misma atmósfera de exploración, con la gravedad de la Luna." },
+  { id: "rover", label: "Rover presurizado lunar (10.2 psi, 30 % O₂)", o2: 30, p: 70.3, flow: 5, g: 0.165,
+    note: "Rango previsto por la NASA para la base y los rovers lunares: 30 % de O₂ o más, a 10.2 psi o menos, entre el traje (100 % O₂, 4.3 psi) y el aire." },
   { id: "mars", label: "Hábitat en Marte (10.2 psi, 26.5 % O₂)", o2: 26.5, p: 70.3, flow: 5, g: 0.38,
     note: "Atmósfera intermedia propuesta para hábitats de larga duración." },
   { id: "custom", label: "Personalizado", note: "Ajusta los controles libremente." },
@@ -42,6 +44,57 @@ const SUMMARIES = {
   "E-FIELD": "Llamas de metano y etileno controladas con un campo eléctrico de hasta 10 kV. El viento iónico que genera puede imitar o cancelar la flotación, lo que la convierte en un análogo útil para pensar en gravedad parcial. Según PSI, no se diseñó para aplicaciones espaciales.",
   "CFI-G": "Llamas esféricas de etano, propano y butano con hasta un 40 % de oxígeno y entre 0.5 y 3 bar. Detectó llamas frías, que arden a baja temperatura y son difíciles de ver y de detectar. Es el conjunto con más oxígeno del catálogo.",
 };
+
+// Ficha por experimento (fuente: metadatos ISA-Tab de PSI y tablas experimentales).
+const DETAILS = {
+  "SAFFIRE": { obj: "Propagación de llama e inflamabilidad de materiales a gran escala en microgravedad.",
+    sample: "Láminas de tejido SIBAL de hasta 94 × 40 cm (I y III); tarjeta con 9 muestras de 5 × 29 cm de SIBAL, silicona, PMMA y PMMA con Nomex (II).",
+    varied: "Material, tamaño de muestra, flujo (20 o 30 cm/s) y sentido del flujo (concurrente u opuesto).", same: "Aire de la nave (~21 % O₂, 1 atm).",
+    sensors: "Dos cámaras, termopares (flujo, llama y penacho), dos radiómetros, sensores de presión, O₂ y CO₂, dos anemómetros.",
+    equip: "Normas de selección de materiales de cabina y diseño de sistemas de detección y supresión para naves." },
+  "BASS-II": { obj: "Ignición, crecimiento, propagación y límites de extinción de sólidos en flujos lentos; puente con la norma NASA-STD-6001 Test 1.",
+    sample: "Varillas, secciones esféricas, placas y películas de PMMA, y láminas de tejido.",
+    varied: "O₂ (diluido con N₂ en el volumen de trabajo), velocidad y sentido del flujo, geometría de la muestra.", same: "Presión de cabina, túnel de flujo de la MSG (hasta 40 cm/s).",
+    sensors: "Vídeo en color de la MSG; CO final en algunas pruebas.",
+    equip: "Control de ventilación como medida de extinción; modelos de detección y supresión (citado en PSI)." },
+  "BASS": { obj: "Primera campaña de combustión de sólidos en el túnel de flujo de la MSG.",
+    sample: "Esferas, placas, varillas y velas de PMMA, algodón, Nomex, Ultem y cera.",
+    varied: "Material, geometría y flujo.", same: "Aire de cabina de la ISS.",
+    sensors: "Vídeo de la MSG.", equip: "Inventario de materiales ensayados para la selección de materiales." },
+  "FLEX": { obj: "Límites de inflamabilidad de combustibles líquidos y eficacia de supresores gaseosos (CO₂, He, SF₆).",
+    sample: "Gotas aisladas de metanol y heptano de varios milímetros, en el MDCA.",
+    varied: "O₂, presión (0.7–3 atm) y diluyente (N₂, CO₂, He).", same: "Ambiente en reposo (sin flujo forzado).",
+    sensors: "Imágenes de la gota y de la llama, radiometría, hollín y perfiles de temperatura.",
+    equip: "Extintores sin halones y agentes gaseosos; base para los extintores de agua nebulizada." },
+  "SAME": { obj: "Tamaño de las partículas de humo en microgravedad para diseñar detectores.",
+    sample: "Kapton, silicona, Teflón, Pyrell, algodón y mecha de lámpara, calentados sin llama.",
+    varied: "Material, temperatura de calentamiento y tiempo de envejecimiento del humo.", same: "Hardware SAME y aire de cabina.",
+    sensors: "Detectores de ionización y fotoeléctricos, contador P-Trak, DustTrak y precipitador térmico (TEM).",
+    equip: "Detectores de humo de próxima generación. El mismo instrumento se usó para medir polvo en DAFT y DAFT-2." },
+  "CFI-G": { obj: "Llamas frías de combustibles gaseosos a alta concentración de oxígeno.",
+    sample: "Quemador esférico poroso; llamas \"al revés\": la mezcla O₂-N₂ (hasta 85 % de O₂ según el reto) sale del quemador hacia el combustible.",
+    varied: "Combustible (etano, propano, butano), O₂ y presión (0.5–3 bar).", same: "Hardware ACME en el CIR.",
+    sensors: "Cámaras, radiómetros y termopares.", equip: "Detección de combustión a baja temperatura, difícil de ver." },
+  "E-FIELD": { obj: "Efecto de un campo eléctrico en llamas de difusión laminares; análogo de gravedad parcial.",
+    sample: "Quemador de coflujo con metano o etileno.",
+    varied: "Tensión del campo (hasta 10 kV) y caudal de combustible.", same: "Hardware ACME en el CIR.",
+    sensors: "Corriente quimio-iónica, OH y CO PLIF, cámaras.", equip: "Indirecta: modelos de llama con flotación variable." },
+};
+const HW_GROUPS = [
+  { hw: "Combustion Integrated Rack (CIR) · hardware modular ACME", inv: ["CFI-G", "E-FIELD"], others: "BRE (inflamabilidad en atmósfera en reposo, con gases) y el resto de los seis experimentos ACME." },
+  { hw: "CIR · Multi-user Droplet Combustion Apparatus (MDCA)", inv: ["FLEX"], others: "FLEX-2 y Cool Flames Investigation (CFI)." },
+  { hw: "Microgravity Science Glovebox (MSG) · túnel de flujo de SPICE", inv: ["BASS", "BASS-II"], others: "SPICE y SLICE (llamas de gas)." },
+  { hw: "Módulo Saffire en Cygnus", inv: ["SAFFIRE"], others: "Saffire IV–VI (aún no cargados)." },
+  { hw: "Hardware SAME (detectores y contadores de partículas)", inv: ["SAME"], others: "DAFT y DAFT-2 usaron el mismo instrumento para medir polvo." },
+];
+const OTHER_INV = [
+  ["BRE (ACME)", "Inflamabilidad de materiales en atmósfera en reposo según sus propiedades, usando gases que emulan el sólido."],
+  ["FLEX-2 y CFI", "Gotas de combustible en el MDCA: llamas frías y mezclas de combustibles."],
+  ["SPICE y SLICE", "Llamas de gas en el túnel de la MSG: punto de humo y despegue de la llama."],
+  ["DAFT y DAFT-2", "Medida de polvo y aerosoles con el instrumento de humo de SAME."],
+  ["Saffire IV–VI y MIST", "Más incendios a gran escala y supresión con agua nebulizada."],
+  ["LUCI y FM2 (futuros)", "Primeros datos de combustión en gravedad lunar."],
+];
 
 let TESTS = [], EXPS = [];
 const $ = (id) => document.getElementById(id);
@@ -130,6 +183,11 @@ function render() {
   $("o2v").textContent = fmt(s.o2); $("pv").textContent = fmt(s.p, 0); $("flowv").textContent = fmt(s.flow);
   $("gNote").textContent = s.g > 0 ? `Flujo efectivo estimado: ${fmt(s.flowEff)} cm/s (ventilación + flotación).` : "";
   const E = evaluate(s);
+  let bounds = "";
+  if (s.g > 0 && s.g < 1) {
+    const r0 = evaluate({ ...s, g: 0, flowEff: s.flow }).risk, r1 = evaluate({ ...s, g: 1, flowEff: s.flow + buoyantFlow(1) }).risk;
+    bounds = `<p class="hint">Cotas por gravedad: <b>${pct(r0)}</b> en microgravedad y <b>${pct(r1)}</b> con la flotación de 1 g. A ${fmt(s.g, 2)} g el resultado debería caer entre ambos.</p>`;
+  }
   const ppO2 = s.o2 * s.p / 100;
   const lvl = E.risk >= 0.66 ? "high" : E.risk >= 0.33 ? "mid" : "low";
   const lvlTxt = { high: "ALTO", mid: "MEDIO", low: "BAJO" }[lvl];
@@ -140,6 +198,7 @@ function render() {
     <p class="hint">Basado en las ${E.r.near.length} pruebas más parecidas${E.P.own ? " del mismo material" : " del mismo tipo de combustible"}${E.P.tests.length < 10 ? " (muestra muy pequeña: tómalo como orientativo)" : ""}.
     Presión parcial de O₂: ${fmt(ppO2)} kPa (aire a nivel del mar: 21,2 kPa).</p>
     ${E.flags.map((f) => `<div class="warn">⚠ ${f}</div>`).join("")}
+    ${bounds}
     ${E.trend ? `<p class="hint">Fuera de rango se usa la tendencia de ${E.trend.n} pruebas de cualquier combustible con O₂ cercano: ${pct(E.trend.p)} siguen ardiendo.</p>` : ""}
   </div>`;
 
@@ -207,6 +266,7 @@ function renderExperiments() {
       <p class="hint">${e.name}</p>
       <p>${SUMMARIES[e.id] || e.summary}</p>
       <p><b>Pilares:</b> ${acc(e.pillars.join(", "))} · <b>Hardware:</b> ${acc(e.hardware)}</p>
+      ${DETAILS[e.id] ? `<p><b>Informa a:</b> ${DETAILS[e.id].equip}</p>` : ""}
       <p><b>En la Tierra:</b> ${acc(e.earth_application)}</p>
       <p class="src">${counts[e.id] || 0} pruebas · ${pubs} publicaciones · ${md.length ? md.map((m) => `<a href="https://doi.org/${m.doi}" target="_blank" rel="noopener">${m.psi_id}</a>`).join(" ") : "sin metadatos PSI cargados"}</p></div>`;
   }).join("");
@@ -214,9 +274,14 @@ function renderExperiments() {
     ["Pruebas", (e) => counts[e.id] || 0], ["O₂ (%)", (e) => e.o2_min != null ? `${fmt(e.o2_min)}–${fmt(e.o2_max)}` : "n.d."],
     ["Presión (kPa)", (e) => e.p_min_kpa != null ? `${fmt(e.p_min_kpa, 0)}–${fmt(e.p_max_kpa, 0)}` : "n.d."],
     ["Flujo máx. (cm/s)", (e) => e.flow_max != null ? fmt(e.flow_max) : "quiescente"], ["Pilares", (e) => acc(e.pillars.join(", "))],
+    ["Objetivo", (e) => DETAILS[e.id]?.obj || ""], ["Muestras y quemadores", (e) => DETAILS[e.id]?.sample || ""],
+    ["Qué variaba", (e) => DETAILS[e.id]?.varied || ""], ["Qué se mantenía", (e) => DETAILS[e.id]?.same || ""],
+    ["Sensores y medidas", (e) => DETAILS[e.id]?.sensors || ""], ["Equipos que informa", (e) => DETAILS[e.id]?.equip || ""],
     ["Relevancia hábitat", (e) => `${e.habitat_relevance}/5`]];
   $("compare").innerHTML = `<tr><th></th>${sorted.map((e) => `<th>${e.id}</th>`).join("")}</tr>` +
     rows.map(([k, fn]) => `<tr><th>${k}</th>${sorted.map((e) => `<td>${fn(e)}</td>`).join("")}</tr>`).join("");
+  $("hwgroups").innerHTML = HW_GROUPS.map((g) => `<div class="rank"><h3>${g.hw}</h3><p><b>En el catálogo:</b> ${g.inv.join(", ")}</p><p class="hint">También: ${g.others}</p></div>`).join("");
+  $("others").innerHTML = OTHER_INV.map(([n, d]) => `<li><b>${n}:</b> ${d}</li>`).join("");
 }
 
 function renderMethod() {
@@ -229,6 +294,8 @@ function renderMethod() {
     <li><b>Gravedad parcial:</b> no hay datos de combustión en la Luna ni en Marte. Se estima el flujo de flotación de una llama pequeña como v ≈ √(g·L) con L = 1 cm (≈13 cm/s en la Luna y ≈19 cm/s en Marte) y se suma a la ventilación. Es una cota, no una medida; LUCI y FM2 aportarán datos reales. El mismo enfoque de escalar con la gravedad, separando el régimen dominado por la flotación del dominado por la tensión superficial, lo usa el experimento de ebullición MABE (PSI-81, Raj y Kim).</li>
     <li><b>Fuera de rango:</b> si el O₂ supera lo ensayado para ese material, se usa la tendencia de todas las pruebas con O₂ parecido y se avisa.</li>
   </ol>
+  <p><b>Atmósferas:</b> los trajes usan 100 % de O₂ a 4.3 psi. La base lunar y los rovers presurizados usarán un punto intermedio (30 % de O₂ o más, a 10.2 psi o menos) para acortar la prerrespiración, lo que hace los materiales mucho más inflamables. Por eso el monitor incluye la base lunar y el rover.</p>
+  <p><b>Fuera de alcance:</b> los motores cohete y los propelentes. A esas velocidades la combustión no depende de la gravedad y PSI no los cubre.</p>
   <p><b>IA:</b> los resúmenes de cada experimento y la clasificación por pilares y relevancia los ha generado un modelo de IA (Claude) a partir de los metadatos y las tablas de PSI, y se han revisado.</p>
   <p><b>Limitaciones:</b> la presión de la ISS se asume en 101,3 kPa; algunos resultados de BASS-II se deducen de notas de texto libre; los sólidos solo se han ensayado hasta ~22 % de O₂. No es una herramienta certificada.</p>`;
 }

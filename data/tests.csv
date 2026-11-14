@@ -1,0 +1,858 @@
+experiment,test_id,date,fuel,fuel_state,geometry,o2_pct,pressure_kpa,flow_cm_s,flow_direction,diluent,outcome,burn_time_s,metric_name,metric_value,metric_unit,co_final_ppm,notes,experiment_group
+BASS-II,B1,2/19/2014,PMMA,solido,pelicula,22.2,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,6.0,ppm,6.0,100 micron PMMA film   2 cm wide | PI Bhattacharjee | secuencia de flujo: 5,BASS-II
+BASS-II,B2,2/19/2014,PMMA,solido,pelicula,22.2,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,,ppm,,200 micron PMMA film   2 cm wide | PI Bhattacharjee | secuencia de flujo: 5,BASS-II
+BASS-II,B3,2/19/2014,PMMA,solido,pelicula,22.2,101.325,2.0,,N2 (aire),combustion sostenida,,CO final,19.0,ppm,19.0,100 micron film   2 cm wide | PI Bhattacharjee | secuencia de flujo: 2,BASS-II
+BASS-II,B4,2/19/2014,PMMA,solido,pelicula,22.2,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,10.0,ppm,10.0,300 micron PMMA film   2 cm wide | PI Bhattacharjee | secuencia de flujo: 5,BASS-II
+BASS-II,B5,2/19/2014,200 micron  2 cm wide,solido,pelicula,22.2,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,12.0,ppm,12.0,200 micron  2 cm wide | PI Bhattacharjee | secuencia de flujo: 5,BASS-II
+BASS-II,B6,7/7/2014,PMMA,solido,pelicula,21.0,101.325,3.0,,N2 (aire),combustion sostenida,,CO final,0.3,ppm,0.3,2 cm 0.1 mm PMMA film | PI Bhattacharjee | secuencia de flujo: 3   5   approaching 10,BASS-II
+BASS-II,B7,2/19/2014,PMMA,solido,pelicula,22.2,101.325,2.0,,N2 (aire),combustion sostenida,,CO final,17.0,ppm,17.0,400 micron film   2 cm wide | PI Bhattacharjee | secuencia de flujo: 2,BASS-II
+BASS-II,B8,7/7/2014,PMMA,solido,pelicula,21.0,101.325,10.0,,N2 (aire),combustion sostenida,,CO final,131.0,ppm,131.0,2 cm   0.2 mm PMMA film | PI Bhattacharjee | secuencia de flujo: 10   max,BASS-II
+BASS-II,B9,7/7/2014,PMMA,solido,pelicula,21.0,101.325,2.0,,N2 (aire),combustion sostenida,,CO final,10.0,ppm,10.0,2 cm   0.1 mm PMMA film | PI Bhattacharjee | secuencia de flujo: 2   <1,BASS-II
+BASS-II,B10,7/7/2014,PMMA,solido,pelicula,21.0,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,23.0,ppm,23.0,1 cm   0.2 mm PMMA film | PI Bhattacharjee | secuencia de flujo: 5  4  3  2  1,BASS-II
+BASS-II,B11,7/7/2014,PMMA,solido,pelicula,21.0,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,46.0,ppm,46.0,2 cm   0.2 mm PMMA film | PI Bhattacharjee | secuencia de flujo: 5   3   1   <1,BASS-II
+BASS-II,B12,2/19/2014,PMMA,solido,pelicula,22.2,101.325,2.0,,N2 (aire),combustion sostenida,,CO final,33.0,ppm,33.0,300 micron film   2 cm wide | PI Bhattacharjee | secuencia de flujo: 2,BASS-II
+BASS-II,B13,7/7/2014,PMMA,solido,pelicula,21.0,101.325,10.0,,N2 (aire),combustion sostenida,,CO final,61.0,ppm,61.0,2 cm   0.4 mm thick film | PI Bhattacharjee | secuencia de flujo: 10   5  4  3  2  1,BASS-II
+BASS-II,B14,7/2/2014,PMMA,solido,pelicula,15.0,101.325,5.0,,N2 (aire),extincion,,CO final,,ppm,,1 cm wide 200 micron thick PMMA | PI Bhattacharjee | secuencia de flujo: 5  3  2   ext,BASS-II
+BASS-II,B15,7/7/2014,PMMA,solido,pelicula,21.0,101.325,10.0,,N2 (aire),combustion sostenida,,CO final,22.0,ppm,22.0,2 cm   0.1 mm PMMA film | PI Bhattacharjee | secuencia de flujo: 10   max,BASS-II
+BASS-II,B16,7/2/2014,PMMA,solido,pelicula,17.3,101.325,3.0,,N2 (aire),combustion sostenida,,CO final,119.0,ppm,119.0,2 cm 100 micron thick PMMA | PI Bhattacharjee | secuencia de flujo: 3  0.5 pot   0.4 pot,BASS-II
+BASS-II,B17,7/2/2014,PMMA,solido,pelicula,17.5,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,47.0,ppm,47.0,1 cm wide 200 micron thick PMMA | PI Bhattacharjee | secuencia de flujo: 5   3    pot 0.4,BASS-II
+BASS-II,B18,7/2/2014,PMMA,solido,pelicula,17.4,101.325,10.0,,N2 (aire),blowoff,,CO final,78.0,ppm,78.0,1 cm wide 200 micron thick PMMA | PI Bhattacharjee | secuencia de flujo: 10   blowoff,BASS-II
+BASS-II,B19,7/2/2014,PMMA,solido,pelicula,17.3,101.325,10.0,,N2 (aire),blowoff,,CO final,131.0,ppm,131.0,2 cm 100 micron thick PMMA | PI Bhattacharjee | secuencia de flujo: 10   blowoff,BASS-II
+BASS-II,B20,7/2/2014,PMMA,solido,pelicula,17.4,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,103.0,ppm,103.0,2 cm 100 micron thick PMMA | PI Bhattacharjee | secuencia de flujo: 5   3      pot 0.5,BASS-II
+BASS-II,B21,8/4/2014,PMMA,solido,pelicula,20.8,101.325,5.0,,N2 (aire),extincion,,CO final,18.0,ppm,18.0,1 cm wide 200 micron thick PMMA | PI Bhattacharjee | secuencia de flujo: 5 down to ext,BASS-II
+BASS-II,B22,8/4/2014,PMMA,solido,pelicula,20.7,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,10.0,ppm,10.0,1 cm wide 200 micron thick PMMA | PI Bhattacharjee | secuencia de flujo: 5   2   0,BASS-II
+BASS-II,F1,2/19/2014,Nomex,solido,lamina/tejido,22.2,101.325,9.5,,N2 (aire),combustion sostenida,,CO final,2.0,ppm,2.0,Nomex natural (nomex III) | PI Ferkul | secuencia de flujo: 9.5,BASS-II
+BASS-II,F2,7/28/2014,Nomex,solido,lamina/tejido,21.0,101.325,15.0,,N2 (aire),combustion sostenida,,CO final,82.0,ppm,82.0,Nomex natural (nomex III) | PI Ferkul | secuencia de flujo: 15,BASS-II
+BASS-II,F3,8/1/2014,Nomex,solido,lamina/tejido,21.7,101.325,8.0,,N2 (aire),combustion sostenida,,CO final,,ppm,,Nomex natural (nomex III) | PI Ferkul | secuencia de flujo: 8,BASS-II
+BASS-II,F4,6/24/2014,Cera/parafina,solido,vela,17.4,101.325,3.0,,N2 (aire),combustion sostenida,,CO final,56.0,ppm,56.0,Japan Wax candle | PI Ferkul | secuencia de flujo: 3 ign,BASS-II
+BASS-II,M1,2/20/2014,PMMA,solido,lamina/tejido,22.2,101.325,10.0,,N2 (aire),combustion sostenida,,CO final,60.0,ppm,60.0,1 mm thick PMMA   1 sided   2 cm | PI Miller | secuencia de flujo: 10  8,BASS-II
+BASS-II,M2,2/20/2014,PMMA,solido,lamina/tejido,22.2,101.325,20.0,,N2 (aire),combustion sostenida,,CO final,325.0,ppm,325.0,3 mm thick PMMA 1 sided    2 cm wide | PI Miller | secuencia de flujo: 20  15  13   14,BASS-II
+BASS-II,M3,7/11/2014,PMMA,solido,lamina/tejido,20.8,101.325,10.0,,N2 (aire),combustion sostenida,,CO final,300.0,ppm,300.0,2 cm wide   5 mm thick 1 sided PMMA | PI Miller | secuencia de flujo: 10   20  18,BASS-II
+BASS-II,M4,7/31/2014,PMMA,solido,lamina/tejido,21.8,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,561.0,ppm,561.0,5 mm thick PMMA   2 cm wide | PI Miller | secuencia de flujo: 5   4   3,BASS-II
+BASS-II,M5,2/20/2014,PMMA,solido,lamina/tejido,22.2,101.325,20.0,,N2 (aire),combustion sostenida,,CO final,500.0,ppm,500.0,3 mm thick PMMA   2 sided   2 cm thick | PI Miller | secuencia de flujo: 20  13  10  8  5,BASS-II
+BASS-II,M6,7/31/2014,PMMA,solido,lamina/tejido,21.8,101.325,10.0,,N2 (aire),combustion sostenida,,CO final,345.0,ppm,345.0,1 mm thick PMMA   2 cm wide | PI Miller | secuencia de flujo: 10   5   3   0,BASS-II
+BASS-II,M7,7/11/2014,PMMA,solido,lamina/tejido,18.9,101.325,10.0,,N2 (aire),combustion sostenida,,CO final,612.0,ppm,612.0,1 cm wide PMMA 1 mm thick | PI Miller | secuencia de flujo: 10   6  5  4.5  4  3,BASS-II
+BASS-II,M8,7/11/2014,PMMA,solido,lamina/tejido,19.1,101.325,10.0,,N2 (aire),combustion sostenida,,CO final,467.0,ppm,467.0,1 cm wide PMMA 2 mm thick | PI Miller | secuencia de flujo: 10   5>7  5 decr,BASS-II
+BASS-II,M9,7/11/2014,PMMA,solido,lamina/tejido,18.0,101.325,10.0,,N2 (aire),combustion sostenida,,CO final,191.0,ppm,191.0,1 cm wide PMMA 3 mm thick | PI Miller | secuencia de flujo: 10   14,BASS-II
+BASS-II,M10,7/23/2014,PMMA,solido,placa,20.1,101.325,10.0,,N2 (aire),combustion sostenida,,CO final,536.0,ppm,536.0,4 mm thick   1 cm wide PMMA slab | PI Miller | secuencia de flujo: 10  17  14  10  8,BASS-II
+BASS-II,M11,7/11/2014,PMMA,solido,lamina/tejido,20.0,101.325,10.0,,N2 (aire),combustion sostenida,,CO final,577.0,ppm,577.0,1 cm wide PMMA 5 mm thick | PI Miller | secuencia de flujo: 10   20   15  12,BASS-II
+BASS-II,M12,7/31/2014,PMMA,solido,lamina/tejido,21.7,101.325,1.0,,N2 (aire),combustion sostenida,,CO final,443.0,ppm,443.0,2 mm thick PMMA   2 cm wide | PI Miller | secuencia de flujo: <1,BASS-II
+BASS-II,M13,7/31/2014,PMMA,solido,lamina/tejido,20.8,101.325,6.0,,N2 (aire),combustion sostenida,,CO final,487.0,ppm,487.0,4 mm thick PMMA   2 cm wide | PI Miller | secuencia de flujo: 6   5   4,BASS-II
+BASS-II,M14,2/20/2014,PMMA,solido,lamina/tejido,22.2,101.325,10.0,,N2 (aire),combustion sostenida,,CO final,198.0,ppm,198.0,2mm thick PMMA   1 sided   2 cm wide | PI Miller | secuencia de flujo: 10   ~8,BASS-II
+BASS-II,M15,7/7/2014,PMMA,solido,placa,21.0,101.325,10.0,,N2 (aire),combustion sostenida,,CO final,220.0,ppm,220.0,2 cm   4 mm 1 sided PMMA slab | PI Miller | secuencia de flujo: 10   8  7  8  10  20  18  16  15,BASS-II
+BASS-II,M16,7/23/2014,PMMA,solido,lamina/tejido,19.2,101.325,10.0,,N2 (aire),combustion sostenida,,CO final,421.0,ppm,421.0,1 mm thick PMMA   2 cm wide | PI Miller | secuencia de flujo: 10  6  3  2  1  10,BASS-II
+BASS-II,M17,7/15/2014,PMMA,solido,lamina/tejido,18.8,101.325,10.0,,N2 (aire),extincion,,CO final,485.0,ppm,485.0,2 cm wide PMMA 2 mm thick | PI Miller | secuencia de flujo: 10   5   3   0ext,BASS-II
+BASS-II,M18,7/15/2014,PMMA,solido,lamina/tejido,17.9,101.325,10.0,,N2 (aire),combustion sostenida,,CO final,335.0,ppm,335.0,2 cm wide PMMA 3 mm thick | PI Miller | secuencia de flujo: 10   15 (brief)   10   8,BASS-II
+BASS-II,M19,7/23/2014,PMMA,solido,placa,19.0,101.325,10.0,,N2 (aire),combustion sostenida,,CO final,357.0,ppm,357.0,4 mm thick   2 cm 2ide PMMA slab | PI Miller | secuencia de flujo: 10  17  14  10  7  5,BASS-II
+BASS-II,M20,8/1/2014,PMMA,solido,lamina/tejido,18.0,101.325,10.0,,N2 (aire),combustion sostenida,,CO final,157.0,ppm,157.0,5 mm thick PMMA   2 cm wide | PI Miller | secuencia de flujo: 10  8,BASS-II
+BASS-II,O1,2/18/2014,PMMA,solido,cilindro,22.2,101.325,20.0,,N2 (aire),combustion sostenida,,CO final,51.0,ppm,51.0,"1/4"" clear rod | PI Olson | secuencia de flujo: 20  10  5  2  1",BASS-II
+BASS-II,O2,2/18/2014,PMMA,solido,cilindro,22.2,101.325,0.0,,N2 (aire),combustion sostenida,,CO final,23.0,ppm,23.0,"1/4"" clear rod | PI Olson | secuencia de flujo: 0",BASS-II
+BASS-II,O3a,6/13/2014,PMMA,solido,cilindro,18.0,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,22.0,ppm,22.0,"1/4"" clear rod | PI Olson | secuencia de flujo: 5  3",BASS-II
+BASS-II,O3b,6/13/2014,PMMA,solido,cilindro,18.0,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,116.0,ppm,116.0,"1/4"" clear rod | PI Olson | secuencia de flujo: 5  3  2  1  low",BASS-II
+BASS-II,O4,7/8/2014,PMMA,solido,cilindro,14.8,101.325,5.0,,N2 (aire),extincion,,CO final,,ppm,,"3/8""clear rod | PI Olson | secuencia de flujo: 5   down to ext",BASS-II
+BASS-II,O5a,7/21/2014,PMMA,solido,cilindro,15.1,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,496.0,ppm,496.0,"1/2"" clear PMMA rod | PI Olson | secuencia de flujo: 5  10  5   2   0 (49   62   49   44   42)",BASS-II
+BASS-II,O5b,7/21/2014,PMMA,solido,cilindro,14.2,101.325,,,N2 (aire),combustion sostenida,,CO final,590.0,ppm,590.0,"1/2"" clear PMMA rod | PI Olson | secuencia de flujo: 49   5 cm/s",BASS-II
+BASS-II,O6,6/26/2014,PMMA,solido,cilindro,16.7,101.325,,,N2 (aire),combustion sostenida,,CO final,232.0,ppm,232.0,"1/4"" clear rod | PI Olson | secuencia de flujo: see fan",BASS-II
+BASS-II,O7,6/26/2014,PMMA,solido,cilindro,16.0,101.325,,,N2 (aire),combustion sostenida,,CO final,512.0,ppm,512.0,"1/4"" clear rod | PI Olson | secuencia de flujo: ",BASS-II
+BASS-II,O8a,6/26/2014,PMMA,solido,cilindro,15.7,101.325,,,N2 (aire),extincion,,CO final,536.0,ppm,536.0,"1/4"" clear rod | PI Olson | secuencia de flujo: ",BASS-II
+BASS-II,O8b,6/26/2014,PMMA,solido,cilindro,15.5,101.325,,,N2 (aire),combustion sostenida,,CO final,660.0,ppm,660.0,"1/4"" clear rod | PI Olson | secuencia de flujo: ",BASS-II
+BASS-II,O9,6/26/2014,PMMA,solido,cilindro,15.0,101.325,,,N2 (aire),combustion sostenida,,CO final,794.0,ppm,794.0,"1/4"" clear rod | PI Olson | secuencia de flujo: ",BASS-II
+BASS-II,O10,7/22/2014,PMMA,solido,cilindro,16.7,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,287.0,ppm,287.0,"1/4"" clear rod | PI Olson | secuencia de flujo: 5  2   0   max",BASS-II
+BASS-II,O11,7/8/2014,PMMA,solido,cilindro,15.4,101.325,5.0,,N2 (aire),blowoff,,CO final,290.0,ppm,290.0,"1/4"" black rod | PI Olson | secuencia de flujo: 5   down then blowoff",BASS-II
+BASS-II,O12,7/8/2014,PMMA,solido,cilindro,13.6,101.325,,,N2 (aire),sin ignicion,,CO final,,ppm,,"3/8"" clear rod | PI Olson | secuencia de flujo: no ign at any flow",BASS-II
+BASS-II,O13a,7/21/2014,PMMA,solido,cilindro,15.9,101.325,,,N2 (aire),combustion sostenida,,CO final,950.0,ppm,950.0,"1/2"" clear PMMA rod | PI Olson | secuencia de flujo: 49  44  42  41  41  40.5 (5   2   0)",BASS-II
+BASS-II,O13b,7/21/2014,PMMA,solido,cilindro,14.6,101.325,7.0,,N2 (aire),combustion sostenida,,CO final,,ppm,,"1/2"" clear PMMA rod | PI Olson | secuencia de flujo: 7   4? (49   ?)",BASS-II
+BASS-II,O14,8/1/2014,PMMA,solido,cilindro,16.3,101.325,5.0,,N2 (aire),extincion,,CO final,352.0,ppm,352.0,"1/4"" black rod | PI Olson | secuencia de flujo: 5 down to ext",BASS-II
+BASS-II,O15a,7/28/2014,PMMA,solido,cilindro,17.1,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,176.0,ppm,176.0,"3/8"" clear rod | PI Olson | secuencia de flujo: 5  0",BASS-II
+BASS-II,O15b,7/28/2014,PMMA,solido,cilindro,16.7,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,751.0,ppm,751.0,"3/8"" clear rod | PI Olson | secuencia de flujo: 5   0",BASS-II
+BASS-II,O16,7/29/2014,PMMA,solido,cilindro,14.5,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,33.0,ppm,33.0,"3/8""clear rod | PI Olson | secuencia de flujo: 5",BASS-II
+BASS-II,O17,7/22/2014,PMMA,solido,cilindro,15.1,101.325,3.0,,N2 (aire),combustion sostenida,,CO final,377.0,ppm,377.0,"1/4"" clear rod | PI Olson | secuencia de flujo: 3   0   11",BASS-II
+BASS-II,O18,7/28/2014,PMMA,solido,cilindro,15.2,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,816.0,ppm,816.0,"1/4"" clear rod | PI Olson | secuencia de flujo: 5  2  0  11  2  11  2  0",BASS-II
+BASS-II,O19,8/1/2014,PMMA,solido,cilindro,15.3,101.325,5.0,,N2 (aire),extincion,,CO final,686.0,ppm,686.0,"1/4"" clear rod | PI Olson | secuencia de flujo: 5 down to ext",BASS-II
+BASS-II,O20,2/26/2016,PMMA,solido,cilindro,16.5,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,57.0,ppm,57.0,"1/4"" clear rod | PI Olson | secuencia de flujo: 5   8    incr to max 38.5",BASS-II
+BASS-II,O21,2/26/2016,PMMA,solido,cilindro,15.9,101.325,28.0,,N2 (aire),combustion sostenida,,CO final,187.0,ppm,187.0,"3/8"" clear rod | PI Olson | secuencia de flujo: incr to 28",BASS-II
+BASS-II,O22,2/26/2016,PMMA,solido,cilindro,15.4,101.325,4.0,,N2 (aire),combustion sostenida,,CO final,322.0,ppm,322.0,"1/2"" clear rod | PI Olson | secuencia de flujo: 4 incr to 26.5",BASS-II
+BASS-II,P1,6/16/2014,PMMA,solido,cilindro,17.7,101.325,5.0,,N2 (aire),extincion,,CO final,14.0,ppm,14.0,"1/4"" black rod | PI Fernandez-Pello | secuencia de flujo: 5  2   slow decr to ext",BASS-II
+BASS-II,P2,6/16/2014,PMMA,solido,cilindro,17.4,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,26.0,ppm,26.0,"1/4"" black rod | PI Fernandez-Pello | secuencia de flujo: 5   2.5   2 (pot .9   .5   .35.  .33)",BASS-II
+BASS-II,P3a,6/16/2014,PMMA,solido,cilindro,17.7,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,33.0,ppm,33.0,"1/4"" clear rod | PI Fernandez-Pello | secuencia de flujo: 5   2.5 (1.15   .5   .35   .33. .32   .315   .31   .3)",BASS-II
+BASS-II,P3b,6/16/2014,PMMA,solido,cilindro,17.4,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,79.0,ppm,79.0,1/4 clear rod | PI Fernandez-Pello | secuencia de flujo: 5   very low (0.85   0.32   0.31   0.305   0.30   0.295),BASS-II
+BASS-II,P4,7/3/2014,PMMA,solido,cilindro,18.5,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,493.0,ppm,493.0,"3/8"" black rod | PI Fernandez-Pello | secuencia de flujo: 5   pots 0.4   0.36   0.32   0.308   .3   off",BASS-II
+BASS-II,P5,7/14/2014,PMMA,solido,cilindro,19.3,101.325,5.0,,N2 (aire),extincion,,CO final,525.0,ppm,525.0,"0.5"" black rod | PI Fernandez-Pello | secuencia de flujo: 5 down to ext",BASS-II
+BASS-II,P6,7/3/2014,PMMA,solido,cilindro,18.9,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,64.0,ppm,64.0,"1/4"" black rod | PI Fernandez-Pello | secuencia de flujo: 5   pots 0.4   0.36   0.32   0.31   off",BASS-II
+BASS-II,P8,7/3/2014,PMMA,solido,cilindro,16.4,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,69.0,ppm,69.0,"3/8"" black rod | PI Fernandez-Pello | secuencia de flujo: 5   would not stay lit   10   15 ibid",BASS-II
+BASS-II,P9,7/14/2014,PMMA,solido,cilindro,17.6,101.325,5.0,,N2 (aire),extincion,,CO final,535.0,ppm,535.0,"0.5"" black rod | PI Fernandez-Pello | secuencia de flujo: 5 down to ext",BASS-II
+BASS-II,P10,7/3/2014,PMMA,solido,cilindro,17.0,101.325,5.0,,N2 (aire),extincion,,CO final,44.0,ppm,44.0,"1/4"" black rod | PI Fernandez-Pello | secuencia de flujo: 5   pots 0.4   0.36   0.32   0.31   0.30 extinguished",BASS-II
+BASS-II,P12,7/29/2014,PMMA,solido,cilindro,17.5,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,57.0,ppm,57.0,"3/8"" black rod | PI Fernandez-Pello | secuencia de flujo: 5   3  2  1   0.5   lower",BASS-II
+BASS-II,P13a,7/14/2014,PMMA,solido,cilindro,20.7,101.325,5.0,,N2 (aire),extincion,,CO final,450.0,ppm,450.0,"0.5"" black rod | PI Fernandez-Pello | secuencia de flujo: 5 down to ext",BASS-II
+BASS-II,P13b,7/14/2014,PMMA,solido,cilindro,20.6,101.325,5.0,,N2 (aire),extincion,,CO final,72.0,ppm,72.0,"0.5"" black rod | PI Fernandez-Pello | secuencia de flujo: 5 down to ext",BASS-II
+BASS-II,P14,6/23/2014,PMMA,solido,cilindro,18.4,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,90.0,ppm,90.0,1/4 blac rod | PI Fernandez-Pello | secuencia de flujo: 5   low (.85   .4   .32),BASS-II
+BASS-II,P15,6/23/2014,PMMA,solido,cilindro,18.0,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,108.0,ppm,108.0,1/4 black rod | PI Fernandez-Pello | secuencia de flujo: 5   (0.36),BASS-II
+BASS-II,P16,7/22/2014,PMMA,solido,cilindro,18.2,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,56.0,ppm,56.0,"1/4"" black rod | PI Fernandez-Pello | secuencia de flujo: 5  8  2  low",BASS-II
+BASS-II,P17,7/29/2014,PMMA,solido,cilindro,16.8,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,68.0,ppm,68.0,"1/4""  black rod | PI Fernandez-Pello | secuencia de flujo: 5   3   2   22   2   low",BASS-II
+BASS-II,P18,7/30/2014,PMMA,solido,cilindro,20.0,101.325,2.0,,N2 (aire),combustion sostenida,,CO final,26.0,ppm,26.0,"1/4"" black rod | PI Fernandez-Pello | secuencia de flujo: 2  0  2  0  etc",BASS-II
+BASS-II,P19,7/22/2014,PMMA,solido,cilindro,17.5,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,94.0,ppm,94.0,"1/4"" black rod | PI Fernandez-Pello | secuencia de flujo: 5  8  2  max   0",BASS-II
+BASS-II,P20,7/30/2014,PMMA,solido,cilindro,19.0,101.325,2.0,,N2 (aire),combustion sostenida,,CO final,78.0,ppm,78.0,"1/4"" black rod | PI Fernandez-Pello | secuencia de flujo: 2  0  2  0  etc",BASS-II
+BASS-II,P21a,6/23/2014,PMMA,solido,cilindro,16.3,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,94.0,ppm,94.0,1/4 black rod | PI Fernandez-Pello | secuencia de flujo: 5,BASS-II
+BASS-II,P21b,6/23/2014,PMMA,solido,cilindro,16.3,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,98.0,ppm,98.0,"1/4"" black rod | PI Fernandez-Pello | secuencia de flujo: 5",BASS-II
+BASS-II,P22a,7/8/2014,PMMA,solido,cilindro,20.8,101.325,5.0,,N2 (aire),extincion,,CO final,,ppm,,"3/8"" black rod | PI Fernandez-Pello | secuencia de flujo: 5   down to ext",BASS-II
+BASS-II,P22b,7/8/2014,PMMA,solido,cilindro,20.0,101.325,5.0,,N2 (aire),extincion,,CO final,239.0,ppm,239.0,"3/8"" black rod | PI Fernandez-Pello | secuencia de flujo: 5 down to ext",BASS-II
+BASS-II,P23,7/30/2014,PMMA,solido,cilindro,18.2,101.325,2.0,,N2 (aire),combustion sostenida,,CO final,159.0,ppm,159.0,"3/8"" black rod | PI Fernandez-Pello | secuencia de flujo: 2  0  2  0  etc",BASS-II
+BASS-II,P24,7/30/2014,PMMA,solido,cilindro,19.0,101.325,2.0,,N2 (aire),combustion sostenida,,CO final,260.0,ppm,260.0,"3/8"" black rod | PI Fernandez-Pello | secuencia de flujo: 2  0  2  0  etc",BASS-II
+BASS-II,P25,7/8/2014,PMMA,solido,cilindro,20.9,101.325,5.0,,N2 (aire),extincion,,CO final,205.0,ppm,205.0,"3/8"" clear rod | PI Fernandez-Pello | secuencia de flujo: 5 down to ext",BASS-II
+BASS-II,T1,2/14/2014,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,18.5,101.325,10.0,,N2 (aire),combustion sostenida,,CO final,40.0,ppm,40.0,2 cm SIBAL | PI T'ien | secuencia de flujo: 10,BASS-II
+BASS-II,T2,2/14/2014,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,18.5,101.325,9.0,,N2 (aire),combustion sostenida,,CO final,78.0,ppm,78.0,2 cm SIBAL | PI T'ien | secuencia de flujo: 9   5   4,BASS-II
+BASS-II,T3,6/27/2014,4 cm spherical section,solido,esfera,17.2,101.325,10.0,,N2 (aire),combustion sostenida,,CO final,113.0,ppm,113.0,4 cm spherical section | PI T'ien | secuencia de flujo: 10,BASS-II
+BASS-II,T4,2/14/2014,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,18.7,101.325,9.0,,N2 (aire),combustion sostenida,,CO final,72.0,ppm,72.0,2 cm SIBAL | PI T'ien | secuencia de flujo: 9  1,BASS-II
+BASS-II,T5,4/10/2014,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,18.8,101.325,10.0,,N2 (aire),combustion sostenida,,CO final,41.0,ppm,41.0,2 cm SIBAL | PI T'ien | secuencia de flujo: 10   2   1,BASS-II
+BASS-II,T6,4/10/2014,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,18.8,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,77.0,ppm,77.0,2 cm SIBAL | PI T'ien | secuencia de flujo: 5  2  1   <1,BASS-II
+BASS-II,T7,7/9/2014,4 cm spherical section,solido,esfera,17.3,101.325,10.0,,N2 (aire),combustion sostenida,,CO final,140.0,ppm,140.0,4 cm spherical section | PI T'ien | secuencia de flujo: 10   5  3  1   decr,BASS-II
+BASS-II,T9,6/24/2018,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,16.4,101.325,10.0,,N2 (aire),combustion sostenida,,CO final,9.0,ppm,9.0,2 cm SIBAL | PI T'ien | secuencia de flujo: 10,BASS-II
+BASS-II,T10,6/24/2014,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,16.4,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,14.0,ppm,14.0,2 cm SIBAL | PI T'ien | secuencia de flujo: 5,BASS-II
+BASS-II,T11,6/27/2014,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,17.1,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,45.0,ppm,45.0,2 cm SIBAL | PI T'ien | secuencia de flujo: 5,BASS-II
+BASS-II,T12,6/27/2014,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,16.8,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,117.0,ppm,117.0,2 cm SIBAL | PI T'ien | secuencia de flujo: 5,BASS-II
+BASS-II,T13,4/10/2014,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,17.5,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,12.0,ppm,12.0,2 cm SIBAL | PI T'ien | secuencia de flujo: 5  1,BASS-II
+BASS-II,T14,6/27/2014,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,16.9,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,152.0,ppm,152.0,2 cm SIBAL | PI T'ien | secuencia de flujo: 5  3,BASS-II
+BASS-II,T15,2/14/2014,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,18.7,101.325,9.0,,N2 (aire),combustion sostenida,,CO final,102.0,ppm,102.0,2 cm SIBAL | PI T'ien | secuencia de flujo: 9   29,BASS-II
+BASS-II,T16,4/10/2014,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,17.6,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,41.0,ppm,41.0,2 cm SIBAL | PI T'ien | secuencia de flujo: 5  3,BASS-II
+BASS-II,T17,6/27/2014,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,16.9,101.325,6.0,,N2 (aire),combustion sostenida,,CO final,190.0,ppm,190.0,2 cm SIBAL | PI T'ien | secuencia de flujo: 6   53,BASS-II
+BASS-II,T18,6/24/2018,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,17.4,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,22.0,ppm,22.0,2 cm SIBAL | PI T'ien | secuencia de flujo: 5  2,BASS-II
+BASS-II,T19,7/9/2014,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,17.2,101.325,11.0,,N2 (aire),combustion sostenida,,CO final,20.0,ppm,20.0,1 cm SIBAL | PI T'ien | secuencia de flujo: 11,BASS-II
+BASS-II,T20,7/9/2014,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,17.2,101.325,11.0,,N2 (aire),combustion sostenida,,CO final,34.0,ppm,34.0,1 cm SIBAL | PI T'ien | secuencia de flujo: 11   3,BASS-II
+BASS-II,T21,7/9/2014,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,17.2,101.325,11.0,,N2 (aire),combustion sostenida,,CO final,45.0,ppm,45.0,1 cm SIBAL | PI T'ien | secuencia de flujo: 11   max(47),BASS-II
+BASS-II,T22,7/9/2014,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,17.1,101.325,10.0,,N2 (aire),combustion sostenida,,CO final,162.0,ppm,162.0,1 cm SIBAL | PI T'ien | secuencia de flujo: 10   5,BASS-II
+BASS-II,T23,7/9/2014,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,17.2,101.325,10.0,,N2 (aire),combustion sostenida,,CO final,49.0,ppm,49.0,2 cm Sibal   moved igniter | PI T'ien | secuencia de flujo: 10,BASS-II
+BASS-II,T24,7/9/2014,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,18.2,101.325,10.0,,N2 (aire),combustion sostenida,,CO final,107.0,ppm,107.0,1 cm SIBAL   top side ign | PI T'ien | secuencia de flujo: 10,BASS-II
+BASS-II,T25,8/4/2014,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,20.8,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,17.0,ppm,17.0,2 cm SIBAL | PI T'ien | secuencia de flujo: 5   2.5,BASS-II
+BASS-II,T26,8/4/2014,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,20.8,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,24.0,ppm,24.0,2 cm SIBAL | PI T'ien | secuencia de flujo: 5   2.5,BASS-II
+BASS-II,T27,8/4/2014,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,20.7,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,9.0,ppm,9.0,1 cm SIBAL | PI T'ien | secuencia de flujo: 5   2,BASS-II
+BASS-II,T28a,8/4/2014,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,20.7,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,,ppm,,1 cm SIBAL | PI T'ien | secuencia de flujo: 5,BASS-II
+BASS-II,T28b,8/4/2014,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,20.7,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,2.0,ppm,2.0,1 cm SIBAL | PI T'ien | secuencia de flujo: 5,BASS-II
+BASS-II,T29,8/4/2014,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,20.7,101.325,5.0,,N2 (aire),combustion sostenida,,CO final,10.0,ppm,10.0,1 cm SIBAL | PI T'ien | secuencia de flujo: 5   2(?),BASS-II
+BASS,1,3/30/2012,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,SIBAL 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,42,3/30/2012,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,PMMA sphere 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,18,3/30/2012,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,PMMA sphere 1 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,7,4/5/2012,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,SIBAL 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,8,4/5/2012,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,SIBAL 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,43,4/9/2012,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,PMMA sphere 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,44,4/9/2012,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,PMMA sphere 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,45,4/9/2012,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,PMMA sphere 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,19,5/2/2012,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,PMMA sphere 1 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,20,5/2/2012,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,PMMA sphere 1 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,21,5/2/2012,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,PMMA sphere 1 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,4,5/10/2012,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,SIBAL 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,10,5/10/2012,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,SIBAL 1 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,12,5/10/2012,Nomex,solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,Nomex blend 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,54,5/11/2012,PMMA,solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,PMMA 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,55,5/11/2012,PMMA,solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,PMMA 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,56,5/11/2012,PMMA,solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,PMMA 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,57,5/11/2012,PMMA,solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,PMMA 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,110,5/11/2012,PMMA,solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,PMMA 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,30,6/5/2012,PMMA,solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,PMMA 1 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,31,6/5/2012,PMMA,solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,PMMA 1 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,32,6/5/2012,PMMA,solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,PMMA 1 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,33,6/5/2012,PMMA,solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,PMMA 1 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,12-R,6/5/2012,Nomex,solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,Nomex blend 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,12-R2,6/5/2012,Nomex,solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,Nomex blend 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,46,6/11/2012,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,2 cm sphere | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,47,6/11/2012,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,2 cm sphere | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,48,6/11/2012,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,2 cm sphere | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,49,6/11/2012,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,2 cm sphere | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,22,6/14/2012,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,1 cm sphere | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,23,6/14/2012,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,1 cm sphere | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,24,6/14/2012,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,1 cm sphere | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,25,6/14/2012,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,1 cm sphere | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,58,6/18/2012,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,2 cm sphere | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,59,6/18/2012,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,2 cm sphere | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,60,6/18/2012,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,2 cm sphere | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,61,6/18/2012,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,2 cm sphere | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,5,6/28/2012,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,SIBAL 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,14,6/28/2012,Nomex,solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,Nomex III Natural | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,66,6/28/2012,PMMA,solido,placa,,101.325,,,N2 (aire),,,,,,,PMMA slab | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,67,6/28/2012,PMMA,solido,placa,,101.325,,,N2 (aire),,,,,,,PMMA slab | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,34,6/29/2012,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,1 cm sphere | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,35,6/29/`12,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,1 cm sphere | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,16,6/29/2012,Ultem,solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,ultem sheet | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,5b,6/29/2012,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,,101.325,,opuesto,N2 (aire),,,,,,,SIBAL 2 cm   opposed flow | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,6,7/3/2012,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,SIBAL 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,82,7/3/2012,Cera/parafina,solido,vela,,101.325,,,N2 (aire),,,,,,,candle | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,82a,7/3/2012,Cera/parafina,solido,vela,,101.325,,,N2 (aire),,,,,,,candle | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,82b,7/3/2012,Cera/parafina,solido,vela,,101.325,,,N2 (aire),,,,,,,candle | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,68,7/3/2012,PMMA,solido,placa,,101.325,,,N2 (aire),,,,,,,pmma slab | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,69,7/12/2012,PMMA,solido,placa,,101.325,,,N2 (aire),,,,,,,pmma slab | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,111,7/12/2012,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,2 cm sphere   wake ign | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,112,7/12/2012,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,2 cm sphere   wake ign | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,113,7/12/2012,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,2 cm sphere   wake ign | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,2,7/19/2012,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,SIBAL 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,3,7/19/2012,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,SIBAL 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,15,7/19/2012,Nomex,solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,nomex natural III | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,13,7/19/2012,Nomex,solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,Nomex blend 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,17,7/19/2012,Ultem,solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,ultem sheet | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,114,7/19/2012,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,pmma sphere | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,62,7/23/2012,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,PMMA sphere 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,63,7/23/2012,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,PMMA sphere 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,64,7/23/2012,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,PMMA sphere 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,65,7/23/2012,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,PMMA sphere 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,118,7/23/2012,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,PMMA sphere 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,11,8/9/2012,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,SIBAL 1 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,9,8/9/2012,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,SIBAL 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,102,8/9/2012,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,PMMA sphere 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,83a,8/16/2012,Cera/parafina,solido,vela,,101.325,,,N2 (aire),,,,,,,Japan Wax Candle   wake | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,83b,8/16/2012,Cera/parafina,solido,vela,,101.325,,,N2 (aire),,,,,,,Japan Wax Candle   wake | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,83c,8/16/2012,Cera/parafina,solido,vela,,101.325,,,N2 (aire),,,,,,,Japan Wax Candle   wake | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,84a,8/16/2012,Cera/parafina,solido,vela,,101.325,,,N2 (aire),,,,,,,Japan Wax Candle   wake | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,84b,8/16/2012,Cera/parafina,solido,vela,,101.325,,,N2 (aire),,,,,,,Japan Wax Candle   wake | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,86a,8/16/2012,Cera/parafina,solido,vela,,101.325,,,N2 (aire),,,,,,,Japan Wax Candle   wake | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,86b,8/16/2012,Cera/parafina,solido,vela,,101.325,,,N2 (aire),,,,,,,Japan Wax Candle   wake | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,86c,8/16/2012,Cera/parafina,solido,vela,,101.325,,,N2 (aire),,,,,,,Japan Wax Candle   wake | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,70,8/21/2012,PMMA,solido,placa,,101.325,,,N2 (aire),,,,,,,PMMA slab | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,71,8/21/2012,PMMA,solido,placa,,101.325,,,N2 (aire),,,,,,,PMMA slab | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,74,8/21/2012,Cera/parafina,solido,placa,,101.325,,,N2 (aire),,,,,,,paraffin wax slab | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,75,8/21/2012,Cera/parafina,solido,placa,,101.325,,,N2 (aire),,,,,,,parrafin wax slab | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,98,4/5/2013,PMMA,solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,PMMA 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,99,4/5/2013,PMMA,solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,PMMA 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,114,4/9/2013,PMMA,solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,PMMA 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,115,4/9/2013,PMMA,solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,pmma 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,116,4/9/2013,PMMA,solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,pmma 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,117,4/9/2013,PMMA,solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,pmma 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,117a,4/9/2013,PMMA,solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,pmma 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,100,4/12/2013,PMMA,solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,pmma 2 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,85,4/12/2013,Cera/parafina,solido,vela,,101.325,,,N2 (aire),,,,,,,candle    paraffin   wake | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,93,4/12/2013,Cera/parafina,solido,vela,,101.325,,,N2 (aire),,,,,,,candle    paraffin   wake | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,26,4/16/2013,PMMA,solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,pmma 1 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,27,4/16/2013,PMMA,solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,pmma 1 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,28,4/16/2013,PMMA,solido,lamina/tejido,,101.325,,,N2 (aire),,,,,,,pmma 1 cm | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,87,4/23/2013,Cera/parafina,solido,vela,,101.325,,,N2 (aire),,,,,,,candle   Japan wax | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,103,4/23/2013,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,2 cm sphere | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,104,4/23/2013,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,2 cm sphere | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,105,4/23/2013,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,2 cm sphere | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,38,4/26/2013,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,1 cm sphere   wake | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,39,4/26/2013,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,1 cm wake sphere | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,40,4/26/2013,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,1 cm wake sphere | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,72,4/26/2013,PMMA,solido,placa,,101.325,,opuesto,N2 (aire),,,,,,,pmma slab opposed | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,73,4/26/2013,PMMA,solido,placa,,101.325,,,N2 (aire),,,,,,,pmma slab   oppsed | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,118,4/29/2013,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,2 cm pmma sphere | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,119,4/29/2013,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,2 cm pmma sphere | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,89,5/2/2013,Cera/parafina,solido,vela,,101.325,,,N2 (aire),,,,,,,parrafin wax candle | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,95,5/2/2013,Cera/parafina,solido,vela,,101.325,,,N2 (aire),,,,,,,paraffin wax candle | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,92,5/2/2013,Cera/parafina,solido,vela,,101.325,,,N2 (aire),,,,,,,candle   Japan wax | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,78,5/2/2013,Cera/parafina,solido,placa,,101.325,,,N2 (aire),,,,,,,paraffin wax slab | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,50,5/15/2103,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,2 cm pmma sphere | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,51,5/15/2013,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,2 cm sphere | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,52,5/15/2013,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,2 cm sphere | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,53,5/15/2013,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,2 cm sphere | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,106,5/17/2013,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,2 cm sphere | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,107,5/17/2013,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,2 cm sphere | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,108,5/17/2013,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,2 cm sphere | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,109,6/1/2013,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,2 cm sphere | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,79,6/1/2013,Cera/parafina,solido,placa,,101.325,,,N2 (aire),,,,,,,flat wax slab | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,80,6/1/2013,Cera/parafina,solido,placa,,101.325,,,N2 (aire),,,,,,,flat wax slab | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,75,6/1/2013,Cera/parafina,solido,placa,,101.325,,,N2 (aire),,,,,,,flat wax slab | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,53,6/1/2013,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,pmma sphere | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+BASS,53a,6/1/2013,PMMA,solido,esfera,,101.325,,,N2 (aire),,,,,,,pmma sphere | la tabla PSI no incluye O2 ni flujo por prueba,BASS
+FLEX,20CAL08,3/5/2009,Methanol,liquido,gota,21.0,101.0,0.0,,N2,disrupcion de gota,4.3,diametro de extincion,0.89,mm,,d0=1.69 mm | burning rate=0.52 mm2/s,FLEX
+FLEX,20CAL10,3/5/2009,Methanol,liquido,gota,21.0,101.6,0.0,,N2,extincion,5.0,diametro de extincion,0.94,mm,,d0=1.86 mm | burning rate=0.6 mm2/s,FLEX
+FLEX,20CAL12,3/5/2009,Methanol,liquido,gota,21.0,101.9,0.0,,N2,extincion,3.2,diametro de extincion,0.92,mm,,d0=1.61 mm | burning rate=0.58 mm2/s,FLEX
+FLEX,30CAL02,3/31/2009,Methanol,liquido,gota,21.0,101.3,0.0,,N2,extincion,7.64,diametro de extincion,,mm,,d0=2.06 mm | burning rate=0.6 mm2/s,FLEX
+FLEX,30CAL03,3/31/2009,Methanol,liquido,gota,21.0,101.3,0.0,,N2,extincion,6.34,diametro de extincion,0.81,mm,,d0=1.92 mm | burning rate=0.48 mm2/s,FLEX
+FLEX,40CAL01,3/31/2009,Methanol,liquido,gota,21.0,101.3,0.0,,N2,extincion,9.6,diametro de extincion,1.53,mm,,d0=2.54 mm | burning rate=0.51 mm2/s,FLEX
+FLEX,20CAL13,4/10/2009,Heptane,liquido,gota,21.0,101.5,0.0,,N2,disrupcion de gota,5.3,diametro de extincion,,mm,,d0=1.87 mm | burning rate=0.67 mm2/s,FLEX
+FLEX,30CAL06,4/10/2009,Heptane,liquido,gota,21.0,101.6,0.0,,N2,disrupcion de gota,14.8,diametro de extincion,,mm,,d0=2.95 mm | burning rate=0.79 mm2/s,FLEX
+FLEX,30CAL07,4/10/2009,Heptane,liquido,gota,21.0,101.3,0.0,,N2,disrupcion de gota,,diametro de extincion,,mm,,d0= mm | burning rate= mm2/s,FLEX
+FLEX,256F002,5/22/2009,Methanol,liquido,gota,21.0,309.3,0.0,,CO2 (70%),extincion,13.6,diametro de extincion,,mm,,d0=3.86 mm | burning rate=0.37 mm2/s,FLEX
+FLEX,256R001,5/22/2009,Methanol,liquido,gota,21.0,309.1,0.0,,CO2 (70%),extincion,16.5,diametro de extincion,,mm,,d0=3.03 mm | burning rate=0.4 mm2/s,FLEX
+FLEX,264F003,5/22/2009,Heptane,liquido,gota,21.0,309.3,0.0,,CO2 (70%),disrupcion de gota,,diametro de extincion,,mm,,d0=2.74 mm | burning rate= mm2/s,FLEX
+FLEX,256R002,6/25/2009,Methanol,liquido,gota,21.0,276.5,0.0,,CO2 (70%),extincion,10.8,diametro de extincion,,mm,,d0=2.59 mm | burning rate=0.49 mm2/s,FLEX
+FLEX,256F007,6/29/2009,Methanol,liquido,gota,21.0,274.1,0.0,,CO2 (70%),extincion,11.3,diametro de extincion,,mm,,d0=3.7 mm | burning rate= mm2/s,FLEX
+FLEX,256F008,6/29/2009,Methanol,liquido,gota,21.0,275.5,0.0,,CO2 (70%),extincion,23.1,diametro de extincion,,mm,,d0=4.42 mm | burning rate= mm2/s,FLEX
+FLEX,256F009,6/29/2009,Methanol,liquido,gota,21.0,276.3,0.0,,CO2 (70%),extincion,3.4,diametro de extincion,1.0,mm,,d0=1.66 mm | burning rate=0.53 mm2/s,FLEX
+FLEX,240R003,7/1/2009,Methanol,liquido,gota,21.0,206.1,0.0,,CO2 (70%),disrupcion de gota,2.4,diametro de extincion,,mm,,d0=2.67 mm | burning rate= mm2/s,FLEX
+FLEX,248F001,7/1/2009,Heptane,liquido,gota,21.0,207.2,0.0,,CO2 (70%),extincion,8.1,diametro de extincion,1.77,mm,,d0=2.74 mm | burning rate=0.61 mm2/s,FLEX
+FLEX,196F001,8/26/2009,Heptane,liquido,gota,34.0,71.9,0.0,,N2,disrupcion de gota,4.2,diametro de extincion,,mm,,d0=3.39 mm | burning rate=0.9 mm2/s,FLEX
+FLEX,192F001,10/24/09,Methanol,liquido,gota,34.0,71.9,0.0,,N2,combustion completa,17.4,diametro de extincion,1.56,mm,,d0=3.4 mm | burning rate=0.53 mm2/s,FLEX
+FLEX,192F002,10/24/09,Methanol,liquido,gota,34.0,72.1,0.0,,N2,disrupcion de gota,17.8,diametro de extincion,0.95,mm,,d0=3.49 mm | burning rate=0.66 mm2/s,FLEX
+FLEX,192F003,10/24/09,Methanol,liquido,gota,34.0,72.1,0.0,,N2,disrupcion de gota,18.2,diametro de extincion,,mm,,d0=3.5 mm | burning rate=0.65 mm2/s,FLEX
+FLEX,196F002,10/24/09,Heptane,liquido,gota,34.0,72.2,0.0,,N2,disrupcion de gota,13.1,diametro de extincion,,mm,,d0=3.01 mm | burning rate=0.73 mm2/s,FLEX
+FLEX,196F003,10/24/09,Heptane,liquido,gota,34.0,72.4,0.0,,N2,disrupcion de gota,,diametro de extincion,,mm,,d0= mm | burning rate= mm2/s,FLEX
+FLEX,191R001,11/9/2009,Methanol,liquido,gota,30.0,71.6,0.0,,N2,combustion completa,10.3,diametro de extincion,0.59,mm,,d0=2.6 mm | burning rate=0.65 mm2/s,FLEX
+FLEX,191F001,11/9/2009,Methanol,liquido,gota,30.0,71.8,0.0,,N2,disrupcion de gota,22.2,diametro de extincion,0.4,mm,,d0=3.63 mm | burning rate=0.62 mm2/s,FLEX
+FLEX,195F001,11/9/2009,Heptane,liquido,gota,30.0,72.1,0.0,,N2,disrupcion de gota,23.8,diametro de extincion,,mm,,d0=3.87 mm | burning rate=0.64 mm2/s,FLEX
+FLEX,195F002,11/9/2009,Heptane,liquido,gota,30.0,72.0,0.0,,N2,disrupcion de gota,17.3,diametro de extincion,,mm,,d0=3.36 mm | burning rate=0.64 mm2/s,FLEX
+FLEX,178R001,11/13/09,Methanol,liquido,gota,30.0,102.2,0.0,,N2,combustion completa,10.4,diametro de extincion,,mm,,d0=2.57 mm | burning rate=0.74 mm2/s,FLEX
+FLEX,178F001,11/13/09,Methanol,liquido,gota,30.0,102.6,0.0,,N2,extincion,15.6,diametro de extincion,1.32,mm,,d0=3.26 mm | burning rate=0.59 mm2/s,FLEX
+FLEX,182F001,11/13/09,Heptane,liquido,gota,30.0,102.7,0.0,,N2,disrupcion de gota,18.4,diametro de extincion,,mm,,d0=3.39 mm | burning rate=0.85 mm2/s,FLEX
+FLEX,182F002,11/13/09,Heptane,liquido,gota,30.0,102.8,0.0,,N2,combustion completa,14.0,diametro de extincion,,mm,,d0=3.07 mm | burning rate=0.68 mm2/s,FLEX
+FLEX,177R002,11/27/09,Methanol,liquido,gota,21.0,101.9,0.0,,N2,extincion,11.4,diametro de extincion,1.25,mm,,d0=2.62 mm | burning rate=0.48 mm2/s,FLEX
+FLEX,177F001,11/27/09,Methanol,liquido,gota,21.0,102.4,0.0,,N2,extincion,27.3,diametro de extincion,2.0,mm,,d0=3.89 mm | burning rate=0.44 mm2/s,FLEX
+FLEX,181F001,11/27/09,Heptane,liquido,gota,21.0,102.4,0.0,,N2,extincion,8.9,diametro de extincion,3.34,mm,,d0=3.85 mm | burning rate=0.43 mm2/s,FLEX
+FLEX,190R002,12/15/09,Methanol,liquido,gota,20.0,71.9,0.0,,N2,extincion,7.1,diametro de extincion,1.67,mm,,d0=2.4 mm | burning rate=0.45 mm2/s,FLEX
+FLEX,220R001,1/7/2010,Methanol,liquido,gota,34.0,71.2,0.0,,N2,disrupcion de gota,10.7,diametro de extincion,,mm,,d0=3.31 mm | burning rate=0.72 mm2/s,FLEX
+FLEX,220R002,1/7/2010,Methanol,liquido,gota,34.0,71.2,0.0,,N2,disrupcion de gota,15.3,diametro de extincion,,mm,,d0=3.59 mm | burning rate=0.71 mm2/s,FLEX
+FLEX,224F001,1/7/2010,Heptane,liquido,gota,34.0,71.3,0.0,,N2,disrupcion de gota,9.9,diametro de extincion,0.0,mm,,d0=2.91 mm | burning rate=0.8 mm2/s,FLEX
+FLEX,219R001,1/8/2010,Methanol,liquido,gota,30.0,71.3,0.0,,N2,disrupcion de gota,19.2,diametro de extincion,,mm,,d0=3.77 mm | burning rate=0.62 mm2/s,FLEX
+FLEX,219F001,1/8/2010,Methanol,liquido,gota,30.0,71.2,0.0,,N2,disrupcion de gota,14.1,diametro de extincion,,mm,,d0=3.35 mm | burning rate=0.65 mm2/s,FLEX
+FLEX,223F001,1/8/2010,Heptane,liquido,gota,30.0,71.3,0.0,,N2,disrupcion de gota,11.3,diametro de extincion,,mm,,d0=2.92 mm | burning rate=0.58 mm2/s,FLEX
+FLEX,223F002,1/8/2010,Heptane,liquido,gota,30.0,71.3,0.0,,N2,disrupcion de gota,11.4,diametro de extincion,0.0,mm,,d0=2.97 mm | burning rate=0.78 mm2/s,FLEX
+FLEX,206F001,1/11/2010,Methanol,liquido,gota,30.0,102.2,0.0,,N2,disrupcion de gota,16.6,diametro de extincion,,mm,,d0=3.49 mm | burning rate=0.63 mm2/s,FLEX
+FLEX,206R001,1/11/2010,Methanol,liquido,gota,30.0,102.4,0.0,,N2,extincion,6.6,diametro de extincion,1.01,mm,,d0=2.42 mm | burning rate=0.73 mm2/s,FLEX
+FLEX,205R001,1/12/2010,Methanol,liquido,gota,21.0,102.6,0.0,,N2,disrupcion de gota,13.1,diametro de extincion,1.08,mm,,d0=2.78 mm | burning rate=0.54 mm2/s,FLEX
+FLEX,209F001,1/12/2010,Heptane,liquido,gota,21.0,102.7,0.0,,N2,combustion completa,17.1,diametro de extincion,,mm,,d0=3.36 mm | burning rate=0.5 mm2/s,FLEX
+FLEX,205F001,1/12/2010,Methanol,liquido,gota,21.0,102.5,0.0,,N2,disrupcion de gota,23.5,diametro de extincion,,mm,,d0=3.66 mm | burning rate=0.27 mm2/s,FLEX
+FLEX,209F003,1/19/2010,Heptane,liquido,gota,21.0,102.0,0.0,,N2,extincion,8.6,diametro de extincion,2.78,mm,,d0=3.46 mm | burning rate=0.59 mm2/s,FLEX
+FLEX,209F004,1/19/2010,Heptane,liquido,gota,21.0,102.7,0.0,,N2,extincion,8.4,diametro de extincion,2.98,mm,,d0=3.57 mm | burning rate=0.52 mm2/s,FLEX
+FLEX,209F005,1/19/2010,Heptane,liquido,gota,21.0,102.8,0.0,,N2,combustion completa,8.2,diametro de extincion,0.0,mm,,d0=2.41 mm | burning rate=0.65 mm2/s,FLEX
+FLEX,210F002,1/11/2010,Heptane,liquido,gota,30.0,102.8,0.0,,N2,disrupcion de gota,18.3,diametro de extincion,0.0,mm,,d0=3.53 mm | burning rate=0.7 mm2/s,FLEX
+FLEX,209F002,1/12/2010,Heptane,liquido,gota,21.0,102.7,0.0,,N2,disrupcion de gota,18.5,diametro de extincion,,mm,,d0= mm | burning rate= mm2/s,FLEX
+FLEX,190F003,1/29/2010,Methanol,liquido,gota,20.0,72.2,0.0,,N2,extincion,29.0,diametro de extincion,,mm,,d0=3.56 mm | burning rate=0.41 mm2/s,FLEX
+FLEX,218F001,1/29/2010,Methanol,liquido,gota,20.0,72.3,0.0,,N2,disrupcion de gota,20.5,diametro de extincion,2.39,mm,,d0=3.37 mm | burning rate=0.46 mm2/s,FLEX
+FLEX,194F001,1/29/2010,Heptane,liquido,gota,20.0,72.5,0.0,,N2,combustion completa,7.9,diametro de extincion,3.04,mm,,d0=3.56 mm | burning rate=0.44 mm2/s,FLEX
+FLEX,303F001,1/29/2010,Heptane,liquido,gota,20.0,72.6,0.0,,N2,extincion,6.8,diametro de extincion,2.49,mm,,d0=3.1 mm | burning rate=0.54 mm2/s,FLEX
+FLEX,176F001,2/4/2010,Methanol,liquido,gota,18.0,103.1,0.0,,N2,extincion,29.1,diametro de extincion,,mm,,d0=3.69 mm | burning rate=0.42 mm2/s,FLEX
+FLEX,176R001,2/4/2010,Methanol,liquido,gota,18.0,102.6,0.0,,N2,extincion,17.7,diametro de extincion,1.39,mm,,d0=2.93 mm | burning rate=0.43 mm2/s,FLEX
+FLEX,204F001,2/4/2010,Methanol,liquido,gota,18.0,103.2,0.0,,N2,extincion,23.2,diametro de extincion,,mm,,d0=3.43 mm | burning rate=0.45 mm2/s,FLEX
+FLEX,204R001,2/4/2010,Methanol,liquido,gota,18.0,103.2,0.0,,N2,extincion,25.7,diametro de extincion,2.0,mm,,d0=3.68 mm | burning rate=0.41 mm2/s,FLEX
+FLEX,301F001,3/11/2010,Heptane,liquido,gota,18.0,101.6,0.0,,N2,extincion,4.8,diametro de extincion,3.17,mm,,d0=3.43 mm | burning rate=0.39 mm2/s,FLEX
+FLEX,301F002,3/11/2010,Heptane,liquido,gota,18.0,102.3,0.0,,N2,combustion completa,9.6,diametro de extincion,0.0,mm,,d0=2.15 mm | burning rate=0.51 mm2/s,FLEX
+FLEX,302F001,3/11/2010,Heptane,liquido,gota,18.0,101.9,0.0,,N2,extincion,5.5,diametro de extincion,2.07,mm,,d0=2.69 mm | burning rate=0.6 mm2/s,FLEX
+FLEX,189R001,3/19/2010,Methanol,liquido,gota,15.0,102.1,0.0,,N2,extincion,24.3,diametro de extincion,,mm,,d0=3.37 mm | burning rate=0.4 mm2/s,FLEX
+FLEX,189F001,3/19/2010,Methanol,liquido,gota,15.0,102.2,0.0,,N2,extincion,12.9,diametro de extincion,1.32,mm,,d0=2.52 mm | burning rate=0.38 mm2/s,FLEX
+FLEX,189F002,3/19/2010,Methanol,liquido,gota,15.0,102.4,0.0,,N2,extincion,14.4,diametro de extincion,3.3,mm,,d0=3.97 mm | burning rate=0.36 mm2/s,FLEX
+FLEX,189R003,3/19/2010,Methanol,liquido,gota,15.0,102.5,0.0,,N2,extincion,10.7,diametro de extincion,1.29,mm,,d0=2.38 mm | burning rate=0.39 mm2/s,FLEX
+FLEX,193R002,3/23/2010,Heptane,liquido,gota,14.000000000000002,102.3,0.0,,N2,combustion completa,1.3,diametro de extincion,0.0,mm,,d0=1.1 mm | burning rate=0.94 mm2/s,FLEX
+FLEX,193F001,3/23/2010,Heptane,liquido,gota,15.0,101.5,0.0,,N2,extincion,1.6,diametro de extincion,4.6,mm,,d0=4.67 mm | burning rate=0.41 mm2/s,FLEX
+FLEX,189R002,3/19/2010,Methanol,liquido,gota,15.0,102.4,0.0,,N2,extincion,8.4,diametro de extincion,,mm,,d0=2.25 mm | burning rate=0.4 mm2/s,FLEX
+FLEX,193R001,3/23/2010,Heptane,liquido,gota,15.0,102.0,0.0,,N2,combustion completa,2.5,diametro de extincion,,mm,,d0=1.13 mm | burning rate=0.52 mm2/s,FLEX
+FLEX,193F001,3/23/2010,Heptane,liquido,gota,15.0,101.5,0.0,,N2,extincion,1.5,diametro de extincion,4.58,mm,,d0=4.64 mm | burning rate=0.56 mm2/s,FLEX
+FLEX,221F001,3/23/2010,Heptane,liquido,gota,15.0,102.1,0.0,,N2,combustion completa,2.3,diametro de extincion,,mm,,d0=1.33 mm | burning rate=0.77 mm2/s,FLEX
+FLEX,203R002,3/29/2010,Methanol,liquido,gota,13.0,102.8,0.0,,N2,extincion,9.1,diametro de extincion,1.78,mm,,d0=2.54 mm | burning rate=0.37 mm2/s,FLEX
+FLEX,203F001,3/29/2010,Methanol,liquido,gota,13.0,102.6,0.0,,N2,extincion,8.9,diametro de extincion,2.78,mm,,d0=3.21 mm | burning rate=0.37 mm2/s,FLEX
+FLEX,175R001,3/29/2010,Methanol,liquido,gota,14.000000000000002,102.4,0.0,,N2,extincion,8.5,diametro de extincion,2.91,mm,,d0=3.33 mm | burning rate=0.34 mm2/s,FLEX
+FLEX,175F001,3/29/2010,Methanol,liquido,gota,14.000000000000002,102.1,0.0,,N2,extincion,12.9,diametro de extincion,1.66,mm,,d0=2.66 mm | burning rate=0.35 mm2/s,FLEX
+FLEX,179F001,3/30/2010,Heptane,liquido,gota,13.0,102.4,0.0,,N2,extincion,1.5,diametro de extincion,2.86,mm,,d0=2.92 mm | burning rate=0.25 mm2/s,FLEX
+FLEX,207F001,3/30/2010,Heptane,liquido,gota,13.0,102.7,0.0,,N2,extincion,1.0,diametro de extincion,,mm,,d0= mm | burning rate= mm2/s,FLEX
+FLEX,207F002,3/30/2010,Heptane,liquido,gota,13.0,102.7,0.0,,N2,extincion,1.5,diametro de extincion,,mm,,d0= mm | burning rate= mm2/s,FLEX
+FLEX,304F001,4/19/2010,Methanol,liquido,gota,13.0,101.9,0.0,,N2,extincion,7.5,diametro de extincion,2.39,mm,,d0=2.84 mm | burning rate=0.35 mm2/s,FLEX
+FLEX,304F002,4/19/2010,Methanol,liquido,gota,12.0,102.9,0.0,,N2,extincion,5.45,diametro de extincion,,mm,,d0= mm | burning rate= mm2/s,FLEX
+FLEX,304R001,4/19/2010,Methanol,liquido,gota,12.0,102.3,0.0,,N2,extincion,10.8,diametro de extincion,1.42,mm,,d0=2.35 mm | burning rate=0.35 mm2/s,FLEX
+FLEX,304R002,4/19/2010,Methanol,liquido,gota,12.0,102.8,0.0,,N2,extincion,9.3,diametro de extincion,1.77,mm,,d0=2.4 mm | burning rate=0.35 mm2/s,FLEX
+FLEX,305F002,4/19/2010,Methanol,liquido,gota,12.0,102.7,0.0,,N2,extincion,9.0,diametro de extincion,2.56,mm,,d0=3.07 mm | burning rate=0.35 mm2/s,FLEX
+FLEX,305F003,4/19/2010,Methanol,liquido,gota,12.0,102.8,0.0,,N2,extincion,9.3,diametro de extincion,1.92,mm,,d0=2.64 mm | burning rate=0.38 mm2/s,FLEX
+FLEX,053R001,5/5/2010,Methanol,liquido,gota,25.0,71.7,0.0,,CO2 (15%),disrupcion de gota,14.8,diametro de extincion,,mm,,d0=3.01 mm | burning rate=0.53 mm2/s,FLEX
+FLEX,053F001,5/5/2010,Methanol,liquido,gota,25.0,71.6,0.0,,CO2 (15%),disrupcion de gota,24.0,diametro de extincion,,mm,,d0=3.7 mm | burning rate=0.51 mm2/s,FLEX
+FLEX,141R001,5/6/2010,Methanol,liquido,gota,25.0,71.9,0.0,,CO2 (15%),disrupcion de gota,20.1,diametro de extincion,,mm,,d0=3.62 mm | burning rate=0.53 mm2/s,FLEX
+FLEX,141F001,5/5/2010,Methanol,liquido,gota,25.0,71.8,0.0,,CO2 (15%),disrupcion de gota,18.0,diametro de extincion,,mm,,d0=3.51 mm | burning rate=0.51 mm2/s,FLEX
+FLEX,061F002,6/14/2010,Heptane,liquido,gota,25.0,71.5,0.0,,CO2 (15%),disrupcion de gota,21.7,diametro de extincion,,mm,,d0=3.41 mm | burning rate=0.55 mm2/s,FLEX
+FLEX,149F001,6/15/2010,Heptane,liquido,gota,25.0,71.6,0.0,,CO2 (15%),disrupcion de gota,8.3,diametro de extincion,0.0,mm,,d0=2.48 mm | burning rate=0.71 mm2/s,FLEX
+FLEX,C08H101,6/15/2010,Heptane,liquido,gota,24.0,71.1,0.0,,CO2 (20%),extincion,10.1,diametro de extincion,2.76,mm,,d0=3.53 mm | burning rate=0.51 mm2/s,FLEX
+FLEX,C08H201,6/15/2010,Heptane,liquido,gota,24.0,71.2,0.0,,CO2 (20%),extincion,8.0,diametro de extincion,3.04,mm,,d0=3.6 mm | burning rate=0.58 mm2/s,FLEX
+FLEX,C08H301,6/15/2010,Heptane,liquido,gota,24.0,71.2,0.0,,CO2 (20%),disrupcion de gota,5.2,diametro de extincion,,mm,,d0= mm | burning rate= mm2/s,FLEX
+FLEX,C08M101,6/16/2010,Methanol,liquido,gota,23.0,71.2,0.0,,CO2 (20%),combustion completa,26.5,diametro de extincion,2.6,mm,,d0=4.25 mm | burning rate=0.45 mm2/s,FLEX
+FLEX,C09M201,6/21/2010,Methanol,liquido,gota,23.0,71.6,0.0,,CO2 (25%),extincion,22.9,diametro de extincion,1.74,mm,,d0=3.64 mm | burning rate=0.47 mm2/s,FLEX
+FLEX,C09M101,6/21/2010,Methanol,liquido,gota,23.0,71.3,0.0,,CO2 (25%),extincion,33.0,diametro de extincion,2.32,mm,,d0=4.28 mm | burning rate=0.42 mm2/s,FLEX
+FLEX,C09H101,6/29/2010,Heptane,liquido,gota,23.0,71.6,0.0,,CO2 (25%),extincion,6.1,diametro de extincion,3.98,mm,,d0=4.14 mm | burning rate=0.34 mm2/s,FLEX
+FLEX,C09H201,6/29/2010,Heptane,liquido,gota,23.0,71.8,0.0,,CO2 (25%),extincion,6.5,diametro de extincion,3.45,mm,,d0=3.88 mm | burning rate=0.5 mm2/s,FLEX
+FLEX,C10H101,6/29/2010,Heptane,liquido,gota,21.0,71.2,0.0,,CO2 (30%),extincion,4.2,diametro de extincion,3.43,mm,,d0=3.57 mm | burning rate=0.33 mm2/s,FLEX
+FLEX,C10H201,6/29/2010,Heptane,liquido,gota,21.0,71.2,0.0,,CO2 (30%),extincion,3.2,diametro de extincion,3.88,mm,,d0=4 mm | burning rate=0.35 mm2/s,FLEX
+FLEX,C08M201,6/16/2010,Methanol,liquido,gota,23.0,71.2,0.0,,CO2 (20%),extincion,23.2,diametro de extincion,1.58,mm,,d0=3.6 mm | burning rate=0.49 mm2/s,FLEX
+FLEX,C08M301,6/16/2010,Methanol,liquido,gota,23.0,71.3,0.0,,CO2 (20%),disrupcion de gota,30.7,diametro de extincion,2.0,mm,,d0=4.17 mm | burning rate=0.47 mm2/s,FLEX
+FLEX,C09M401,6/21/2010,Methanol,liquido,gota,23.0,71.8,0.0,,CO2 (25%),disrupcion de gota,14.1,diametro de extincion,1.75,mm,,d0=3.08 mm | burning rate=0.51 mm2/s,FLEX
+FLEX,C08M401,6/16/2010,Methanol,liquido,gota,23.0,71.3,0.0,,CO2 (20%),disrupcion de gota,15.1,diametro de extincion,,mm,,d0=3.18 mm | burning rate=0.52 mm2/s,FLEX
+FLEX,C09M301,6/21/2010,Methanol,liquido,gota,23.0,71.8,0.0,,CO2 (25%),combustion completa,24.3,diametro de extincion,,mm,,d0=3.75 mm | burning rate=0.47 mm2/s,FLEX
+FLEX,C10M102,8/31/2010,Methanol,liquido,gota,21.0,71.5,0.0,,CO2 (30%),extincion,,diametro de extincion,1.92,mm,,d0=3.56 mm | burning rate=0.42 mm2/s,FLEX
+FLEX,C10M201,8/31/2010,Methanol,liquido,gota,21.0,71.6,0.0,,CO2 (30%),extincion,13.0,diametro de extincion,1.57,mm,,d0=2.83 mm | burning rate=0.45 mm2/s,FLEX
+FLEX,C10M303,8/31/2010,Methanol,liquido,gota,21.0,71.6,0.0,,CO2 (30%),combustion completa,16.4,diametro de extincion,2.1,mm,,d0=3.37 mm | burning rate=0.45 mm2/s,FLEX
+FLEX,C10M401,9/1/2010,Methanol,liquido,gota,21.0,70.8,0.0,,CO2 (30%),combustion completa,25.2,diametro de extincion,2.35,mm,,d0=3.99 mm | burning rate=0.43 mm2/s,FLEX
+FLEX,C11M101,9/1/2010,Methanol,liquido,gota,20.0,71.3,0.0,,CO2 (35%),extincion,18.2,diametro de extincion,2.85,mm,,d0=4.2 mm | burning rate=0.49 mm2/s,FLEX
+FLEX,C11M201,9/6/2010,Methanol,liquido,gota,20.0,,0.0,,CO2 (35%),extincion,18.9,diametro de extincion,1.68,mm,,d0=3.23 mm | burning rate=0.42 mm2/s,FLEX
+FLEX,C11M301,9/1/2010,Methanol,liquido,gota,20.0,71.4,0.0,,CO2 (35%),extincion,22.9,diametro de extincion,2.61,mm,,d0=3.97 mm | burning rate=0.41 mm2/s,FLEX
+FLEX,C11M401,9/1/2010,Methanol,liquido,gota,20.0,71.5,0.0,,CO2 (35%),extincion,16.9,diametro de extincion,1.57,mm,,d0=3.16 mm | burning rate=0.46 mm2/s,FLEX
+FLEX,C11H101,9/6/2010,Heptane,liquido,gota,20.0,70.8,0.0,,CO2 (35%),extincion,2.4,diametro de extincion,3.77,mm,,d0=3.84 mm | burning rate=0.25 mm2/s,FLEX
+FLEX,C11H201,9/6/2010,Heptane,liquido,gota,20.0,71.0,0.0,,CO2 (35%),extincion,2.5,diametro de extincion,2.93,mm,,d0=3.03 mm | burning rate=0.38 mm2/s,FLEX
+FLEX,C12H103,9/7/2010,Heptane,liquido,gota,18.0,71.0,0.0,,CO2 (40%),extincion,1.3,diametro de extincion,2.48,mm,,d0=2.6 mm | burning rate=0.37 mm2/s,FLEX
+FLEX,C12H201,9/7/2010,Heptane,liquido,gota,18.0,71.0,0.0,,CO2 (40%),extincion,1.43,diametro de extincion,2.39,mm,,d0=2.45 mm | burning rate=0.38 mm2/s,FLEX
+FLEX,C12M101,9/8/2010,Methanol,liquido,gota,18.0,70.2,0.0,,CO2 (40%),extincion,8.0,diametro de extincion,3.92,mm,,d0=4.25 mm | burning rate=0.34 mm2/s,FLEX
+FLEX,C12M201,9/8/2010,Methanol,liquido,gota,18.0,70.8,0.0,,CO2 (40%),extincion,13.9,diametro de extincion,2.58,mm,,d0=3.46 mm | burning rate=0.41 mm2/s,FLEX
+FLEX,C12M301,9/8/2010,Methanol,liquido,gota,18.0,70.9,0.0,,CO2 (40%),extincion,8.7,diametro de extincion,3.79,mm,,d0=4.13 mm | burning rate=0.35 mm2/s,FLEX
+FLEX,C12M401,9/8/2010,Methanol,liquido,gota,18.0,71.0,0.0,,CO2 (40%),extincion,2.4,diametro de extincion,2.74,mm,,d0=2.87 mm | burning rate=0.3 mm2/s,FLEX
+FLEX,C13M103,9/13/2010,Methanol,liquido,gota,17.0,71.6,0.0,,CO2 (45%),extincion,5.7,diametro de extincion,3.37,mm,,d0=3.63 mm | burning rate=0.35 mm2/s,FLEX
+FLEX,C13M201,9/13/2010,Methanol,liquido,gota,17.0,71.5,0.0,,CO2 (45%),extincion,11.7,diametro de extincion,1.84,mm,,d0=2.8 mm | burning rate=0.4 mm2/s,FLEX
+FLEX,C13M301,9/13/2010,Methanol,liquido,gota,17.0,71.6,0.0,,CO2 (45%),extincion,11.0,diametro de extincion,2.53,mm,,d0=3.22 mm | burning rate=0.38 mm2/s,FLEX
+FLEX,C13M401,9/13/2010,Methanol,liquido,gota,17.0,71.6,0.0,,CO2 (45%),extincion,11.5,diametro de extincion,,mm,,d0=2.91 mm | burning rate=0.39 mm2/s,FLEX
+FLEX,C13H102,9/17/2010,Heptane,liquido,gota,17.0,71.5,0.0,,CO2 (45%),extincion,0.55,diametro de extincion,3.34,mm,,d0=3.33 mm | burning rate=0.33 mm2/s,FLEX
+FLEX,C13H201,9/17/2010,Heptane,liquido,gota,17.0,71.6,0.0,,CO2 (45%),extincion,0.6,diametro de extincion,2.89,mm,,d0=2.91 mm | burning rate=0.05 mm2/s,FLEX
+FLEX,C21H101,10/6/2010,Heptane,liquido,gota,24.0,101.8,0.0,,CO2 (20%),disrupcion de gota,4.9,diametro de extincion,0.52,mm,,d0=1.72 mm | burning rate=0.61 mm2/s,FLEX
+FLEX,C21H201,10/6/2010,Heptane,liquido,gota,24.0,102.0,0.0,,CO2 (20%),disrupcion de gota,12.4,diametro de extincion,0.53,mm,,d0=2.63 mm | burning rate=0.6 mm2/s,FLEX
+FLEX,C21H301,10/6/2010,Heptane,liquido,gota,24.0,102.2,0.0,,CO2 (20%),disrupcion de gota,19.0,diametro de extincion,0.55,mm,,d0=3.25 mm | burning rate=0.56 mm2/s,FLEX
+FLEX,C21H401,10/6/2010,Heptane,liquido,gota,24.0,102.3,0.0,,CO2 (20%),extincion,9.2,diametro de extincion,2.88,mm,,d0=3.66 mm | burning rate=0.56 mm2/s,FLEX
+FLEX,C21H501,10/6/2010,Heptane,liquido,gota,24.0,102.4,0.0,,CO2 (20%),combustion completa,10.8,diametro de extincion,0.0,mm,,d0=2.78 mm | burning rate=0.59 mm2/s,FLEX
+FLEX,C21H302,10/6/2010,Heptane,liquido,gota,24.0,102.4,0.0,,CO2 (20%),combustion completa,17.0,diametro de extincion,,mm,,d0=3.08 mm | burning rate=0.51 mm2/s,FLEX
+FLEX,C21H303,10/6/2010,Heptane,liquido,gota,24.0,102.4,0.0,,CO2 (20%),disrupcion de gota,17.5,diametro de extincion,,mm,,d0=3.13 mm | burning rate=0.55 mm2/s,FLEX
+FLEX,C21H304,10/6/2010,Heptane,liquido,gota,24.0,102.5,0.0,,CO2 (20%),disrupcion de gota,,diametro de extincion,,mm,,d0= mm | burning rate= mm2/s,FLEX
+FLEX,C21H305,10/6/2010,Heptane,liquido,gota,24.0,102.4,0.0,,CO2 (20%),disrupcion de gota,5.4,diametro de extincion,,mm,,d0=1.75 mm | burning rate=0.63 mm2/s,FLEX
+FLEX,C14M101,11/4/2010,Methanol,liquido,gota,15.0,71.1,0.0,,CO2 (50%),extincion,1.3,diametro de extincion,3.95,mm,,d0=3.98 mm | burning rate=0.2 mm2/s,FLEX
+FLEX,C14M201,11/4/2010,Methanol,liquido,gota,15.0,71.2,0.0,,CO2 (50%),extincion,2.3,diametro de extincion,2.73,mm,,d0=2.86 mm | burning rate=0.3 mm2/s,FLEX
+FLEX,C14M301,11/4/2010,Methanol,liquido,gota,15.0,71.3,0.0,,CO2 (50%),extincion,3.4,diametro de extincion,1.48,mm,,d0=1.86 mm | burning rate=0.39 mm2/s,FLEX
+FLEX,C14M302,11/4/2010,Methanol,liquido,gota,15.0,71.3,0.0,,CO2 (50%),extincion,2.7,diametro de extincion,2.06,mm,,d0=2.25 mm | burning rate=0.36 mm2/s,FLEX
+FLEX,C01M101,11/16/10,Methanol,liquido,gota,20.0,101.6,0.0,,CO2 (5%),extincion,23.8,diametro de extincion,1.53,mm,,d0=3.53 mm | burning rate=0.45 mm2/s,FLEX
+FLEX,C01M201,11/16/10,Methanol,liquido,gota,20.0,101.8,0.0,,CO2 (5%),extincion,20.0,diametro de extincion,1.61,mm,,d0=3.33 mm | burning rate=0.45 mm2/s,FLEX
+FLEX,C01M301,11/16/10,Methanol,liquido,gota,20.0,102.1,0.0,,CO2 (5%),extincion,39.2,diametro de extincion,1.95,mm,,d0=4.35 mm | burning rate=0.41 mm2/s,FLEX
+FLEX,C13M102,9/13/2010,Methanol,liquido,gota,17.0,71.4,0.0,,CO2 (45%),extincion,7.8,diametro de extincion,2.49,mm,,d0=3.02 mm | burning rate=0.4 mm2/s,FLEX
+FLEX,C01H101,11/18/10,Heptane,liquido,gota,20.0,101.9,0.0,,CO2 (5%),disrupcion de gota,11.8,diametro de extincion,1.15,mm,,d0=2.58 mm | burning rate=0.54 mm2/s,FLEX
+FLEX,C01H201,11/18/10,Heptane,liquido,gota,20.0,102.2,0.0,,CO2 (5%),disrupcion de gota,8.9,diametro de extincion,0.82,mm,,d0=2.21 mm | burning rate=0.53 mm2/s,FLEX
+FLEX,C01H302,11/18/10,Heptane,liquido,gota,20.0,102.3,0.0,,CO2 (5%),extincion,8.0,diametro de extincion,2.54,mm,,d0=3.18 mm | burning rate=0.46 mm2/s,FLEX
+FLEX,C03M101,12/8/2010,Methanol,liquido,gota,18.0,101.7,0.0,,CO2 (15%),combustion completa,31.3,diametro de extincion,,mm,,d0=3.86 mm | burning rate=0.36 mm2/s,FLEX
+FLEX,C03M201,12/8/2010,Methanol,liquido,gota,18.0,102.0,0.0,,CO2 (15%),extincion,23.2,diametro de extincion,1.23,mm,,d0=3.33 mm | burning rate=0.43 mm2/s,FLEX
+FLEX,C03M301,12/8/2010,Methanol,liquido,gota,18.0,102.1,0.0,,CO2 (15%),extincion,15.7,diametro de extincion,1.19,mm,,d0=2.78 mm | burning rate=0.42 mm2/s,FLEX
+FLEX,C03H101,12/9/2010,Heptane,liquido,gota,18.0,101.6,0.0,,CO2 (15%),extincion,2.2,diametro de extincion,3.6,mm,,d0=3.7 mm | burning rate=0.34 mm2/s,FLEX
+FLEX,C03H201,12/9/2010,Heptane,liquido,gota,18.0,102.0,0.0,,CO2 (15%),extincion,2.7,diametro de extincion,2.52,mm,,d0=2.73 mm | burning rate=0.39 mm2/s,FLEX
+FLEX,C03H401,12/9/2010,Heptane,liquido,gota,18.0,102.1,0.0,,CO2 (15%),combustion completa,3.2,diametro de extincion,0.45,mm,,d0=1.34 mm | burning rate=0.48 mm2/s,FLEX
+FLEX,C05M101,12/14/10,Methanol,liquido,gota,16.0,101.6,0.0,,CO2 (25%),extincion,7.6,diametro de extincion,3.96,mm,,d0=4.24 mm | burning rate=0.3 mm2/s,FLEX
+FLEX,C05M201,12/14/10,Methanol,liquido,gota,16.0,101.9,0.0,,CO2 (25%),extincion,10.1,diametro de extincion,3.22,mm,,d0=3.7 mm | burning rate=0.37 mm2/s,FLEX
+FLEX,C05M301,12/14/10,Methanol,liquido,gota,16.0,102.1,0.0,,CO2 (25%),extincion,14.9,diametro de extincion,1.34,mm,,d0=2.71 mm | burning rate=0.38 mm2/s,FLEX
+FLEX,C05M401,12/14/10,Methanol,liquido,gota,16.0,102.3,0.0,,CO2 (25%),extincion,14.8,diametro de extincion,1.52,mm,,d0=2.77 mm | burning rate=0.38 mm2/s,FLEX
+FLEX,C06M101,12/28/10,Methanol,liquido,gota,15.0,101.8,0.0,,CO2 (32%),extincion,6.0,diametro de extincion,3.5,mm,,d0=3.72 mm | burning rate=0.28 mm2/s,FLEX
+FLEX,C06M201,12/28/10,Methanol,liquido,gota,15.0,101.9,0.0,,CO2 (32%),extincion,8.5,diametro de extincion,2.54,mm,,d0=3.05 mm | burning rate=0.37 mm2/s,FLEX
+FLEX,C06M301,12/28/10,Methanol,liquido,gota,15.0,102.1,0.0,,CO2 (32%),extincion,11.6,diametro de extincion,1.63,mm,,d0=2.59 mm | burning rate=0.37 mm2/s,FLEX
+FLEX,C06M401,12/28/10,Methanol,liquido,gota,15.0,102.1,0.0,,CO2 (32%),extincion,8.9,diametro de extincion,1.79,mm,,d0=2.59 mm | burning rate=0.42 mm2/s,FLEX
+FLEX,C03H302,12/9/2010,Heptane,liquido,gota,18.0,102.0,0.0,,CO2 (15%),extincion,3.9,diametro de extincion,1.39,mm,,d0=1.96 mm | burning rate=0.54 mm2/s,FLEX
+FLEX,C07M101,1/12/2011,Methanol,liquido,gota,14.000000000000002,101.4,0.0,,CO2 (36%),extincion,3.4,diametro de extincion,3.08,mm,,d0=3.22 mm | burning rate=0.28 mm2/s,FLEX
+FLEX,C07M201,1/12/2011,Methanol,liquido,gota,14.000000000000002,101.5,0.0,,CO2 (36%),extincion,5.9,diametro de extincion,1.84,mm,,d0=2.32 mm | burning rate=0.37 mm2/s,FLEX
+FLEX,C15M101,1/18/2011,Methanol,liquido,gota,21.0,101.8,0.0,,CO2 (15%),disrupcion de gota,15.6,diametro de extincion,1.57,mm,,d0=3.03 mm | burning rate=0.48 mm2/s,FLEX
+FLEX,C15M201,1/18/2011,Methanol,liquido,gota,21.0,102.1,0.0,,CO2 (15%),extincion,16.7,diametro de extincion,1.28,mm,,d0=3.05 mm | burning rate=0.51 mm2/s,FLEX
+FLEX,C15M301,1/18/2011,Methanol,liquido,gota,21.0,102.2,0.0,,CO2 (15%),extincion,23.6,diametro de extincion,1.59,mm,,d0=3.53 mm | burning rate=0.46 mm2/s,FLEX
+FLEX,C03H501,2/21/2011,Heptane,liquido,gota,18.0,101.3,0.0,,CO2 (15%),extincion,2.8,diametro de extincion,3.68,mm,,d0=3.74 mm | burning rate=0.35 mm2/s,FLEX
+FLEX,C03H601,2/21/2011,Heptane,liquido,gota,18.0,101.6,0.0,,CO2 (15%),extincion,4.4,diametro de extincion,1.96,mm,,d0=2.4 mm | burning rate=0.46 mm2/s,FLEX
+FLEX,C03H701,2/21/2011,Heptane,liquido,gota,18.0,101.6,0.0,,CO2 (15%),disrupcion de gota,3.6,diametro de extincion,0.47,mm,,d0=1.35 mm | burning rate=0.5 mm2/s,FLEX
+FLEX,C08H502,2/21/2011,Heptane,liquido,gota,24.0,70.9,0.0,,CO2 (20%),disrupcion de gota,11.2,diametro de extincion,0.21,mm,,d0=2.5 mm | burning rate=0.56 mm2/s,FLEX
+FLEX,C08H601,2/21/2011,Heptane,liquido,gota,24.0,70.9,0.0,,CO2 (20%),disrupcion de gota,15.6,diametro de extincion,,mm,,d0=2.88 mm | burning rate=0.55 mm2/s,FLEX
+FLEX,C08M501,4/18/2011,Methanol,liquido,gota,24.0,71.6,0.0,,CO2 (20%),extincion,38.2,diametro de extincion,,mm,,d0=4.53 mm | burning rate=0.46 mm2/s,FLEX
+FLEX,C08M601,4/18/2011,Methanol,liquido,gota,24.0,71.6,0.0,,CO2 (20%),extincion,14.5,diametro de extincion,1.35,mm,,d0=3.02 mm | burning rate=0.52 mm2/s,FLEX
+FLEX,C09H501,4/20/2011,Heptane,liquido,gota,23.0,71.1,0.0,,CO2 (25%),extincion,8.9,diametro de extincion,2.61,mm,,d0=3.32 mm | burning rate=0.5 mm2/s,FLEX
+FLEX,C09H601,4/20/2011,Heptane,liquido,gota,23.0,71.2,0.0,,CO2 (25%),disrupcion de gota,7.5,diametro de extincion,0.48,mm,,d0=2.07 mm | burning rate=0.57 mm2/s,FLEX
+FLEX,C02H101,4/20/2011,Heptane,liquido,gota,19.0,101.1,0.0,,CO2 (10%),extincion,4.5,diametro de extincion,3.13,mm,,d0=3.4 mm | burning rate=0.41 mm2/s,FLEX
+FLEX,C02H201,4/20/2011,Heptane,liquido,gota,19.0,101.2,0.0,,CO2 (10%),extincion,7.0,diametro de extincion,1.68,mm,,d0=2.48 mm | burning rate=0.49 mm2/s,FLEX
+FLEX,C02H202,4/20/2011,Heptane,liquido,gota,19.0,101.2,0.0,,CO2 (10%),disrupcion de gota,5.1,diametro de extincion,0.49,mm,,d0=1.64 mm | burning rate=0.54 mm2/s,FLEX
+FLEX,C09M501,8/8/2011,Methanol,liquido,gota,23.0,71.2,0.0,,CO2 (25%),extincion,26.2,diametro de extincion,,mm,,d0=3.72 mm | burning rate=0.53 mm2/s,FLEX
+FLEX,C09M502,8/8/2011,Methanol,liquido,gota,23.0,71.3,0.0,,CO2 (25%),extincion,15.8,diametro de extincion,,mm,,d0=3.42 mm | burning rate=0.51 mm2/s,FLEX
+FLEX,C09M601,8/8/2011,Methanol,liquido,gota,23.0,71.4,0.0,,CO2 (25%),extincion,12.7,diametro de extincion,1.33,mm,,d0=2.8 mm | burning rate=0.51 mm2/s,FLEX
+FLEX,C09M701,8/8/2011,Methanol,liquido,gota,23.0,71.5,0.0,,CO2 (25%),extincion,9.2,diametro de extincion,1.21,mm,,d0=2.47 mm | burning rate=0.52 mm2/s,FLEX
+FLEX,C02M101,8/8/2011,Methanol,liquido,gota,19.0,101.1,0.0,,CO2 (10%),extincion,21.8,diametro de extincion,1.29,mm,,d0=3.38 mm | burning rate=0.47 mm2/s,FLEX
+FLEX,C02M201,8/8/2011,Methanol,liquido,gota,19.0,101.1,0.0,,CO2 (10%),extincion,11.0,diametro de extincion,1.08,mm,,d0=2.47 mm | burning rate=0.46 mm2/s,FLEX
+FLEX,C03M501,8/9/2011,Methanol,liquido,gota,18.0,101.5,0.0,,CO2 (15%),extincion,30.5,diametro de extincion,1.78,mm,,d0=3.77 mm | burning rate=0.42 mm2/s,FLEX
+FLEX,C03M601,8/9/2011,Methanol,liquido,gota,18.0,101.9,0.0,,CO2 (15%),extincion,14.0,diametro de extincion,0.95,mm,,d0=2.74 mm | burning rate=0.5 mm2/s,FLEX
+FLEX,C03M701,8/9/2011,Methanol,liquido,gota,18.0,102.0,0.0,,CO2 (15%),extincion,5.5,diametro de extincion,0.81,mm,,d0=1.76 mm | burning rate=0.46 mm2/s,FLEX
+FLEX,C04M101,8/9/2011,Methanol,liquido,gota,17.0,101.3,0.0,,CO2 (20%),extincion,21.8,diametro de extincion,,mm,,d0=3.46 mm | burning rate=0.39 mm2/s,FLEX
+FLEX,C04M201,8/9/2011,Methanol,liquido,gota,17.0,101.2,0.0,,CO2 (20%),extincion,15.6,diametro de extincion,1.27,mm,,d0=2.77 mm | burning rate=0.4 mm2/s,FLEX
+FLEX,C04H101,8/17/2011,Heptane,liquido,gota,17.0,100.3,0.0,,CO2 (20%),extincion,1.6,diametro de extincion,3.71,mm,,d0=3.76 mm | burning rate=0.29 mm2/s,FLEX
+FLEX,C04H201,8/17/2011,Heptane,liquido,gota,17.0,100.3,0.0,,CO2 (20%),extincion,1.9,diametro de extincion,2.79,mm,,d0=2.9 mm | burning rate=0.36 mm2/s,FLEX
+FLEX,C01H501,8/18/2011,Heptane,liquido,gota,20.0,101.1,0.0,,CO2 (5%),extincion,8.9,diametro de extincion,2.28,mm,,d0=3.06 mm | burning rate=0.52 mm2/s,FLEX
+FLEX,C01H601,8/18/2011,Heptane,liquido,gota,20.0,101.3,0.0,,CO2 (5%),extincion,8.1,diametro de extincion,2.33,mm,,d0=3.04 mm | burning rate=0.49 mm2/s,FLEX
+FLEX,C01H701,8/18/2011,Heptane,liquido,gota,20.0,101.3,0.0,,CO2 (5%),disrupcion de gota,8.7,diametro de extincion,0.13,mm,,d0=2.12 mm | burning rate=0.53 mm2/s,FLEX
+FLEX,C01M501,8/24/2011,Methanol,liquido,gota,20.0,100.5,0.0,,CO2 (5%),extincion,21.0,diametro de extincion,0.98,mm,,d0=3.37 mm | burning rate=0.49 mm2/s,FLEX
+FLEX,C01M602,8/24/2011,Methanol,liquido,gota,20.0,100.8,0.0,,CO2 (5%),extincion,11.7,diametro de extincion,1.13,mm,,d0=2.57 mm | burning rate=0.47 mm2/s,FLEX
+FLEX,C01M603,8/24/2011,Methanol,liquido,gota,20.0,100.9,0.0,,CO2 (5%),extincion,10.2,diametro de extincion,1.05,mm,,d0=2.4 mm | burning rate=0.48 mm2/s,FLEX
+FLEX,N01M101,8/24/2011,Methanol,liquido,gota,21.0,101.4,0.0,,N2,extincion,19.5,diametro de extincion,1.42,mm,,d0=3.3 mm | burning rate=0.47 mm2/s,FLEX
+FLEX,N01M201,8/24/2011,Methanol,liquido,gota,21.0,101.5,0.0,,N2,extincion,12.8,diametro de extincion,1.11,mm,,d0=2.75 mm | burning rate=0.52 mm2/s,FLEX
+FLEX,N01H101,8/29/2011,Heptane,liquido,gota,21.0,100.9,0.0,,N2,disrupcion de gota,23.9,diametro de extincion,,mm,,d0=3.56 mm | burning rate=0.43 mm2/s,FLEX
+FLEX,N01H102,8/29/2011,Heptane,liquido,gota,21.0,101.0,0.0,,N2,disrupcion de gota,24.0,diametro de extincion,,mm,,d0=3.58 mm | burning rate=0.42 mm2/s,FLEX
+FLEX,N01H201,8/29/2011,Heptane,liquido,gota,21.0,101.4,0.0,,N2,disrupcion de gota,17.1,diametro de extincion,0.47,mm,,d0=2.96 mm | burning rate=0.5 mm2/s,FLEX
+FLEX,N01H202,8/29/2011,Heptane,liquido,gota,21.0,101.7,0.0,,N2,combustion completa,11.5,diametro de extincion,1.13,mm,,d0=2.72 mm | burning rate=0.54 mm2/s,FLEX
+FLEX,N01H301,8/29/2011,Heptane,liquido,gota,21.0,101.7,0.0,,N2,combustion completa,12.8,diametro de extincion,,mm,,d0=2.92 mm | burning rate=0.69 mm2/s,FLEX
+FLEX,N02H101,8/29/2011,Heptane,liquido,gota,16.0,101.3,0.0,,N2,extincion,3.4,diametro de extincion,3.18,mm,,d0=3.34 mm | burning rate=0.34 mm2/s,FLEX
+FLEX,N02H201,8/29/2011,Heptane,liquido,gota,16.0,101.3,0.0,,N2,extincion,,diametro de extincion,,mm,,d0= mm | burning rate= mm2/s,FLEX
+FLEX,N02H203,8/30/2011,Heptane,liquido,gota,16.0,101.3,0.0,,N2,extincion,4.5,diametro de extincion,2.13,mm,,d0=2.52 mm | burning rate=0.42 mm2/s,FLEX
+FLEX,N03H101,9/1/2011,Heptane,liquido,gota,15.0,101.9,0.0,,N2,extincion,3.4,diametro de extincion,2.31,mm,,d0=2.55 mm | burning rate=0.37 mm2/s,FLEX
+FLEX,N04H101,9/1/2011,Heptane,liquido,gota,14.000000000000002,101.3,0.0,,N2,extincion,1.6,diametro de extincion,4.15,mm,,d0=4.16 mm | burning rate=0.24 mm2/s,FLEX
+FLEX,N04H201,9/1/2011,Heptane,liquido,gota,14.000000000000002,101.3,0.0,,N2,extincion,3.8,diametro de extincion,,mm,,d0=1.83 mm | burning rate=0.39 mm2/s,FLEX
+FLEX,N04M101,9/8/2011,Methanol,liquido,gota,14.000000000000002,101.0,0.0,,N2,extincion,26.0,diametro de extincion,,mm,,d0=3.5 mm | burning rate=0.3 mm2/s,FLEX
+FLEX,N04M201,9/8/2011,Methanol,liquido,gota,14.000000000000002,101.1,0.0,,N2,extincion,15.6,diametro de extincion,1.27,mm,,d0=2.67 mm | burning rate=0.38 mm2/s,FLEX
+FLEX,N05M101,9/8/2011,Methanol,liquido,gota,13.0,101.2,0.0,,N2,extincion,9.5,diametro de extincion,2.96,mm,,d0=3.46 mm | burning rate=0.36 mm2/s,FLEX
+FLEX,N05M201,9/8/2011,Methanol,liquido,gota,13.0,101.4,0.0,,N2,extincion,16.3,diametro de extincion,1.46,mm,,d0=2.75 mm | burning rate=0.35 mm2/s,FLEX
+FLEX,N06M101,9/9/2011,Methanol,liquido,gota,12.0,101.5,0.0,,N2,extincion,6.9,diametro de extincion,2.09,mm,,d0=2.6 mm | burning rate=0.36 mm2/s,FLEX
+FLEX,N06M201,9/9/2011,Methanol,liquido,gota,12.0,101.6,0.0,,N2,extincion,7.8,diametro de extincion,1.05,mm,,d0=1.94 mm | burning rate=0.35 mm2/s,FLEX
+FLEX,N06M202,9/9/2011,Methanol,liquido,gota,12.0,101.8,0.0,,N2,extincion,6.0,diametro de extincion,1.04,mm,,d0=1.84 mm | burning rate=0.38 mm2/s,FLEX
+FLEX,H01M102,9/9/2011,Methanol,liquido,gota,20.0,101.2,0.0,,He (5%),extincion,14.4,diametro de extincion,1.12,mm,,d0=2.91 mm | burning rate=0.51 mm2/s,FLEX
+FLEX,H01M104,9/9/2011,Methanol,liquido,gota,20.0,101.3,0.0,,He (5%),extincion,6.0,diametro de extincion,,mm,,d0= mm | burning rate= mm2/s,FLEX
+FLEX,H01H102,9/13/2011,Heptane,liquido,gota,20.0,100.7,0.0,,He (5%),combustion completa,9.0,diametro de extincion,,mm,,d0=2.25 mm | burning rate=0.57 mm2/s,FLEX
+FLEX,H02M101,9/21/2011,Methanol,liquido,gota,19.0,100.4,0.0,,He (10%),extincion,12.5,diametro de extincion,,mm,,d0=2.78 mm | burning rate=0.57 mm2/s,FLEX
+FLEX,H03M101,9/22/2011,Methanol,liquido,gota,18.0,101.2,0.0,,He (15%),extincion,12.5,diametro de extincion,1.3,mm,,d0=2.79 mm | burning rate=0.51 mm2/s,FLEX
+FLEX,H03M201,9/22/2011,Methanol,liquido,gota,18.0,101.4,0.0,,He (15%),extincion,11.7,diametro de extincion,1.67,mm,,d0=2.95 mm | burning rate=0.53 mm2/s,FLEX
+FLEX,N01H401,9/23/2011,Heptane,liquido,gota,21.0,102.3,0.0,,N2,extincion,17.5,diametro de extincion,1.37,mm,,d0=3.32 mm | burning rate=0.52 mm2/s,FLEX
+FLEX,N01H502,9/24/2011,Heptane,liquido,gota,21.0,102.4,0.0,,N2,disrupcion de gota,10.6,diametro de extincion,,mm,,d0=2.39 mm | burning rate=0.57 mm2/s,FLEX
+FLEX,N01H601,9/24/2011,Heptane,liquido,gota,21.0,102.6,0.0,,N2,extincion,9.6,diametro de extincion,2.85,mm,,d0=3.65 mm | burning rate=0.57 mm2/s,FLEX
+FLEX,H02H101,9/24/2011,Heptane,liquido,gota,19.0,101.2,0.0,,He (10%),disrupcion de gota,12.0,diametro de extincion,,mm,,d0=2.59 mm | burning rate=0.54 mm2/s,FLEX
+FLEX,H03H101,9/27/2011,Heptane,liquido,gota,18.0,101.8,0.0,,He (15%),extincion,4.1,diametro de extincion,3.28,mm,,d0=3.52 mm | burning rate=0.41 mm2/s,FLEX
+FLEX,H03H201,9/27/2011,Heptane,liquido,gota,18.0,102.1,0.0,,He (15%),combustion completa,9.1,diametro de extincion,,mm,,d0=2.3 mm | burning rate=0.49 mm2/s,FLEX
+FLEX,H03H202,9/27/2011,Heptane,liquido,gota,18.0,102.2,0.0,,He (15%),combustion completa,8.6,diametro de extincion,,mm,,d0=2.27 mm | burning rate=0.51 mm2/s,FLEX
+FLEX,H04H101,9/27/2011,Heptane,liquido,gota,17.0,101.2,0.0,,He (20%),extincion,3.2,diametro de extincion,2.6,mm,,d0=2.85 mm | burning rate=0.46 mm2/s,FLEX
+FLEX,H04H201,9/27/2011,Heptane,liquido,gota,17.0,101.2,0.0,,He (20%),extincion,4.5,diametro de extincion,1.39,mm,,d0=2.12 mm | burning rate=0.59 mm2/s,FLEX
+FLEX,H04H302,9/27/2011,Heptane,liquido,gota,17.0,101.3,0.0,,He (20%),disrupcion de gota,1.7,diametro de extincion,,mm,,d0= mm | burning rate= mm2/s,FLEX
+FLEX,H04H303,9/27/2011,Heptane,liquido,gota,17.0,101.3,0.0,,He (20%),combustion completa,2.7,diametro de extincion,,mm,,d0=1.61 mm | burning rate=0.91 mm2/s,FLEX
+FLEX,H04M101,10/1/2011,Methanol,liquido,gota,17.0,100.6,0.0,,He (20%),extincion,9.1,diametro de extincion,,mm,,d0=2.99 mm | burning rate=0.49 mm2/s,FLEX
+FLEX,H04M202,10/1/2011,Methanol,liquido,gota,17.0,100.9,0.0,,He (20%),extincion,13.1,diametro de extincion,1.42,mm,,d0=2.9 mm | burning rate=0.51 mm2/s,FLEX
+FLEX,H05M102,10/1/2011,Methanol,liquido,gota,16.0,101.3,0.0,,He (25%),extincion,7.9,diametro de extincion,2.79,mm,,d0=3.4 mm | burning rate=0.51 mm2/s,FLEX
+FLEX,H05M202,10/1/2011,Methanol,liquido,gota,16.0,101.5,0.0,,He (25%),extincion,5.0,diametro de extincion,,mm,,d0= mm | burning rate= mm2/s,FLEX
+FLEX,H05H103,10/5/2011,Heptane,liquido,gota,16.0,101.0,0.0,,He (25%),extincion,2.9,diametro de extincion,0.69,mm,,d0=1.49 mm | burning rate=0.6 mm2/s,FLEX
+FLEX,H06M102,10/7/2011,Methanol,liquido,gota,15.0,100.7,0.0,,He (30%),extincion,3.6,diametro de extincion,3.47,mm,,d0=3.67 mm | burning rate=0.43 mm2/s,FLEX
+FLEX,H06M201,10/7/2011,Methanol,liquido,gota,15.0,100.9,0.0,,He (30%),extincion,4.0,diametro de extincion,2.06,mm,,d0=2.52 mm | burning rate=0.56 mm2/s,FLEX
+FLEX,H07M101,10/7/2011,Methanol,liquido,gota,14.000000000000002,101.2,0.0,,He (35%),extincion,1.5,diametro de extincion,2.26,mm,,d0=2.44 mm | burning rate=0.56 mm2/s,FLEX
+FLEX,H07M202,10/7/2011,Methanol,liquido,gota,14.000000000000002,101.3,0.0,,He (35%),extincion,1.0,diametro de extincion,1.73,mm,,d0=1.88 mm | burning rate=0.58 mm2/s,FLEX
+FLEX,H08M101,10/11/11,Methanol,liquido,gota,13.0,101.8,0.0,,He (40%),extincion,0.3,diametro de extincion,3.54,mm,,d0=3.56 mm | burning rate=0.51 mm2/s,FLEX
+FLEX,H10H101,10/12/11,Heptane,liquido,gota,24.0,71.2,0.0,,He (20%),extincion,12.2,diametro de extincion,2.52,mm,,d0=3.78 mm | burning rate=0.72 mm2/s,FLEX
+FLEX,H11H101,10/12/11,Heptane,liquido,gota,23.0,71.0,0.0,,He (25%),combustion completa,11.4,diametro de extincion,0.12,mm,,d0=2.8 mm | burning rate=0.71 mm2/s,FLEX
+FLEX,H10M101,11/18/11,Methanol,liquido,gota,24.0,71.2,0.0,,He (20%),extincion,11.2,diametro de extincion,1.03,mm,,d0=2.82 mm | burning rate=0.62 mm2/s,FLEX
+FLEX,H10M102,11/18/11,Methanol,liquido,gota,24.0,71.3,0.0,,He (20%),disrupcion de gota,8.1,diametro de extincion,1.53,mm,,d0=2.79 mm | burning rate=0.7 mm2/s,FLEX
+FLEX,H11M101,11/18/11,Methanol,liquido,gota,23.0,70.9,0.0,,He (25%),extincion,8.3,diametro de extincion,0.86,mm,,d0=2.45 mm | burning rate=0.6 mm2/s,FLEX
+FLEX,H11M102,11/18/11,Methanol,liquido,gota,23.0,70.9,0.0,,He (25%),disrupcion de gota,6.3,diametro de extincion,,mm,,d0=2.61 mm | burning rate=0.73 mm2/s,FLEX
+FLEX,H12M101,11/18/11,Methanol,liquido,gota,21.0,70.9,0.0,,He (30%),extincion,10.4,diametro de extincion,,mm,,d0=3.22 mm | burning rate=0.56 mm2/s,FLEX
+FLEX,H12M102,11/18/11,Methanol,liquido,gota,21.0,70.8,0.0,,He (30%),extincion,12.1,diametro de extincion,1.78,mm,,d0=3.25 mm | burning rate=0.65 mm2/s,FLEX
+FLEX,H12M201,11/18/11,Methanol,liquido,gota,21.0,70.8,0.0,,He (30%),extincion,7.6,diametro de extincion,1.42,mm,,d0=2.67 mm | burning rate=0.7 mm2/s,FLEX
+FLEX,H12H101,11/22/11,Heptane,liquido,gota,21.0,70.6,0.0,,He (30%),extincion,7.5,diametro de extincion,2.33,mm,,d0=3.23 mm | burning rate=0.67 mm2/s,FLEX
+FLEX,H12H201,11/22/11,Heptane,liquido,gota,21.0,70.5,0.0,,He (30%),extincion,11.0,diametro de extincion,0.71,mm,,d0=2.86 mm | burning rate=0.7 mm2/s,FLEX
+FLEX,H13H101,11/22/11,Heptane,liquido,gota,20.0,71.0,0.0,,He (35%),extincion,4.3,diametro de extincion,3.32,mm,,d0=3.69 mm | burning rate=0.61 mm2/s,FLEX
+FLEX,H13H201,11/22/11,Heptane,liquido,gota,20.0,70.9,0.0,,He (35%),extincion,5.4,diametro de extincion,1.69,mm,,d0=3.08 mm | burning rate=0.67 mm2/s,FLEX
+FLEX,H13M102,11/28/11,Methanol,liquido,gota,20.0,70.3,0.0,,He (35%),extincion,17.4,diametro de extincion,2.24,mm,,d0=3.87 mm | burning rate=0.6 mm2/s,FLEX
+FLEX,H13M201,11/28/11,Methanol,liquido,gota,20.0,70.4,0.0,,He (35%),extincion,10.6,diametro de extincion,1.5,mm,,d0=2.95 mm | burning rate=0.63 mm2/s,FLEX
+FLEX,H14M101,11/28/11,Methanol,liquido,gota,18.0,71.0,0.0,,He (40%),extincion,7.8,diametro de extincion,2.67,mm,,d0=3.5 mm | burning rate=0.59 mm2/s,FLEX
+FLEX,H14M201,11/28/11,Methanol,liquido,gota,18.0,71.0,0.0,,He (40%),extincion,5.9,diametro de extincion,1.92,mm,,d0=2.7 mm | burning rate=0.63 mm2/s,FLEX
+FLEX,H14M202,11/28/11,Methanol,liquido,gota,18.0,71.1,0.0,,He (40%),extincion,2.3,diametro de extincion,1.3,mm,,d0=1.84 mm | burning rate=0.62 mm2/s,FLEX
+FLEX,H14H101,11/30/11,Heptane,liquido,gota,18.0,70.4,0.0,,He (40%),extincion,3.5,diametro de extincion,1.64,mm,,d0=2.27 mm | burning rate=0.71 mm2/s,FLEX
+FLEX,H14H201,11/30/11,Heptane,liquido,gota,18.0,70.7,0.0,,He (40%),extincion,3.5,diametro de extincion,0.84,mm,,d0=1.86 mm | burning rate=0.77 mm2/s,FLEX
+FLEX,H15H101,11/30/11,Heptane,liquido,gota,17.0,71.0,0.0,,He (45%),extincion,1.9,diametro de extincion,1.86,mm,,d0=2.22 mm | burning rate=0.76 mm2/s,FLEX
+FLEX,H15H201,11/30/11,Heptane,liquido,gota,17.0,71.0,0.0,,He (45%),combustion completa,1.4,diametro de extincion,0.91,mm,,d0=1.61 mm | burning rate=1.06 mm2/s,FLEX
+FLEX,H15M102,12/5/2011,Methanol,liquido,gota,17.0,70.7,0.0,,He (45%),extincion,4.0,diametro de extincion,2.3,mm,,d0=2.79 mm | burning rate=0.63 mm2/s,FLEX
+FLEX,H15M201,12/5/2011,Methanol,liquido,gota,17.0,70.9,0.0,,He (45%),extincion,2.9,diametro de extincion,2.31,mm,,d0=2.68 mm | burning rate=0.66 mm2/s,FLEX
+FLEX,H19H101,12/8/2011,Heptane,liquido,gota,21.0,102.0,0.0,,He (15%),extincion,7.6,diametro de extincion,2.91,mm,,d0=3.54 mm | burning rate=0.55 mm2/s,FLEX
+FLEX,H19H201,12/8/2011,Heptane,liquido,gota,21.0,102.2,0.0,,He (15%),extincion,11.7,diametro de extincion,0.73,mm,,d0=2.82 mm | burning rate=0.65 mm2/s,FLEX
+SAFFIRE-1,S1,,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,21.5,101.325,20.0,concurrente,N2 (aire),propagacion completa,420.0,,,,,SIBAL Fabric | espesor 0.37 | ensayo a gran escala en vehiculo Cygnus,SAFFIRE
+SAFFIRE-1,S2,,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,21.5,101.325,20.0,opuesto,N2 (aire),propagacion completa,70.0,,,,,SIBAL Fabric | espesor 0.37 | ensayo a gran escala en vehiculo Cygnus,SAFFIRE
+SAFFIRE-2,2-1,,Silicona,solido,lamina/tejido,21.5,101.325,20.0,concurrente,N2 (aire),sin propagacion,,,,,,Silicone | espesor 0.27 mm | ensayo a gran escala en vehiculo Cygnus,SAFFIRE
+SAFFIRE-2,2-2,,Silicona,solido,lamina/tejido,22.1,101.325,20.0,concurrente,N2 (aire),sin propagacion,,,,,,Silicone | espesor 0.61 mm | ensayo a gran escala en vehiculo Cygnus,SAFFIRE
+SAFFIRE-2,2-3,,Silicona,solido,lamina/tejido,22.1,101.325,20.0,concurrente,N2 (aire),sin propagacion,,,,,,Silicone | espesor 1.03 mm | ensayo a gran escala en vehiculo Cygnus,SAFFIRE
+SAFFIRE-2,2-4,,Silicona,solido,lamina/tejido,22.1,101.325,20.0,opuesto,N2 (aire),sin propagacion,,,,,,Silicone | espesor 037 mm | ensayo a gran escala en vehiculo Cygnus,SAFFIRE
+SAFFIRE-2,2-5,,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,22.1,101.325,20.0,concurrente,N2 (aire),propagacion completa,145.0,velocidad de propagacion,2.1,mm/s,,Cotton-Fiberglass (SIBAL) | espesor 037 mm | ensayo a gran escala en vehiculo Cygnus,SAFFIRE
+SAFFIRE-2,2-6,,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,22.1,101.325,20.0,concurrente,N2 (aire),propagacion completa,115.0,velocidad de propagacion,2.6,mm/s,,Cotton-Fiberglass (SIBAL) | espesor 037 mm | ensayo a gran escala en vehiculo Cygnus,SAFFIRE
+SAFFIRE-2,2-7,,PMMA,solido,lamina/tejido,22.1,101.325,20.0,concurrente,N2 (aire),propagacion completa,140.0,,,,,PMMA & Nomex | espesor 0.85 and 0.37 mm | ensayo a gran escala en vehiculo Cygnus,SAFFIRE
+SAFFIRE-2,2-8,,PMMA,solido,lamina/tejido,22.1,101.325,20.0,concurrente,N2 (aire),propagacion completa,600.0,velocidad de propagacion,4.0,mm/s,,PMMA | espesor See Fig. 5 | ensayo a gran escala en vehiculo Cygnus,SAFFIRE
+SAFFIRE-2,2-9,,PMMA,solido,lamina/tejido,22.0,101.325,20.0,concurrente,N2 (aire),propagacion completa,900.0,velocidad de propagacion,4.0,mm/s,,PMMA | espesor 1 cm | ensayo a gran escala en vehiculo Cygnus,SAFFIRE
+SAFFIRE-3,S1,,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,,101.325,30.0,concurrente,N2 (aire),n.d.,,,,,,SIBAL Fabric | espesor .33 cm | ensayo a gran escala en vehiculo Cygnus,SAFFIRE
+SAFFIRE-3,S2,,SIBAL (algodon-fibra de vidrio),solido,lamina/tejido,,101.325,30.0,opuesto,N2 (aire),n.d.,,,,,,SIBAL Fabric | espesor .33 cm | ensayo a gran escala en vehiculo Cygnus,SAFFIRE
+SAME,51,21-Jul,Kapton,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.38,-,,B.L. new formula | envejecimiento neto 38 s,SAME
+SAME,51a,22-Jul,Kapton,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.38,-,,B.L. new formula | envejecimiento neto 261 s,SAME
+SAME,61,2-Aug,Kapton,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.38,-,,Baseline Aging | envejecimiento neto 38 s,SAME
+SAME,61a,2-Aug,Kapton,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.38,-,,aged | envejecimiento neto 807 s,SAME
+SAME,62,2-Aug,Kapton,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.48,-,,High Temp aging | envejecimiento neto 39 s,SAME
+SAME,62a,2-Aug,Kapton,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.48,-,,aged | envejecimiento neto 808 s,SAME
+SAME,70,24-Aug,Kapton,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.48,-,,High temp aged STS det | envejecimiento neto 747 s,SAME
+SAME,73,26-Aug,Kapton,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.38,-,,Baseline Aging | envejecimiento neto 33 s,SAME
+SAME,73a,26-Aug,Kapton,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.38,-,,aged | envejecimiento neto 560 s,SAME
+SAME,75,26-Aug,Kapton,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.43,-,,Mid Temp aging (no Ptrak) | envejecimiento neto 32 s,SAME
+SAME,75a,26-Aug,Kapton,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.43,-,,aged | envejecimiento neto 563 s,SAME
+SAME,77,26-Aug,Kapton,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.48,-,,High Temp aging | envejecimiento neto 31 s,SAME
+SAME,77a,26-Aug,Kapton,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.48,-,,aged | envejecimiento neto 559 s,SAME
+SAME,85,30-Aug,Kapton,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.43,-,,Mid Temp aging run. Repeat 75 | envejecimiento neto 33 s,SAME
+SAME,85a,30-Aug,Kapton,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.43,-,,aged | envejecimiento neto 563 s,SAME
+SAME,90,30-Aug,Kapton,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.43,-,,Mid Temp aging reburn 85 | envejecimiento neto 38 s,SAME
+SAME,90a,30-Aug,Kapton,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.43,-,,aged | envejecimiento neto 569 s,SAME
+SAME,92,7-Sep,Kapton,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.38,-,,Baseline STS det | envejecimiento neto 35 s,SAME
+SAME,93,7-Sep,Kapton,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.43,-,,Mid Temp aging run 75 repeat | envejecimiento neto 36 s,SAME
+SAME,93a,7-Sep,Kapton,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.43,-,,aged | envejecimiento neto 568 s,SAME
+SAME,94,7-Sep,Kapton,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.45,-,,Mid Temp aging run mid high | envejecimiento neto 42 s,SAME
+SAME,94a,7-Sep,Kapton,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.45,-,,aged | envejecimiento neto 567 s,SAME
+SAME,101,8-Sep,Kapton,solido (pirolisis),muestra calentada,21.0,101.325,0.0,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.48,-,,No flow run w/ aging | envejecimiento neto 29 s,SAME
+SAME,101a,8-Sep,Kapton,solido (pirolisis),muestra calentada,21.0,101.325,0.0,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.48,-,,aged | envejecimiento neto 561 s,SAME
+SAME,102,8-Sep,Kapton,solido (pirolisis),muestra calentada,21.0,101.325,0.0,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.48,-,,No flow run w/ aging | envejecimiento neto 28 s,SAME
+SAME,102a,8-Sep,Kapton,solido (pirolisis),muestra calentada,21.0,101.325,0.0,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.48,-,,aged | envejecimiento neto 563 s,SAME
+SAME,108,9-Sep,Kapton,solido (pirolisis),muestra calentada,21.0,101.325,1.0,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.48,-,,Low flow run w/aging | envejecimiento neto 30 s,SAME
+SAME,108a,9-Sep,Kapton,solido (pirolisis),muestra calentada,21.0,101.325,1.0,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.48,-,,aged | envejecimiento neto 560 s,SAME
+SAME,114,9-Sep,Kapton,solido (pirolisis),muestra calentada,21.0,101.325,2.0,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.43,-,,low flow run w STS no Ptrak | envejecimiento neto 28 s,SAME
+SAME,48,16-Jul,Silicone,solido (pirolisis),muestra calentada,21.0,101.325,8.0,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.304,-,,Low Temp | envejecimiento neto 62 s,SAME
+SAME,53,22-Jul,Silicone,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.35,-,,HighTemp | envejecimiento neto 52 s,SAME
+SAME,59,30-Jul,Silicone,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.327,-,,baseline aged | envejecimiento neto 24 s,SAME
+SAME,59a,30-Jul,Silicone,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.327,-,,aged | envejecimiento neto 856 s,SAME
+SAME,60,30-Jul,Silicone,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.35,-,,Htemp ageing | envejecimiento neto 49 s,SAME
+SAME,60a,30-Jul,Silicone,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.35,-,,aged | envejecimiento neto 856 s,SAME
+SAME,65,23-Aug,Silicone,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.327,-,,Baseline long aging | envejecimiento neto 50 s,SAME
+SAME,65a,23-Aug,Silicone,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.327,-,,aged | envejecimiento neto 1923 s,SAME
+SAME,66,23-Aug,Silicone,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.36,-,,High T aging | envejecimiento neto 42 s,SAME
+SAME,66a,23-Aug,Silicone,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.36,-,,aged | envejecimiento neto 837 s,SAME
+SAME,67,24-Aug,Silicone,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.35,-,,High temp aged | envejecimiento neto 751 s,SAME
+SAME,72,25-Aug,Silicone,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.327,-,,Baseline STS det | envejecimiento neto 42 s,SAME
+SAME,86,30-Aug,Silicone,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.345,-,,Mid temp aging | envejecimiento neto 50 s,SAME
+SAME,86a,30-Aug,Silicone,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.345,-,,aged | envejecimiento neto 628 s,SAME
+SAME,91,7-Sep,Silicone,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.327,-,,Baseline STS det | envejecimiento neto 46 s,SAME
+SAME,99,8-Sep,Silicone,solido (pirolisis),muestra calentada,21.0,101.325,0.0,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.35,-,,No flow run w/aging | envejecimiento neto 48 s,SAME
+SAME,99a,8-Sep,Silicone,solido (pirolisis),muestra calentada,21.0,101.325,0.0,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.35,-,,aged | envejecimiento neto 627 s,SAME
+SAME,103,9-Sep,Silicone,solido (pirolisis),muestra calentada,21.0,101.325,1.0,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.35,-,,low flow run w/ aging | envejecimiento neto 48 s,SAME
+SAME,103a,9-Sep,Silicone,solido (pirolisis),muestra calentada,21.0,101.325,1.0,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.35,-,,aged | envejecimiento neto 619 s,SAME
+SAME,104,9-Sep,Silicone,solido (pirolisis),muestra calentada,21.0,101.325,0.0,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.35,-,,No flow run w/ aging | envejecimiento neto 51 s,SAME
+SAME,104a,9-Sep,Silicone,solido (pirolisis),muestra calentada,21.0,101.325,0.0,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.35,-,,aged | envejecimiento neto 636 s,SAME
+SAME,109,9-Sep,Silicone,solido (pirolisis),muestra calentada,21.0,101.325,2.0,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.35,-,,low flow run w STS | envejecimiento neto 28 s,SAME
+SAME,49,19-Jul,Lampwick,solido (pirolisis),muestra calentada,21.0,101.325,8.0,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.251,-,,B.L. High RT/R0 | envejecimiento neto 51 s,SAME
+SAME,54,29-Jul,Lampwick,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.245,-,,Baseline | envejecimiento neto 57 s,SAME
+SAME,55,29-Jul,Lampwick,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.245,-,,High RT/R0 test aging | envejecimiento neto 47 s,SAME
+SAME,55a,29-Jul,Lampwick,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.245,-,,aged | envejecimiento neto 218 s,SAME
+SAME,57,29-Jul,Lampwick,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.253,-,,High RT/R0 reburn sample | envejecimiento neto  s,SAME
+SAME,68,24-Aug,Lampwick,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.28,-,,High temp aged STS det | envejecimiento neto 747 s,SAME
+SAME,78,26-Aug,Lampwick,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.245,-,,Baseline aging | envejecimiento neto 37 s,SAME
+SAME,78a,26-Aug,Lampwick,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.245,-,,aged | envejecimiento neto 581 s,SAME
+SAME,80,26-Aug,Lampwick,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.28,-,,High temp aging | envejecimiento neto 40 s,SAME
+SAME,80a,26-Aug,Lampwick,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.28,-,,aged | envejecimiento neto 580 s,SAME
+SAME,82,26-Aug,Lampwick,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.265,-,,Mid temp aging | envejecimiento neto 39 s,SAME
+SAME,82a,27-Aug,Lampwick,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.265,-,,aged | envejecimiento neto 579 s,SAME
+SAME,88,30-Aug,Lampwick,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.245,-,,Baseline STS det | envejecimiento neto  s,SAME
+SAME,96,7-Sep,Lampwick,solido (pirolisis),muestra calentada,21.0,101.325,0.0,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.245,-,,No flow run w/aging | envejecimiento neto 34 s,SAME
+SAME,96a,7-Sep,Lampwick,solido (pirolisis),muestra calentada,21.0,101.325,0.0,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.245,-,,aged | envejecimiento neto 582 s,SAME
+SAME,98,8-Sep,Lampwick,solido (pirolisis),muestra calentada,21.0,101.325,0.0,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.28,-,,No flow run w/aging | envejecimiento neto 37 s,SAME
+SAME,98a,8-Sep,Lampwick,solido (pirolisis),muestra calentada,21.0,101.325,0.0,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.28,-,,aged | envejecimiento neto 585 s,SAME
+SAME,106,9-Sep,Lampwick,solido (pirolisis),muestra calentada,21.0,101.325,0.0,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.28,-,,No flow run w/aging | envejecimiento neto 30 s,SAME
+SAME,106a,9-Sep,Lampwick,solido (pirolisis),muestra calentada,21.0,101.325,0.0,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.28,-,,aged | envejecimiento neto 558 s,SAME
+SAME,110,9-Sep,Lampwick,solido (pirolisis),muestra calentada,21.0,101.325,2.0,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.28,-,,low flow run w/STS | envejecimiento neto 21 s,SAME
+SAME,50,20-Jul,Teflon,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.452,-,,B.L. High RT/R0 | envejecimiento neto 33 s,SAME
+SAME,56,29-Jul,Teflon,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.445,-,,Baseline | envejecimiento neto 41 s,SAME
+SAME,57,29-Jul,Teflon,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.253,-,,High RT/R0 reburn sample | envejecimiento neto  s,SAME
+SAME,58,30-Jul,Teflon,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.445,-,,Baseline aging | envejecimiento neto 34 s,SAME
+SAME,58a,30-Jul,Teflon,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.445,-,,aged | envejecimiento neto 805 s,SAME
+SAME,69,24-Aug,Teflon,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.45,-,,High temp aged STS det | envejecimiento neto 745 s,SAME
+SAME,79,26-Aug,Teflon,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.445,-,,Baseline aging | envejecimiento neto 33 s,SAME
+SAME,79a,26-Aug,Teflon,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.445,-,,aged | envejecimiento neto 560 s,SAME
+SAME,81,26-Aug,Teflon,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.45,-,,High temp aging | envejecimiento neto 30 s,SAME
+SAME,81a,27-Aug,Teflon,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.45,-,,aged | envejecimiento neto 559 s,SAME
+SAME,83,26-Aug,Teflon,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.448,-,,Mid temp aging | envejecimiento neto 30 s,SAME
+SAME,83a,27-Aug,Teflon,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.448,-,,aged | envejecimiento neto 557 s,SAME
+SAME,89,30-Aug,Teflon,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.445,-,,Baseline STS det | envejecimiento neto 31 s,SAME
+SAME,100,8-Sep,Teflon,solido (pirolisis),muestra calentada,21.0,101.325,0.0,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.45,-,,No flow run w/ aging | envejecimiento neto 29 s,SAME
+SAME,100a,8-Sep,Teflon,solido (pirolisis),muestra calentada,21.0,101.325,0.0,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.45,-,,aged | envejecimiento neto 560 s,SAME
+SAME,105,9-Sep,Teflon,solido (pirolisis),muestra calentada,21.0,101.325,0.0,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.45,-,,No flow run w/ aging | envejecimiento neto 24 s,SAME
+SAME,105a,9-Sep,Teflon,solido (pirolisis),muestra calentada,21.0,101.325,0.0,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.45,-,,aged | envejecimiento neto 559 s,SAME
+SAME,111,9-Sep,Teflon,solido (pirolisis),muestra calentada,21.0,101.325,2.0,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.45,-,,low flow run w/ STS | envejecimiento neto 43 s,SAME
+SAME,52,22-Jul,Pyrell,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.22,-,,Baseline | envejecimiento neto  s,SAME
+SAME,63,23-Aug,Pyrell,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.22,-,,Baseline Aging | envejecimiento neto 56 s,SAME
+SAME,63a,23-Aug,Pyrell,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.22,-,,aged | envejecimiento neto 840 s,SAME
+SAME,64,23-Aug,Pyrell,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.23,-,,High Temp aging | envejecimiento neto 47 s,SAME
+SAME,64a,23-Aug,Pyrell,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.23,-,,aged | envejecimiento neto 842 s,SAME
+SAME,71,24-Aug,Pyrell,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.23,-,,High temp aged STS det | envejecimiento neto 750 s,SAME
+SAME,74,26-Aug,Pyrell,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.22,-,,Baseline Aging | envejecimiento neto 48 s,SAME
+SAME,74a,26-Aug,Pyrell,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.22,-,,aged | envejecimiento neto 623 s,SAME
+SAME,76,26-Aug,Pyrell,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.23,-,,High Temp aging | envejecimiento neto 51 s,SAME
+SAME,76a,26-Aug,Pyrell,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.23,-,,aged | envejecimiento neto 625 s,SAME
+SAME,84,30-Aug,Pyrell,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.225,-,,Mid Temp aging retry | envejecimiento neto 53 s,SAME
+SAME,84a,30-Aug,Pyrell,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.225,-,,aged | envejecimiento neto 632 s,SAME
+SAME,87,30-Aug,Pyrell,solido (pirolisis),muestra calentada,21.0,101.325,8.1,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.22,-,,Baseline STS det | envejecimiento neto 45 s,SAME
+SAME,95,7-Sep,Pyrell,solido (pirolisis),muestra calentada,21.0,101.325,0.0,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.22,-,,No flow run w/ aging | envejecimiento neto 38 s,SAME
+SAME,95a,7-Sep,Pyrell,solido (pirolisis),muestra calentada,21.0,101.325,0.0,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.22,-,,aged | envejecimiento neto  s,SAME
+SAME,97,8-Sep,Pyrell,solido (pirolisis),muestra calentada,21.0,101.325,0.0,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.23,-,,No flow run w/aging | envejecimiento neto 48 s,SAME
+SAME,97a,8-Sep,Pyrell,solido (pirolisis),muestra calentada,21.0,101.325,0.0,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.23,-,,aged | envejecimiento neto 624 s,SAME
+SAME,107,9-Sep,Pyrell,solido (pirolisis),muestra calentada,21.0,101.325,1.0,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.23,-,,Low flow run w/aging | envejecimiento neto 32 s,SAME
+SAME,107a,9-Sep,Pyrell,solido (pirolisis),muestra calentada,21.0,101.325,1.0,,,humo envejecido,,Rt/R0 (temperatura de calentamiento),1.23,-,,aged | envejecimiento neto 559 s,SAME
+SAME,113,9-Sep,Pyrell,solido (pirolisis),muestra calentada,21.0,101.325,2.0,,,humo generado,,Rt/R0 (temperatura de calentamiento),1.23,-,,low flow run w STS | envejecimiento neto 31 s,SAME
+CFI-G,21088A1,,ethane,gas,quemador esferico,39.39,94.4,0.0,,N2,autoextincion,50.0,Tad,2719.323211,K,,caudal 2 mg/s | Xf=1 | ,CFI-G
+CFI-G,21088 B1,,ethane,gas,quemador esferico,38.98,94.4,0.0,,N2,autoextincion,43.0,Tad,2713.594987,K,,caudal 2 mg/s | Xf=1 | ,CFI-G
+CFI-G,21088 C1,,ethane,gas,quemador esferico,38.63,94.4,0.0,,N2,autoextincion,42.0,Tad,2708.596221,K,,caudal 2 mg/s | Xf=1 | hit burner T limit,CFI-G
+CFI-G,21088 D1,,ethane,gas,quemador esferico,38.29,94.4,0.0,,N2,flujo cortado,61.0,Tad,2703.647801,K,,caudal 1 mg/s | Xf=1 | FC=flow cut,CFI-G
+CFI-G,21088 F1,,ethane,gas,quemador esferico,38.04,94.4,0.0,,N2,flujo cortado,28.0,Tad,2700.011998,K,,caudal 0.5 mg/s | Xf=1 | Lowest flow rate for ignition,CFI-G
+CFI-G,21088 G1,,ethane,gas,quemador esferico,37.99,94.4,0.0,,N2,autoextincion,42.0,Tad,2639.215662,K,,caudal 2 mg/s | Xf=0.5 | ,CFI-G
+CFI-G,21088 H1,,ethane,gas,quemador esferico,37.61,94.4,0.0,,N2,flujo cortado,62.0,Tad,2633.824861,K,,caudal 1 mg/s | Xf=0.5 | ,CFI-G
+CFI-G,21088 J1,,ethane,gas,quemador esferico,37.34,94.4,0.0,,N2,autoextincion,37.0,Tad,2512.315217,K,,caudal 2 mg/s | Xf=0.25 | ,CFI-G
+CFI-G,21088 K1,,ethane,gas,quemador esferico,36.96,94.4,0.0,,N2,flujo cortado,98.0,Tad,2506.607152,K,,caudal 1 mg/s | Xf=0.25 | ,CFI-G
+CFI-G,21088 H2,,ethane,gas,quemador esferico,36.45,94.4,0.0,,N2,flujo cortado,127.0,Tad,2616.399176,K,,caudal 1 mg/s | Xf=0.5 | ,CFI-G
+CFI-G,21088 M4,,ethane,gas,quemador esferico,21.01,101.3,0.0,,N2,autoextincion,13.0,Tad,2256.600629,K,,caudal 1 mg/s | Xf=1 | ,CFI-G
+CFI-G,21088 L1,,ethane,gas,quemador esferico,20.96,101.3,0.0,,N2,autoextincion,9.0,Tad,2254.430202,K,,caudal 2 mg/s | Xf=1 | ,CFI-G
+CFI-G,21088 N1,,ethane,gas,quemador esferico,18.02,101.3,0.0,,N2,autoextincion,7.0,Tad,2042.838447,K,,caudal 2 mg/s | Xf=0.5 | ,CFI-G
+CFI-G,21088 P1,,ethane,gas,quemador esferico,17.97,101.3,0.0,,N2,autoextincion,8.0,Tad,2039.856766,K,,caudal 1 mg/s | Xf=0.5 | ,CFI-G
+CFI-G,21102A1,,50% butane,gas,quemador esferico,39.57,101.3,0.0,,N2,autoextincion,40.0,Tad,2633.037949,K,,caudal 1.6 mg/s | Xf=0.25 | Manually stopped the flow. No cool flame detected.,CFI-G
+CFI-G,21102 C1,,50% butane,gas,quemador esferico,39.3,101.3,0.0,,N2,autoextincion,41.0,Tad,2693.534385,K,,caudal 1.6 mg/s | Xf=0.5 | Extinction detected. Fuel flow stopped in 6 sec after PMT dropped to 0.,CFI-G
+CFI-G,21102 B1,,50% butane,gas,quemador esferico,39.05,101.3,0.0,,N2,autoextincion,38.0,Tad,2501.08662,K,,caudal 1.3 mg/s | Xf=0.125 | ,CFI-G
+CFI-G,21102 C2,,50% butane,gas,quemador esferico,38.81,101.3,0.0,,N2,flujo cortado,63.0,Tad,2686.707285,K,,caudal 0.8 mg/s | Xf=0.5 | ,CFI-G
+CFI-G,21102 C3,,50% butane,gas,quemador esferico,38.62,101.3,0.0,,N2,autoextincion,82.0,Tad,2684.020784,K,,caudal 1.2 mg/s | Xf=0.5 | ,CFI-G
+CFI-G,21102 C4,,50% butane,gas,quemador esferico,38.25,101.3,0.0,,N2,sin ignicion,0.0,Tad,2678.72461,K,,caudal 0.8 mg/s | Xf=0.5 | Igniter voltage: 2V and 2.5V for 10 sec each. No ignition.Retracted too early.,CFI-G
+CFI-G,21102 C5,,50% butane,gas,quemador esferico,38.25,101.3,0.0,,N2,flujo cortado,43.0,Tad,2678.72461,K,,caudal 0.8 mg/s | Xf=0.5 | Igniter voltage: 2.25V and 2.75V for 10 sec each. No ignition.,CFI-G
+CFI-G,21102 C6,,50% butane,gas,quemador esferico,38.12,101.3,0.0,,N2,sin ignicion,0.0,Tad,2676.855135,K,,caudal 0.8 mg/s | Xf=0.5 | Igniter voltage: 2V and 2.5V for 10 sec each. No ignition. PMT2 gain 0.04V.,CFI-G
+CFI-G,21102 C7,,50% butane,gas,quemador esferico,38.12,101.3,0.0,,N2,flujo cortado,18.0,Tad,2676.855135,K,,caudal 0.8 mg/s | Xf=0.5 | Igniter voltage: 2.1V and 2.6V for 10 sec each. Hot flame.,CFI-G
+CFI-G,21102 C8,,50% butane,gas,quemador esferico,38.07,101.3,0.0,,N2,sin ignicion,0.0,Tad,2676.069774,K,,caudal 0.8 mg/s | Xf=0.5 | Igniter voltage: 2V and 2.5V for 10 sec and 20 sec respectively.,CFI-G
+CFI-G,21102 M1,,50% butane,gas,quemador esferico,23.41,101.3,0.0,,N2,autoextincion,8.0,Tad,2336.982762,K,,caudal 1.6 mg/s | Xf=0.5 | ,CFI-G
+CFI-G,21102 M2,,50% butane,gas,quemador esferico,23.36,101.3,0.0,,N2,autoextincion,14.0,Tad,2335.25391,K,,caudal 0.8 mg/s | Xf=0.5 | may have intensified images,CFI-G
+CFI-G,21102 M3,,50% butane,gas,quemador esferico,23.33,101.3,0.0,,N2,sin ignicion,0.0,Tad,2333.736064,K,,caudal 0.8 mg/s | Xf=0.5 | Igniter voltage: 2V and 2.5V for 10 sec and 20 sec respectively.,CFI-G
+CFI-G,21102 M4,,50% butane,gas,quemador esferico,23.33,101.3,0.0,,N2,sin ignicion,0.0,Tad,2333.736064,K,,caudal 0.8 mg/s | Xf=0.5 | Igniter voltage: 2.1V and 2.6V for 10 sec and 20 sec respectively.,CFI-G
+CFI-G,21102 M5,,50% butane,gas,quemador esferico,23.33,101.3,0.0,,N2,sin ignicion,0.0,Tad,2333.736064,K,,caudal 0.8 mg/s | Xf=0.5 | Igniter voltage: 2.2V and 2.7V for 10 sec and 20 sec respectively.,CFI-G
+CFI-G,21102 M6,,50% butane,gas,quemador esferico,23.33,101.3,0.0,,N2,sin ignicion,0.0,Tad,2333.736064,K,,caudal 0.8 mg/s | Xf=0.5 | Igniter voltage: 2.4V and 2.9V for 10 sec and 20 sec respectively.,CFI-G
+CFI-G,21106A4,,50% butane,gas,quemador esferico,39.26,50.7,0.0,,N2,autoextincion,60.0,Tad,2628.957655,K,,caudal 1.6 mg/s | Xf=0.25 | hot ig,CFI-G
+CFI-G,21106 B1,,50% butane,gas,quemador esferico,38.46,50.7,0.0,,N2,autoextincion,62.0,Tad,2681.772338,K,,caudal 1.6 mg/s | Xf=0.5 | ,CFI-G
+CFI-G,21106 C1,,50% butane,gas,quemador esferico,37.72,50.7,0.0,,N2,autoextincion,63.0,Tad,2482.423373,K,,caudal 1.3 mg/s | Xf=0.125 | ,CFI-G
+CFI-G,21106 D1,,50% butane,gas,quemador esferico,36.93,50.7,0.0,,N2,autoextincion,120.0,Tad,2659.169725,K,,caudal 1.2 mg/s | Xf=0.5 | ,CFI-G
+CFI-G,21106 F1,,50% butane,gas,quemador esferico,35.85,50.7,0.0,,N2,flujo cortado,72.0,Tad,2642.41109,K,,caudal 0.8 mg/s | Xf=0.5 | hit T limit,CFI-G
+CFI-G,21106 F2,,50% butane,gas,quemador esferico,35.42,50.7,0.0,,N2,sin ignicion,,Tad,2635.478932,K,,caudal 0.8 mg/s | Xf=0.5 | direct cool - no hot ignition,CFI-G
+CFI-G,21106 F3,,50% butane,gas,quemador esferico,35.42,50.7,0.0,,N2,flujo cortado,13.0,Tad,2635.478932,K,,caudal 0.5 mg/s | Xf=0.5 | hot flame,CFI-G
+CFI-G,21106 F4,,50% butane,gas,quemador esferico,35.38,50.7,0.0,,N2,sin ignicion,22.0,Tad,2634.687627,K,,caudal 0.5 mg/s | Xf=0.5 | hot flame,CFI-G
+CFI-G,21106 F5,,50% butane,gas,quemador esferico,35.29,50.7,0.0,,N2,sin ignicion,,Tad,2633.344646,K,,caudal 0.5 mg/s | Xf=0.5 | direct cool - no hot ignition,CFI-G
+CFI-G,21106 G6,,50% butane,gas,quemador esferico,20.97,50.7,0.0,,N2,autoextincion,20.0,Tad,2233.365664,K,,"caudal 0.8 mg/s | Xf=0.5 | hot flame, the igniter stayed in the flame longer than others.",CFI-G
+CFI-G,21106 G7,,50% butane,gas,quemador esferico,20.86,50.7,0.0,,N2,autoextincion,20.0,Tad,2228.11818,K,,"caudal 0.8 mg/s | Xf=0.5 | hot flame, the igniter stayed in the flame longer than others.",CFI-G
+CFI-G,21106 G9,,50% butane,gas,quemador esferico,20.75,50.7,0.0,,N2,autoextincion,14.0,Tad,2222.825542,K,,caudal 0.8 mg/s | Xf=0.5 | hot flame,CFI-G
+CFI-G,21106 H1,,50% butane,gas,quemador esferico,20.67,50.7,0.0,,N2,sin ignicion,,Tad,2219.09339,K,,caudal 0.8 mg/s | Xf=0.5 | ,CFI-G
+CFI-G,21106 H2,,50% butane,gas,quemador esferico,20.67,50.7,0.0,,N2,sin ignicion,,Tad,2219.09339,K,,caudal 0.8 mg/s | Xf=0.5 | ,CFI-G
+CFI-G,21112A1,,propane,gas,quemador esferico,39.54,94.4,0.0,,N2,flujo cortado,43.0,Tad,2729.986983,K,,caudal 0.8 mg/s | Xf=1 | 1 bottle 100% propane,CFI-G
+CFI-G,21112 A2,,propane,gas,quemador esferico,39.4,94.4,0.0,,N2,autoextincion,44.0,Tad,2728.07951,K,,caudal 1.6 mg/s | Xf=1 | ,CFI-G
+CFI-G,21112 A3,,propane,gas,quemador esferico,39.13,94.4,0.0,,N2,autoextincion,95.0,Tad,2724.147584,K,,caudal 1.2 mg/s | Xf=1 | ,CFI-G
+CFI-G,21112 A4,,propane,gas,quemador esferico,38.68,94.4,0.0,,N2,flujo cortado,185.0,Tad,2717.697955,K,,caudal 1 mg/s | Xf=1 | ,CFI-G
+CFI-G,21112 A5,,propane,gas,quemador esferico,37.95,94.4,0.0,,N2,autoextincion,24.0,Tad,2707.007929,K,,caudal 2 mg/s | Xf=1 | ,CFI-G
+CFI-G,21112 C1,,propane,gas,quemador esferico,37.77,94.4,0.0,,N2,flujo cortado,29.0,Tad,2704.18406,K,,caudal 0.5 mg/s | Xf=1 | ,CFI-G
+CFI-G,21112 C2,,propane,gas,quemador esferico,37.71,94.4,0.0,,N2,flujo cortado,29.0,Tad,2703.326866,K,,caudal 0.5 mg/s | Xf=1 | ,CFI-G
+CFI-G,21112 A6,,propane,gas,quemador esferico,37.65,94.4,0.0,,N2,autoextincion,259.0,Tad,2702.467823,K,,caudal 1 mg/s | Xf=1 | ,CFI-G
+CFI-G,21112 C3,,propane,gas,quemador esferico,36.64,94.4,0.0,,N2,sin ignicion,0.0,Tad,2686.828847,K,,caudal 0.5 mg/s | Xf=1 | ,CFI-G
+CFI-G,21112 C4,,propane,gas,quemador esferico,36.64,94.4,0.0,,N2,sin ignicion,0.0,Tad,2686.828847,K,,caudal 0.5 mg/s | Xf=1 | ,CFI-G
+CFI-G,21112 C5,,propane,gas,quemador esferico,36.64,94.4,0.0,,N2,sin ignicion,0.0,Tad,2686.828847,K,,caudal 0.5 mg/s | Xf=1 | ,CFI-G
+CFI-G,21112 C6,,propane,gas,quemador esferico,36.64,94.4,0.0,,N2,sin ignicion,0.0,Tad,2686.828847,K,,caudal 0.5 mg/s | Xf=1 | ,CFI-G
+CFI-G,21112 F1,,propane,gas,quemador esferico,21.25,101.3,0.0,,N2,sin ignicion,0.0,Tad,2275.686041,K,,caudal 1 mg/s | Xf=1 | ,CFI-G
+CFI-G,21112 F2,,propane,gas,quemador esferico,21.25,101.3,0.0,,N2,autoextincion,8.0,Tad,2275.686041,K,,caudal 1 mg/s | Xf=1 | ,CFI-G
+CFI-G,21112 F3,,propane,gas,quemador esferico,21.22,101.3,0.0,,N2,autoextincion,8.0,Tad,2274.412146,K,,caudal 0.8 mg/s | Xf=1 | ,CFI-G
+CFI-G,21112 F4,,propane,gas,quemador esferico,21.2,101.3,0.0,,N2,autoextincion,10.0,Tad,2273.390966,K,,caudal 0.6 mg/s | Xf=1 | ,CFI-G
+CFI-G,21112 F5,,propane,gas,quemador esferico,21.18,101.3,0.0,,N2,sin ignicion,0.0,Tad,2272.431946,K,,caudal 0.4 mg/s | Xf=1 | ,CFI-G
+CFI-G,21112 H1,,propane,gas,quemador esferico,21.18,101.3,0.0,,N2,autoextincion,12.0,Tad,2272.431946,K,,caudal 0.5 mg/s | Xf=1 | ,CFI-G
+CFI-G,21112 H2,,propane,gas,quemador esferico,21.16,101.3,0.0,,N2,autoextincion,11.0,Tad,2271.471317,K,,caudal 0.5 mg/s | Xf=1 | ,CFI-G
+CFI-G,21112 H3,,propane,gas,quemador esferico,21.14,101.3,0.0,,N2,sin ignicion,0.0,Tad,2270.589322,K,,caudal 0.5 mg/s | Xf=1 | ,CFI-G
+CFI-G,21125A1,,30% butane,gas,quemador esferico,39.45,101.3,0.0,,N2,sin ignicion,0.0,Tad,1596.02196,K,,"caudal 0.5 mg/s | Xf=0.02385 | 1 bottle 1 day, 30% butane, 1 timer reset",CFI-G
+CFI-G,21125 A2,,30% butane,gas,quemador esferico,39.45,101.3,0.0,,N2,autoextincion,8.0,Tad,1795.234249,K,,caudal 0.5 mg/s | Xf=0.031 | ,CFI-G
+CFI-G,21125 A3,,30% butane,gas,quemador esferico,39.41,101.3,0.0,,N2,sin ignicion,0.0,Tad,1695.058747,K,,caudal 0.5 mg/s | Xf=0.02717 | ,CFI-G
+CFI-G,21125 A4,,30% butane,gas,quemador esferico,39.41,101.3,0.0,,N2,sin ignicion,0.0,Tad,0.0,K,,caudal 0 mg/s | Xf=0 | ,CFI-G
+CFI-G,21125 A5,,30% butane,gas,quemador esferico,39.41,101.3,0.0,,N2,sin ignicion,0.0,Tad,1695.058747,K,,caudal 0.5 mg/s | Xf=0.02717 | ,CFI-G
+CFI-G,21125 A6,,30% butane,gas,quemador esferico,39.41,101.3,0.0,,N2,sin ignicion,0.0,Tad,1695.058747,K,,caudal 0.75 mg/s | Xf=0.02717 | ,CFI-G
+CFI-G,21125 A7,,30% butane,gas,quemador esferico,39.41,101.3,0.0,,N2,sin ignicion,0.0,Tad,1695.058747,K,,caudal 0.25 mg/s | Xf=0.02717 | ,CFI-G
+CFI-G,21125 A8,,30% butane,gas,quemador esferico,39.41,101.3,0.0,,N2,sin ignicion,0.0,Tad,1695.058747,K,,caudal 1.5 mg/s | Xf=0.02717 | ,CFI-G
+CFI-G,21125 A9,,30% butane,gas,quemador esferico,39.41,101.3,0.0,,N2,sin ignicion,0.0,Tad,1695.058747,K,,caudal 2.36 mg/s | Xf=0.02717 | ,CFI-G
+CFI-G,21125 H1,,30% butane,gas,quemador esferico,39.41,101.3,0.0,,N2,sin ignicion,0.0,Tad,1695.058747,K,,caudal 0.5 mg/s | Xf=0.02717 | ,CFI-G
+CFI-G,21125 H2,,30% butane,gas,quemador esferico,39.41,101.3,0.0,,N2,sin ignicion,0.0,Tad,1695.058747,K,,caudal 0.5 mg/s | Xf=0.02717 | ,CFI-G
+CFI-G,21125 H3,,30% butane,gas,quemador esferico,39.41,101.3,0.0,,N2,sin ignicion,0.0,Tad,0.0,K,,caudal 0 mg/s | Xf=0 | ,CFI-G
+CFI-G,21125 H4,,30% butane,gas,quemador esferico,39.41,101.3,0.0,,N2,sin ignicion,0.0,Tad,1695.058747,K,,caudal 0.5 mg/s | Xf=0.02717 | ,CFI-G
+CFI-G,21125 J1,,30% butane,gas,quemador esferico,39.41,101.3,0.0,,N2,sin ignicion,0.0,Tad,1397.031071,K,,caudal 0.5 mg/s | Xf=0.01827 | ,CFI-G
+CFI-G,21125 H5,,30% butane,gas,quemador esferico,39.41,101.3,0.0,,N2,sin ignicion,0.0,Tad,1695.058747,K,,caudal 0.1 mg/s | Xf=0.02717 | ,CFI-G
+CFI-G,21125 K1,,30% butane,gas,quemador esferico,39.41,101.3,0.0,,N2,autoextincion,35.0,Tad,1794.86369,K,,caudal 1.5 mg/s | Xf=0.031 | ,CFI-G
+CFI-G,21125 K2,,30% butane,gas,quemador esferico,38.92,101.3,0.0,,N2,autoextincion,17.0,Tad,1789.988936,K,,caudal 3 mg/s | Xf=0.031 | ,CFI-G
+CFI-G,21125 K3,,30% butane,gas,quemador esferico,38.44,101.3,0.0,,N2,flujo cortado,125.0,Tad,1785.198679,K,,caudal 0.75 mg/s | Xf=0.031 | ,CFI-G
+CFI-G,21125 D1,,30% butane,gas,quemador esferico,21.11,101.3,0.0,,N2,autoextincion,1.0,Tad,1700.967256,K,,caudal 0.5 mg/s | Xf=0.045 | ,CFI-G
+CFI-G,21125 D2,,30% butane,gas,quemador esferico,21.11,101.3,0.0,,N2,autoextincion,1.0,Tad,1700.883051,K,,caudal 0.5 mg/s | Xf=0.045 | ,CFI-G
+CFI-G,21125 D3,,30% butane,gas,quemador esferico,21.1,101.3,0.0,,N2,sin ignicion,0.0,Tad,1700.798838,K,,caudal 0.5 mg/s | Xf=0.045 | ,CFI-G
+CFI-G,21125 D4,,30% butane,gas,quemador esferico,21.1,101.3,0.0,,N2,sin ignicion,0.0,Tad,1700.798838,K,,caudal 1 mg/s | Xf=0.045 | ,CFI-G
+CFI-G,21125 D5,,30% butane,gas,quemador esferico,21.1,101.3,0.0,,N2,sin ignicion,0.0,Tad,1700.798838,K,,caudal 2 mg/s | Xf=0.045 | ,CFI-G
+CFI-G,21125 D6,,30% butane,gas,quemador esferico,21.1,101.3,0.0,,N2,sin ignicion,0.0,Tad,1700.798838,K,,caudal 0.25 mg/s | Xf=0.045 | ,CFI-G
+CFI-G,21130A1,,30% propane,gas,quemador esferico,21.07,202.7,0.0,,N2,autoextincion,1.0,Tad,1601.904915,K,,"caudal 0.5 mg/s | Xf=0.04742 | 1 bottle 2 days, 30% propane, no timer resets through day 10",CFI-G
+CFI-G,21130 A2,,30% propane,gas,quemador esferico,21.07,202.7,0.0,,N2,autoextincion,1.0,Tad,1601.863831,K,,caudal 1 mg/s | Xf=0.04742 | ,CFI-G
+CFI-G,21130 A3,,30% propane,gas,quemador esferico,21.07,202.7,0.0,,N2,sin ignicion,0.0,Tad,1601.781659,K,,caudal 1 mg/s | Xf=0.04742 | ,CFI-G
+CFI-G,21130 A4,,30% propane,gas,quemador esferico,21.07,202.7,0.0,,N2,sin ignicion,0.0,Tad,1601.781659,K,,caudal 1 mg/s | Xf=0.04742 | ,CFI-G
+CFI-G,21130 A5,,30% propane,gas,quemador esferico,21.07,202.7,0.0,,N2,autoextincion,1.0,Tad,1601.781659,K,,caudal 1 mg/s | Xf=0.04742 | ,CFI-G
+CFI-G,21130 A6,,30% propane,gas,quemador esferico,21.06,202.7,0.0,,N2,sin ignicion,0.0,Tad,1601.699478,K,,caudal 2 mg/s | Xf=0.04742 | ,CFI-G
+CFI-G,21130 A7,,30% propane,gas,quemador esferico,21.06,202.7,0.0,,N2,sin ignicion,0.0,Tad,1601.699478,K,,caudal 2.5 mg/s | Xf=0.04742 | ,CFI-G
+CFI-G,21130 A8,,30% propane,gas,quemador esferico,21.06,202.7,0.0,,N2,sin ignicion,0.0,Tad,1601.699478,K,,caudal 2.89 mg/s | Xf=0.04742 | ,CFI-G
+CFI-G,21130 A9,,30% propane,gas,quemador esferico,21.06,202.7,0.0,,N2,autoextincion,1.0,Tad,1601.699478,K,,caudal 0.25 mg/s | Xf=0.04742 | ,CFI-G
+CFI-G,21130 M1,,30% propane,gas,quemador esferico,21.06,202.7,0.0,,N2,autoextincion,6.0,Tad,2171.011986,K,,caudal 1 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21130 M2,,30% propane,gas,quemador esferico,21.05,202.7,0.0,,N2,autoextincion,7.0,Tad,2170.499473,K,,caudal 2 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21130 M3,,30% propane,gas,quemador esferico,21.02,202.7,0.0,,N2,autoextincion,5.0,Tad,2169.302145,K,,caudal 0.5 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21130 G1,,30% propane,gas,quemador esferico,21.67,304.0,0.0,,N2,sin ignicion,0.0,Tad,1617.733857,K,,caudal 0.5 mg/s | Xf=0.04742 | ,CFI-G
+CFI-G,21130 G2,,30% propane,gas,quemador esferico,21.67,304.0,0.0,,N2,autoextincion,1.0,Tad,1617.733857,K,,caudal 0.5 mg/s | Xf=0.04742 | ,CFI-G
+CFI-G,21130 G3,,30% propane,gas,quemador esferico,21.67,304.0,0.0,,N2,autoextincion,1.0,Tad,1617.707026,K,,caudal 1 mg/s | Xf=0.04742 | ,CFI-G
+CFI-G,21130 G4,,30% propane,gas,quemador esferico,21.67,304.0,0.0,,N2,sin ignicion,0.0,Tad,1617.653362,K,,caudal 2 mg/s | Xf=0.04742 | ,CFI-G
+CFI-G,21130 G5,,30% propane,gas,quemador esferico,21.67,304.0,0.0,,N2,sin ignicion,0.0,Tad,1617.653362,K,,caudal 2.89 mg/s | Xf=0.04742 | ,CFI-G
+CFI-G,21130 G6,,30% propane,gas,quemador esferico,21.67,304.0,0.0,,N2,autoextincion,1.0,Tad,1617.653362,K,,caudal 0.25 mg/s | Xf=0.04742 | ,CFI-G
+CFI-G,21130 G7,,30% propane,gas,quemador esferico,21.67,304.0,0.0,,N2,autoextincion,1.0,Tad,1617.639945,K,,caudal 0.125 mg/s | Xf=0.04742 | ,CFI-G
+CFI-G,21130 N1,,30% propane,gas,quemador esferico,21.67,304.0,0.0,,N2,autoextincion,6.0,Tad,2197.919365,K,,caudal 1 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21130 N2,,30% propane,gas,quemador esferico,21.66,304.0,0.0,,N2,autoextincion,6.0,Tad,2197.591604,K,,caudal 2 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21130 N3,,30% propane,gas,quemador esferico,21.64,304.0,0.0,,N2,autoextincion,5.0,Tad,2196.935588,K,,caudal 0.5 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21130 N4,,30% propane,gas,quemador esferico,21.64,304.0,0.0,,N2,autoextincion,5.0,Tad,2196.798826,K,,caudal 0.5 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21130 N5,,30% propane,gas,quemador esferico,21.64,304.0,0.0,,N2,sin ignicion,0.0,Tad,2196.662035,K,,caudal 0.25 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21137A1,,30% propane,gas,quemador esferico,39.96,101.3,0.0,,N2,autoextincion,19.0,Tad,2636.620386,K,,caudal 2.89 mg/s | Xf=0.3 | same bottle,CFI-G
+CFI-G,21137 A2,,30% propane,gas,quemador esferico,39.73,101.3,0.0,,N2,autoextincion,39.0,Tad,2633.57542,K,,caudal 1.5 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21137 A3,,30% propane,gas,quemador esferico,39.48,101.3,0.0,,N2,autoextincion,124.0,Tad,2630.300519,K,,caudal 1 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21137 B1,,30% propane,gas,quemador esferico,38.95,101.3,0.0,,N2,flujo cortado,127.0,Tad,2486.332454,K,,caudal 2.89 mg/s | Xf=0.15 | Irregular Oscillation,CFI-G
+CFI-G,21137 B2,,30% propane,gas,quemador esferico,37.12,101.3,0.0,,N2,flujo cortado,147.0,Tad,2216.048717,K,,caudal 1.5 mg/s | Xf=0.08 | Irregular Oscillation,CFI-G
+CFI-G,21137 A4,,30% propane,gas,quemador esferico,35.75,101.3,0.0,,N2,autoextincion,35.0,Tad,2576.152786,K,,caudal 1.25 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21137 A5,,30% propane,gas,quemador esferico,35.57,101.3,0.0,,N2,autoextincion,44.0,Tad,2573.232287,K,,caudal 1.1 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21137 A6,,30% propane,gas,quemador esferico,35.37,101.3,0.0,,N2,autoextincion,22.0,Tad,2569.970517,K,,caudal 1.4 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21137 A7,,30% propane,gas,quemador esferico,35.24,101.3,0.0,,N2,autoextincion,33.0,Tad,2567.877057,K,,caudal 1.2 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21137 D1,,30% propane,gas,quemador esferico,21.0,101.3,0.0,,N2,autoextincion,8.0,Tad,2168.201271,K,,caudal 2.89 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21137 D2,,30% propane,gas,quemador esferico,20.91,101.3,0.0,,N2,autoextincion,11.0,Tad,2164.225786,K,,caudal 0.5 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21137 C1,,30% propane,gas,quemador esferico,20.89,101.3,0.0,,N2,autoextincion,8.0,Tad,2033.600696,K,,caudal 0.5 mg/s | Xf=0.15 | ,CFI-G
+CFI-G,21153A1,,30% ethane,gas,quemador esferico,38.87,50.7,0.0,,N2,autoextincion,59.0,Tad,2573.174924,K,,"caudal 2.36 mg/s | Xf=0.3 | 1  bottle, 2 days, 30% C2H6, timer reset",CFI-G
+CFI-G,21153 A2,,30% ethane,gas,quemador esferico,37.59,50.7,0.0,,N2,autoextincion,88.0,Tad,2555.198965,K,,caudal 1.5 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21153 A3,,30% ethane,gas,quemador esferico,36.39,50.7,0.0,,N2,autoextincion,258.0,Tad,2537.138924,K,,caudal 1 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21153 F1,,30% ethane,gas,quemador esferico,34.08,50.7,0.0,,N2,autoextincion,44.0,Tad,2498.76161,K,,caudal 1.5 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21153 A4,,30% ethane,gas,quemador esferico,33.49,50.7,0.0,,N2,flujo cortado,56.0,Tad,2488.103107,K,,caudal 0.5 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21153 A5,,30% ethane,gas,quemador esferico,33.24,50.7,0.0,,N2,flujo cortado,274.0,Tad,2483.470764,K,,caudal 0.75 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21153 C1,,30% ethane,gas,quemador esferico,39.85,202.7,0.0,,N2,autoextincion,34.0,Tad,2586.152396,K,,caudal 2.36 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21153 C2,,30% ethane,gas,quemador esferico,39.66,202.7,0.0,,N2,autoextincion,51.0,Tad,2583.720616,K,,caudal 1.5 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21153 C3,,30% ethane,gas,quemador esferico,39.48,202.7,0.0,,N2,autoextincion,123.0,Tad,2581.38403,K,,caudal 1 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21153 G1,,30% ethane,gas,quemador esferico,39.2,202.7,0.0,,N2,autoextincion,131.0,Tad,2577.591097,K,,caudal 1 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21153 C4,,30% ethane,gas,quemador esferico,38.89,202.7,0.0,,N2,flujo cortado,276.0,Tad,2573.499679,K,,caudal 0.75 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21153 C5,,30% ethane,gas,quemador esferico,38.42,202.7,0.0,,N2,flujo cortado,49.0,Tad,2566.926361,K,,caudal 0.5 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21153 C6,,30% ethane,gas,quemador esferico,38.36,202.7,0.0,,N2,autoextincion,44.0,Tad,2566.13774,K,,caudal 1.5 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21153 C7,,30% ethane,gas,quemador esferico,38.21,202.7,0.0,,N2,flujo cortado,61.0,Tad,2564.00403,K,,caudal 1 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21162A1,,30% ethane,gas,quemador esferico,39.97,101.3,0.0,,N2,autoextincion,43.0,Tad,2587.697951,K,,"caudal 2.36 mg/s | Xf=0.3 | same bottle, will get a timer reset",CFI-G
+CFI-G,21162 A2,,30% ethane,gas,quemador esferico,39.5,101.3,0.0,,N2,autoextincion,71.0,Tad,2581.5475,K,,caudal 1.5 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21162 A3,,30% ethane,gas,quemador esferico,39.0,101.3,0.0,,N2,autoextincion,232.0,Tad,2574.958198,K,,caudal 1 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21162 B1,,30% ethane,gas,quemador esferico,37.93,101.3,0.0,,N2,autoextincion,158.0,Tad,2560.131167,K,,caudal 1 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21162 A4,,30% ethane,gas,quemador esferico,37.21,101.3,0.0,,N2,autoextincion,304.0,Tad,2549.597946,K,,caudal 0.85 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21162 C1,,30% ethane,gas,quemador esferico,21.0,101.3,0.0,,N2,autoextincion,19.0,Tad,2121.080305,K,,caudal 0.5 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21162 C2,,30% ethane,gas,quemador esferico,20.96,101.3,0.0,,N2,autoextincion,11.0,Tad,2119.380751,K,,caudal 0.75 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21162 C3,,30% ethane,gas,quemador esferico,20.93,101.3,0.0,,N2,autoextincion,9.0,Tad,2117.901476,K,,caudal 1 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21162 C4,,30% ethane,gas,quemador esferico,20.89,101.3,0.0,,N2,autoextincion,9.0,Tad,2116.284224,K,,caudal 1.5 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21162 C5,,30% ethane,gas,quemador esferico,20.84,101.3,0.0,,N2,autoextincion,9.0,Tad,2113.851649,K,,caudal 2.36 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21162 D1,,30% ethane,gas,quemador esferico,20.75,101.3,0.0,,N2,autoextincion,16.0,Tad,2110.008148,K,,caudal 0.5 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21162 F1,,30% ethane,gas,quemador esferico,20.72,101.3,0.0,,N2,sin ignicion,0.0,Tad,2108.554829,K,,caudal 1.5 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21162 F2,,30% ethane,gas,quemador esferico,20.72,101.3,0.0,,N2,autoextincion,10.0,Tad,2108.554829,K,,caudal 1.5 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21174 A1,,30% butane,gas,quemador esferico,38.86,50.7,0.0,,N2,autoextincion,21.0,Tad,2644.607139,K,,"caudal 3.215 mg/s | Xf=0.3 | 1 bottle 1 day, 30% butane, 3 hour gap if we want a timer reset?",CFI-G
+CFI-G,21174 A2,,30% butane,gas,quemador esferico,38.32,50.7,0.0,,N2,autoextincion,29.0,Tad,2637.1216,K,,caudal 2 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21174 A3,,30% butane,gas,quemador esferico,37.85,50.7,0.0,,N2,autoextincion,54.0,Tad,2630.558001,K,,caudal 1.5 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21174 A4,,30% butane,gas,quemador esferico,37.21,50.7,0.0,,N2,autoextincion,210.0,Tad,2621.181096,K,,caudal 1 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21174 B1,,30% butane,gas,quemador esferico,35.54,50.7,0.0,,N2,autoextincion,109.0,Tad,2595.657867,K,,caudal 1 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21174 C1,,30% butane,gas,quemador esferico,39.85,202.7,0.0,,N2,autoextincion,30.0,Tad,2657.806132,K,,caudal 3.215 mg/s | Xf=0.3 | Irregular Oscillation,CFI-G
+CFI-G,21174 C2,,30% butane,gas,quemador esferico,39.65,202.7,0.0,,N2,autoextincion,29.0,Tad,2655.246017,K,,caudal 2 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21174 C3,,30% butane,gas,quemador esferico,39.54,202.7,0.0,,N2,llama fria,35.0,Tad,2653.697276,K,,caudal 1.5 mg/s | Xf=0.3 | Cool flame!,CFI-G
+CFI-G,21174 C4,,30% butane,gas,quemador esferico,39.43,202.7,0.0,,N2,llama fria,90.0,Tad,2652.289527,K,,caudal 1 mg/s | Xf=0.3 | Cool flame!,CFI-G
+CFI-G,21174 D1,,30% butane,gas,quemador esferico,39.25,202.7,0.0,,N2,llama fria,83.0,Tad,2649.863721,K,,caudal 1 mg/s | Xf=0.3 | Cool flame!,CFI-G
+CFI-G,21174 F1,,30% butane,gas,quemador esferico,39.08,202.7,0.0,,N2,llama fria,40.0,Tad,2647.611673,K,,caudal 1.5 mg/s | Xf=0.3 | Cool flame!,CFI-G
+CFI-G,21174 C5,,30% butane,gas,quemador esferico,38.96,202.7,0.0,,N2,flujo cortado,34.0,Tad,2645.97447,K,,"caudal 0.5 mg/s | Xf=0.3 | Hit the burner temp limit, terminated.",CFI-G
+CFI-G,21174 C6,,30% butane,gas,quemador esferico,38.93,202.7,0.0,,N2,llama fria,251.0,Tad,2645.509092,K,,caudal 0.75 mg/s | Xf=0.3 | Cool flame!,CFI-G
+CFI-G,21174 F2,,30% butane,gas,quemador esferico,38.55,202.7,0.0,,N2,flujo cortado,24.0,Tad,2640.3192,K,,caudal 1.5 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21174 F3,,30% butane,gas,quemador esferico,38.48,202.7,0.0,,N2,flujo cortado,23.0,Tad,2639.316981,K,,caudal 1.5 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21174 F4,,30% butane,gas,quemador esferico,38.41,202.7,0.0,,N2,flujo cortado,35.0,Tad,2638.353796,K,,caudal 1.5 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21291 A1,,30% butane,gas,quemador esferico,39.93,202.7,0.0,,N2,llama fria,167.0,Tad,2658.848468,K,,caudal 1.5 mg/s | Xf=0.3 | bonus day after inverse tests,CFI-G
+CFI-G,21291 C1,,30% butane,gas,quemador esferico,39.42,202.7,0.0,,N2,llama fria,246.0,Tad,2652.186558,K,,"caudal 1 mg/s | Xf=0.3 | 5 transitions from hot to cool, 6 hot and 5 cool flames",CFI-G
+CFI-G,21291 C2,,30% butane,gas,quemador esferico,38.93,202.7,0.0,,N2,autoextincion,27.0,Tad,2645.520346,K,,caudal 1.75 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21291 B1,,30% butane,gas,quemador esferico,38.83,202.7,0.0,,N2,autoextincion,32.0,Tad,2644.223892,K,,caudal 1.75 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21291 H1,,30% butane,gas,quemador esferico,38.72,202.7,0.0,,N2,autoextincion,35.0,Tad,2538.440812,K,,caudal 1.25 mg/s | Xf=0.15 | ,CFI-G
+CFI-G,21291 H2,,30% butane,gas,quemador esferico,38.62,202.7,0.0,,N2,flujo cortado,158.0,Tad,2537.057866,K,,caudal 0.75 mg/s | Xf=0.15 | Hit the burner temperature limit,CFI-G
+CFI-G,21291 D1,,30% butane,gas,quemador esferico,39.78,101.3,0.0,,N2,autoextincion,47.0,Tad,2656.891203,K,,caudal 1.5 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21291 G1,,30% butane,gas,quemador esferico,39.49,101.3,0.0,,N2,autoextincion,161.0,Tad,2653.133679,K,,caudal 1 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21291 G2,,30% butane,gas,quemador esferico,38.85,101.3,0.0,,N2,autoextincion,60.0,Tad,2644.409854,K,,caudal 1.25 mg/s | Xf=0.3 | ,CFI-G
+CFI-G,21291 J1,,30% butane,gas,quemador esferico,38.54,101.3,0.0,,N2,flujo cortado,80.0,Tad,2536.049087,K,,caudal 0.75 mg/s | Xf=0.15 | Hit the burner temperature limit,CFI-G
+CFI-G,21291 J2,,30% butane,gas,quemador esferico,38.27,101.3,0.0,,N2,autoextincion,27.0,Tad,2532.212453,K,,caudal 1.5 mg/s | Xf=0.15 | ,CFI-G
+CFI-G,21291 J3,,30% butane,gas,quemador esferico,38.08,101.3,0.0,,N2,autoextincion,83.0,Tad,2529.593621,K,,caudal 1 mg/s | Xf=0.15 | ,CFI-G
+E-FIELD,18073-100%,2018-03-14,Metano,gas,quemador de coflujo,21.0,101.325,,,N2 en combustible (100% combustible),llamas encendidas,,llamas encendidas en el dia,10.0,,,polaridad de malla negative | campo electrico para simular fuerzas tipo gravedad | O2 de oxidante no indicado en la tabla,E-FIELD
+E-FIELD,18078-70%,2018-03-19,Metano,gas,quemador de coflujo,21.0,101.325,,,N2 en combustible (70% combustible),llamas encendidas,,llamas encendidas en el dia,10.0,,,polaridad de malla negative | campo electrico para simular fuerzas tipo gravedad | O2 de oxidante no indicado en la tabla,E-FIELD
+E-FIELD,18078-100%,2018-03-19,Metano,gas,quemador de coflujo,21.0,101.325,,,N2 en combustible (100% combustible),llamas encendidas,,,,,,polaridad de malla negative | campo electrico para simular fuerzas tipo gravedad | O2 de oxidante no indicado en la tabla,E-FIELD
+E-FIELD,18080-40%,2018-03-21,Metano,gas,quemador de coflujo,21.0,101.325,,,N2 en combustible (40% combustible),llamas encendidas,,llamas encendidas en el dia,8.0,,,polaridad de malla negative | campo electrico para simular fuerzas tipo gravedad | O2 de oxidante no indicado en la tabla,E-FIELD
+E-FIELD,18087-80%,2018-03-28,Etileno,gas,quemador de coflujo,21.0,101.325,,,N2 en combustible (80% combustible),llamas encendidas,,llamas encendidas en el dia,10.0,,,polaridad de malla negative | campo electrico para simular fuerzas tipo gravedad | O2 de oxidante no indicado en la tabla,E-FIELD
+E-FIELD,18087-100%,2018-03-28,Etileno,gas,quemador de coflujo,21.0,101.325,,,N2 en combustible (100% combustible),llamas encendidas,,,,,,polaridad de malla negative | campo electrico para simular fuerzas tipo gravedad | O2 de oxidante no indicado en la tabla,E-FIELD
+E-FIELD,18092-30%,2018-04-02,Etileno,gas,quemador de coflujo,21.0,101.325,,,N2 en combustible (30% combustible),llamas encendidas,,llamas encendidas en el dia,11.0,,,polaridad de malla negative | campo electrico para simular fuerzas tipo gravedad | O2 de oxidante no indicado en la tabla,E-FIELD
+E-FIELD,18095-30%,2018-04-05,Etileno,gas,quemador de coflujo,21.0,101.325,,,N2 en combustible (30% combustible),llamas encendidas,,llamas encendidas en el dia,10.0,,,polaridad de malla positive | campo electrico para simular fuerzas tipo gravedad | O2 de oxidante no indicado en la tabla,E-FIELD
+E-FIELD,18102-40%,2018-04-12,Metano,gas,quemador de coflujo,21.0,101.325,,,N2 en combustible (40% combustible),llamas encendidas,,llamas encendidas en el dia,8.0,,,polaridad de malla positive | campo electrico para simular fuerzas tipo gravedad | O2 de oxidante no indicado en la tabla,E-FIELD
+E-FIELD,18106-40%,2018-04-16,Metano,gas,quemador de coflujo,21.0,101.325,,,N2 en combustible (40% combustible),llamas encendidas,,llamas encendidas en el dia,13.0,,,polaridad de malla positive | campo electrico para simular fuerzas tipo gravedad | O2 de oxidante no indicado en la tabla,E-FIELD
+E-FIELD,18113-100%,2018-04-23,Metano,gas,quemador de coflujo,21.0,101.325,,,N2 en combustible (100% combustible),llamas encendidas,,llamas encendidas en el dia,15.0,,,polaridad de malla positive | campo electrico para simular fuerzas tipo gravedad | O2 de oxidante no indicado en la tabla,E-FIELD
+E-FIELD,18130-70%,2018-05-10,Metano,gas,quemador de coflujo,21.0,101.325,,,N2 en combustible (70% combustible),llamas encendidas,,llamas encendidas en el dia,13.0,,,polaridad de malla positive | campo electrico para simular fuerzas tipo gravedad | O2 de oxidante no indicado en la tabla,E-FIELD
+E-FIELD,18137-80%,2018-05-17,Etileno,gas,quemador de coflujo,21.0,101.325,,,N2 en combustible (80% combustible),llamas encendidas,,llamas encendidas en el dia,12.0,,,polaridad de malla positive | campo electrico para simular fuerzas tipo gravedad | O2 de oxidante no indicado en la tabla,E-FIELD
+E-FIELD,18137-100%,2018-05-17,Etileno,gas,quemador de coflujo,21.0,101.325,,,N2 en combustible (100% combustible),llamas encendidas,,,,,,polaridad de malla positive | campo electrico para simular fuerzas tipo gravedad | O2 de oxidante no indicado en la tabla,E-FIELD
+E-FIELD,18269-40%,2018-09-26,Metano,gas,quemador de chorro de gas,21.0,101.325,,,N2 en combustible (40% combustible),llamas encendidas,,llamas encendidas en el dia,11.0,,,polaridad de malla negative | campo electrico para simular fuerzas tipo gravedad | O2 de oxidante no indicado en la tabla,E-FIELD
+E-FIELD,18274-30%,2018-10-01,Etileno,gas,quemador de chorro de gas,21.0,101.325,,,N2 en combustible (30% combustible),llamas encendidas,,llamas encendidas en el dia,11.0,,,polaridad de malla negative | campo electrico para simular fuerzas tipo gravedad | O2 de oxidante no indicado en la tabla,E-FIELD
+E-FIELD,18282-70%,2018-10-09,Metano,gas,quemador de chorro de gas,21.0,101.325,,,N2 en combustible (70% combustible),llamas encendidas,,llamas encendidas en el dia,13.0,,,polaridad de malla negative | campo electrico para simular fuerzas tipo gravedad | O2 de oxidante no indicado en la tabla,E-FIELD
+E-FIELD,18282-100%,2018-10-09,Metano,gas,quemador de chorro de gas,21.0,101.325,,,N2 en combustible (100% combustible),llamas encendidas,,,,,,polaridad de malla negative | campo electrico para simular fuerzas tipo gravedad | O2 de oxidante no indicado en la tabla,E-FIELD
+E-FIELD,18285-100%,2018-10-12,Etileno,gas,quemador de chorro de gas,21.0,101.325,,,N2 en combustible (100% combustible),llamas encendidas,,llamas encendidas en el dia,10.0,,,polaridad de malla negative | campo electrico para simular fuerzas tipo gravedad | O2 de oxidante no indicado en la tabla,E-FIELD
+E-FIELD,18290-80%,2018-10-17,Etileno,gas,quemador de chorro de gas,21.0,101.325,,,N2 en combustible (80% combustible),llamas encendidas,,llamas encendidas en el dia,11.0,,,polaridad de malla negative | campo electrico para simular fuerzas tipo gravedad | O2 de oxidante no indicado en la tabla,E-FIELD
+E-FIELD,18298-40%,2018-10-25,Metano,gas,quemador de chorro de gas,21.0,101.325,,,N2 en combustible (40% combustible),llamas encendidas,,llamas encendidas en el dia,9.0,,,polaridad de malla positive | campo electrico para simular fuerzas tipo gravedad | O2 de oxidante no indicado en la tabla,E-FIELD
+E-FIELD,18302-30%,2018-10-29,Etileno,gas,quemador de chorro de gas,21.0,101.325,,,N2 en combustible (30% combustible),llamas encendidas,,llamas encendidas en el dia,10.0,,,polaridad de malla positive | campo electrico para simular fuerzas tipo gravedad | O2 de oxidante no indicado en la tabla,E-FIELD
+E-FIELD,18312-70%,2018-11-08,Metano,gas,quemador de chorro de gas,21.0,101.325,,,N2 en combustible (70% combustible),llamas encendidas,,llamas encendidas en el dia,13.0,,,polaridad de malla positive | campo electrico para simular fuerzas tipo gravedad | O2 de oxidante no indicado en la tabla,E-FIELD
+E-FIELD,18312-100%,2018-11-08,Metano,gas,quemador de chorro de gas,21.0,101.325,,,N2 en combustible (100% combustible),llamas encendidas,,,,,,polaridad de malla positive | campo electrico para simular fuerzas tipo gravedad | O2 de oxidante no indicado en la tabla,E-FIELD
+E-FIELD,18319-25%,2018-11-15,Etileno,gas,quemador de chorro de gas,21.0,101.325,,,N2 en combustible (25% combustible),llamas encendidas,,llamas encendidas en el dia,11.0,,,polaridad de malla positive | campo electrico para simular fuerzas tipo gravedad | O2 de oxidante no indicado en la tabla,E-FIELD
+E-FIELD,18319-50%,2018-11-15,Etileno,gas,quemador de chorro de gas,21.0,101.325,,,N2 en combustible (50% combustible),llamas encendidas,,,,,,polaridad de malla positive | campo electrico para simular fuerzas tipo gravedad | O2 de oxidante no indicado en la tabla,E-FIELD
+E-FIELD,18319-80%,2018-11-15,Etileno,gas,quemador de chorro de gas,21.0,101.325,,,N2 en combustible (80% combustible),llamas encendidas,,,,,,polaridad de malla positive | campo electrico para simular fuerzas tipo gravedad | O2 de oxidante no indicado en la tabla,E-FIELD
+E-FIELD,18319-100%,2018-11-15,Etileno,gas,quemador de chorro de gas,21.0,101.325,,,N2 en combustible (100% combustible),llamas encendidas,,,,,,polaridad de malla positive | campo electrico para simular fuerzas tipo gravedad | O2 de oxidante no indicado en la tabla,E-FIELD
+E-FIELD,18319-25%,2018-11-15,Etileno,gas,quemador de chorro de gas,21.0,101.325,,,N2 en combustible (25% combustible),llamas encendidas,,llamas encendidas en el dia,11.0,,,polaridad de malla positive | campo electrico para simular fuerzas tipo gravedad | O2 de oxidante no indicado en la tabla,E-FIELD
+E-FIELD,18319-50%,2018-11-15,Etileno,gas,quemador de chorro de gas,21.0,101.325,,,N2 en combustible (50% combustible),llamas encendidas,,,,,,polaridad de malla positive | campo electrico para simular fuerzas tipo gravedad | O2 de oxidante no indicado en la tabla,E-FIELD
+E-FIELD,18319-80%,2018-11-15,Etileno,gas,quemador de chorro de gas,21.0,101.325,,,N2 en combustible (80% combustible),llamas encendidas,,,,,,polaridad de malla positive | campo electrico para simular fuerzas tipo gravedad | O2 de oxidante no indicado en la tabla,E-FIELD
+E-FIELD,18319-100%,2018-11-15,Etileno,gas,quemador de chorro de gas,21.0,101.325,,,N2 en combustible (100% combustible),llamas encendidas,,,,,,polaridad de malla positive | campo electrico para simular fuerzas tipo gravedad | O2 de oxidante no indicado en la tabla,E-FIELD
