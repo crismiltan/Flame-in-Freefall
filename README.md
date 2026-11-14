@@ -1,10 +1,10 @@
 # Flame in Freefall
 
-Monitor y simulador web para **prevenir, detectar y extinguir** incendios en hábitats espaciales (ISS, cápsulas de exploración, Luna y Marte), basado en 857 pruebas reales de combustión en microgravedad de [NASA Physical Science Informatics](https://psi.nasa.gov/).
+Monitor y simulador web para **prevenir**, **detectar** y **extinguir** incendios en hábitats espaciales (ISS, cápsulas de exploración, Luna y Marte), basado en 857 pruebas reales de combustión en microgravedad de [NASA Physical Science Informatics](https://psi.nasa.gov/).
 
 Proyecto para el reto *Flame in Freefall* del NASA Space Apps Challenge 2026.
 
-## Qué hace
+## ¿Qué hace?
 
 ### Monitor del hábitat (pestaña principal)
 
