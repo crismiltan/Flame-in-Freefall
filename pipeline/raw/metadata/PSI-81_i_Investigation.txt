@@ -1,0 +1,161 @@
+ONTOLOGY SOURCE REFERENCE
+Term Source Name	EFO	PSI
+Term Source File		https://psi.nasa.gov/
+Term Source Version		1.0
+Term Source Description		User defined terms
+INVESTIGATION
+Investigation Identifier	
+Investigation Title	
+Investigation Description	
+Investigation Submission Date	
+Investigation Public Release Date	
+INVESTIGATION PUBLICATIONS
+Investigation PubMed ID
+Investigation Publication DOI
+Investigation Publication Author List
+Investigation Publication Title
+Investigation Publication Status
+Investigation Publication Status Term Accession Number
+Investigation Publication Status Term Source REF
+INVESTIGATION CONTACTS
+Investigation Person Last Name
+Investigation Person First Name
+Investigation Person Mid Initials
+Investigation Person Email
+Investigation Person Phone
+Investigation Person Fax
+Investigation Person Address
+Investigation Person Affiliation
+Investigation Person Roles
+Investigation Person Roles Term Accession Number
+Investigation Person Roles Term Source REF
+STUDY
+Study Identifier	PSI-81
+Study Title	Microheater Array Boiling Experiment
+Study Description	
+Study Submission Date	18-Sep-2024
+Study Public Release Date	18-Sep-2024
+Study File Name	s_PSI-81.txt
+Comment[Acknowledgments]	
+Comment[Approach]	"MABE utilizes a multi-pronged approach to achieve its research objectives. The experiment combines a carefully designed experimental setup with a comprehensive data analysis strategy. Here's a breakdown of the key elements of the investigation approach:
+
+Experimental Setup:
+
+Microscale heater array: The experiment utilizes an array of 96 individually controlled platinum resistance heaters deposited on a quartz substrate.
+
+Constant temperature control: Each heater is maintained at a constant temperature, allowing for accurate quantification of substrate heat conduction and reducing the risk of heater burnout.
+
+Variable experimental conditions: The experiment manipulates key parameters such as bulk liquid subcooling, pressure, and heater size to study their influence on boiling.
+
+Multiple gravity levels: The experiment is designed to allow data acquisition in Earth gravity, lunar gravity, Martian gravity, and microgravity, enabling a comprehensive comparison of boiling behavior across different gravitational environments.
+
+High-speed video imaging: A high-speed digital camera captures images of the boiling process beneath the heater array, providing valuable insights into bubble dynamics.
+
+Interferometry: The experiment employs interferometry to measure temperature profiles around the vapor bubble, providing additional data for analysis.
+
+Data Acquisition and Analysis:
+
+Data Acquisition: Data is collected at a high frequency, capturing the instantaneous power dissipated by each heater, bulk fluid temperature, pressure, and acceleration.
+
+Data Processing: Raw data is converted into engineering units, synchronized, and analyzed to generate boiling curves, heat transfer maps, and other relevant data visualizations.
+
+Correlation with video and interferometry data: The heat transfer data is correlated with visual observations from the high-speed video and interferometry data to gain a deeper understanding of bubble behavior and heat transfer mechanisms.
+
+Analytical and Numerical Modeling: The experiment employs analytical and numerical models to simulate the boiling process and validate the experimental findings.
+
+Ground-Based Testing and Validation:
+
+Preliminary Engineering Model: A preliminary engineering model of the experiment is developed and tested on the KC-135 aircraft, providing essential validation of the design and data acquisition procedures.
+
+Calibration and Validation: The heater array is calibrated on the ground and recalibrated in flight to ensure accurate measurements.
+
+This investigation approach combines a sophisticated experimental setup with rigorous data analysis and modeling to provide a comprehensive understanding of boiling in microgravity."
+Comment[DOI]	10.60555/v2a2-t272
+Comment[Data Source Accession]	
+Comment[Data Source Link]	
+Comment[Experiment Hardware]	
+Comment[Experiment Hardware Link]	
+Comment[Flight Platform]	International Space Station (ISS)
+Comment[Funding]	
+Comment[Hypothesis]	This study will test three central hypotheses: (1) Bubble coalescence dominates heat transfer in microgravity, creating a large primary bubble that induces local dryout; (2) A transition between buoyancy-dominated and surface-tension-dominated boiling regimes occurs depending on the interplay between the heater size and the gravitational acceleration; (3) Heat transfer in the surface-tension-dominated regime shows minimal dependence on gravitational acceleration.
+Comment[Identifiers]	
+Comment[Investigation Acronym]	MABE
+Comment[Investigation End Date]	
+Comment[Investigation Start Date]	
+Comment[Managing NASA Center]	Glenn Research Center (GRC)
+Comment[Mission End]	
+Comment[Mission Link]	
+Comment[Mission Name]	
+Comment[Mission Start]	
+Comment[Objective]	"1. To characterize the boiling curve in a very low g-jitter environment: The experiment aims to determine the boiling curve in a microgravity environment with minimal gravitational disturbances (g-jitter). This objective is driven by the understanding that g-jitter can significantly influence bubble dynamics and, consequently, the heat transfer process. By minimizing g-jitter, the researchers hope to obtain a clearer picture of boiling behavior in a true microgravity environment.
+
+2. To understand the parameters governing the size of the primary bubble and develop a predictive model for it: A key objective is to identify the factors that determine the size of the primary bubble in microgravity. These parameters could include heater size, nucleation site density, subcooling, gravity level, fluid properties, superheated layer thickness, wall superheat, and surface tension. By understanding these parameters, the researchers aim to develop a model that can accurately predict the primary bubble size under different conditions.
+
+3. To investigate the mechanism of critical heat flux (CHF) in microgravity and its relationship to the primary bubble: The research aims to elucidate how CHF occurs in microgravity and to determine its relationship to the size and behavior of the primary bubble. CHF is a critical parameter in boiling, representing the maximum heat flux that can be transferred from a surface before a transition to film boiling occurs. Understanding the factors influencing CHF in microgravity is essential for the safe and efficient operation of space-based thermal systems.
+
+4. To determine the effect of heater size on the formation of the primary bubble and its impact on the boiling curve: MABE investigates the influence of heater size on boiling behavior. Two different heater array sizes are used, allowing the researchers to compare how heater size affects the formation of the primary bubble, the occurrence of dryout, and the shape of the boiling curve in microgravity."
+Comment[Project Identifier]	
+Comment[Project Link]	
+Comment[Project Title]	
+Comment[Project Type]	Microgravity Investigation
+Comment[Proposal Title]	
+Comment[Research Area]	Fluid Physics
+Comment[Research Impacts]	In microgravity, a bubble can cover an entire heater array instead of just a small area, resulting in burnout of components if local hot spots are present. The increased spatial resolution of these measurements will enable the extent of the dry spot to be measured along with the heat transfer from the liquid surrounding the dry spot. This technique can be applied to other areas including spray cooling, turbulence measurements and flow boiling. The proposed research has shown that transient conduction is the dominant heat transfer mechanism in boiling of refrigerants-like fluids. This research will provide insight into creating more efficient cooling systems on Earth.
+Comment[Space Program]	National Aeronautics and Space Administration (NASA)
+Comment[Study Grant Number]	
+Comment[SubResearch Area]	
+STUDY DESIGN DESCRIPTORS
+Study Design Type	MABE	microscale heater array	boiling	bubble dynamics
+Study Design Type Term Accession Number	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/
+Study Design Type Term Source REF	PSI	PSI	PSI	PSI
+STUDY PUBLICATIONS
+Study PubMed ID			19426316	19426315												19426315																						
+Study Publication DOI	10.1115/1.4006846	10.1016/j.ijheatfluidflow.2007.03.009	10.1111/j.1749-6632.2008.04331.x	10.1111/j.1749-6632.2008.04327.x	10.1115/HT2007-32516	10.1016/j.expthermflusci.2005.03.003					10.1115/HT-FED2004-56169	10.1115/HT-FED2004-56169	10.1016/j.expthermflusci.2005.03.003	10.1115/HT2012-58518	10.1115/IMECE2009-12624	10.1111/j.1749-6632.2008.04327.x	10.1115/IMECE2009-12624	10.1080/089161599269726	10.1016/S0017-9310(02)00108-4	10.1016/S0142-727X(02)00139-X	10.1615/MultScienTechn.v12.i3-4.40			10.1115/IMECE1997-0794		10.1063/1.1541287	10.2174/978160805080210901010053			10.2514/6.2002-3223	10.1115/1.2825991	10.1115/1.1385891		10.1115/IMECE2009-12530	10.1115/IHTC14-22657	10.1016/j.ijmultiphaseflow.2009.07.008	10.1115/IHTC14-22682	10.1115/1.4001635
+Study Publication Author List	Raj Rishi, Kim Jungho, McQuillen John	Sathyamurthi V., Banerjee D., Sakamoto H., Kim J.	Liu Zan, Herman Cila, Kim Jungho	Raj Rishi, Kim Jungho	Liu Zan, Herman Cila, Kim Jungho	Henry Christopher D., Kim Jungho, Chamberlain Brian, Hartman Thomas G.	J Kim	J Kim	J Kim	CD Henry, J Kim	Myers Jerry G., Hussey Sam W., Yee Glenda F., Yerramilli Vamsee K., Kim Jungho	Myers Jerry G., Hussey Sam W., Yee Glenda F., Yerramilli Vamsee K., Kim Jungho	Henry Christopher D., Kim Jungho, Chamberlain Brian, Hartman Thomas G.	Kommer Eric, Dessiatoun Serguei, Kim Jungho, Kim Tae Hoon, Solotych Valentin	Raj Rishi, Kim Jungho, McQuillen John	Raj Rishi, Kim Jungho	Raj Rishi, Kim Jungho, McQuillen John	Sungwon Bae, Moohwan Kim, Jungho Ki undefined	Kim Jungho, Benton John F, Wisniewski Derek	Kim Jungho, Benton John F	Yaddanapudi Nagaraja, Kim Jungho	J Kim	R DeLombard, JB McQuillen, D Chao	Rule Toby D., Kim Jungho	TD Rule, J Kim, TS Kalkur	Kim Jungho	DiMarco Paolo, Kim Jungho, Ohta Haruhiko	J Kim, J Benton, R Kucner	J Kim, TS Kalkur	Demiray Fatih, Kim Jungho	Rule T. D., Kim J.	Kim and Jungho, Benton John, McQuillen and John, Vickerman Mary	R Raj, J Kim, J McQuillen	Delgoshaei Payam, Kim Jungho	Delgoshaei Payam, Kim Jungho	Kim Jungho	Raj Rishi, Kim Jungho, McQuillen John, Sheredy William, Booth Wendell, Charpie James, Eggers Jeffrey, Funk Gregory, Funk Justin, Valentine Russell	Raj Rishi, Kim Jungho
+Study Publication Title	Pool Boiling Heat Transfer on the International Space Station: Experimental Results and Model Verification	Measurement of the fractal order of wall void fraction during nucleate boiling	Heat Transfer and Bubble Detachment in Subcooled Pool Boiling from a Downward‐Facing Microheater Array in a Nonuniform Electric Field	Thermocapillary Convection during Subcooled Boiling in Reduced Gravity Environments	Heat Transfer and Bubble Detachment in Subcooled Pool Boiling From a Microheater Array Under the Effect of a Nonuniform Electric Field	Heater size and heater aspect ratio effects on subcooled pool boiling heat transfer in low-g	Microgravity and Earth Gravity Boiling Heat Transfer Mechanisms: Investigations Using a Microheater Array	Gravity Effects on Boiling Heat Transfer: Investigations Using a Microheater Array	Phase Change Heat Transfer Mechanisms: Investigations Using a Microheater Array	Nucleate Pool Boiling Characteristics From a Flat Microheater Array in Low Gravity	Time and Space Resolved Wall Temperature Measurements During Nucleate Boiling With Constant Heat Flux Boundary Conditions	Time and Space Resolved Wall Temperature Measurements During Nucleate Boiling With Constant Heat Flux Boundary Conditions	Heater size and heater aspect ratio effects on subcooled pool boiling heat transfer in low-g	Investigation of Flow Boiling Heat Transfer in Microgravity via Infrared Thermometry	Gravity Scaling Parameter for Pool Boiling Heat Transfer	Thermocapillary Convection during Subcooled Boiling in Reduced Gravity Environments	Gravity Scaling Parameter for Pool Boiling Heat Transfer	IMPROVED TECHNIQUE TO MEASURE TIMEAND SPACE-RESOLVED HEAT TRANSFER UNDER SINGLE BUBBLES DURING SATURATED POOL BOILING OF FC-72	Pool boiling heat transfer on small heaters: effect of gravity and subcooling	Highly subcooled pool boiling heat transfer at various gravity levels	SINGLE BUBBLE HEAT TRANSFER IN SATURATED POOL BOILING OF FC-72	Review of Reduced Gravity Boiling Heat Transfer: US Research	Boiling Experiment Facility for Heat Transfer Studies in Microgravity	Wall Heat Transfer Measurements in Saturated Pool Boiling of FC-72 on a Small Heated Area	Design, Construction, and Qualification of a Microscale Heater Array for Use in Boiling Heat Transfer	Heater Size and Gravity Effects on Pool Boiling Heat Transfer	Boiling Heat Transfer in Reduced Gravity Environments	Subcooled Pool Boiling Heat Transfer Mechanisms in Microgravity: Terrier-Improved Orion Sounding Rocket Experiment	Development of a Surface Array of Microscale Heaters to Measure Wall Heat Transfer Underneath Single Bubbles in Nucleate Pool Boiling	Heat Transfer from a Single Bubble Nucleation Site During Saturated Pool Boiling of FC-72 Using an Array of 100 Micron Heaters	Heat Transfer Behavior on Small Horizontal Heaters During Pool Boiling of FC-72	SUBCOOLED POOL BOILING HEAT TRANSFER IN MICROGRAVITY AND Hi-g	Gravity Scaling Parameter for Pool Boiling Heat Transfer	Microscale Heat Transfer Measurements of the Lateral Merger During Subcooled Pool Boiling of Pentane	Microscale Heat Transfer Measurements During Subcooled Pool Boiling of Pentane: Effect of Bubble Dynamics	Review of nucleate pool boiling bubble heat transfer mechanisms	Heater Size and Orientation Effect on Pool Boiling of FC-72	Heater Size and Gravity Based Pool Boiling Regime Map: Transition Criteria Between Buoyancy and Surface Tension Dominated Boiling
+Study Publication Status	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published
+Study Publication Status Term Accession Number	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796
+Study Publication Status Term Source REF	EFO	EFO	EFO	EFO	EFO	EFO					EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO			EFO	EFO	EFO	EFO			EFO	EFO	EFO		EFO	EFO	EFO	EFO	EFO
+Comment[Study Publication Link]	http://dx.doi.org/10.1115/1.4006846	http://dx.doi.org/10.1016/j.ijheatfluidflow.2007.03.009	http://dx.doi.org/10.1111/j.1749-6632.2008.04331.x	http://dx.doi.org/10.1111/j.1749-6632.2008.04327.x	http://dx.doi.org/10.1115/ht2007-32516	http://dx.doi.org/10.1016/j.expthermflusci.2005.03.003					http://dx.doi.org/10.1115/ht-fed2004-56169	http://dx.doi.org/10.1115/ht-fed2004-56169	http://dx.doi.org/10.1016/j.expthermflusci.2005.03.003	http://dx.doi.org/10.1115/ht2012-58518	http://dx.doi.org/10.1115/imece2009-12624	http://dx.doi.org/10.1111/j.1749-6632.2008.04327.x	http://dx.doi.org/10.1115/imece2009-12624	http://dx.doi.org/10.1080/089161599269726	http://dx.doi.org/10.1016/s0017-9310(02)00108-4	http://dx.doi.org/10.1016/s0142-727x(02)00139-x	http://dx.doi.org/10.1615/multscientechn.v12.i3-4.40		https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20080015838.pdf	http://dx.doi.org/10.1115/imece1997-0794	https://ntrs.nasa.gov/api/citations/19980148003/downloads/19980148003.pdf	http://dx.doi.org/10.1063/1.1541287	http://dx.doi.org/10.2174/978160805080210901010053	https://archive.org/details/nasa_techdoc_20010020434	https://www.osti.gov/biblio/435783	http://dx.doi.org/10.2514/6.2002-3223	http://dx.doi.org/10.1115/1.2825991	http://dx.doi.org/10.1115/1.1385891	http://proceedings.asmedigitalcollection.asme.org/proceeding.aspx?articleid=1641276	http://dx.doi.org/10.1115/imece2009-12530	http://dx.doi.org/10.1115/ihtc14-22657	http://dx.doi.org/10.1016/j.ijmultiphaseflow.2009.07.008	http://dx.doi.org/10.1115/ihtc14-22682	http://dx.doi.org/10.1115/1.4001635
+STUDY FACTORS
+Study Factor Name
+Study Factor Type
+Study Factor Type Term Accession Number
+Study Factor Type Term Source REF
+STUDY ASSAYS
+Study Assay File Name
+Study Assay Measurement Type
+Study Assay Measurement Type Term Accession Number
+Study Assay Measurement Type Term Source REF
+Study Assay Technology Type
+Study Assay Technology Type Term Accession Number
+Study Assay Technology Type Term Source REF
+Study Assay Technology Platform
+STUDY PROTOCOLS
+Study Protocol Name
+Study Protocol Type
+Study Protocol Type Term Accession Number
+Study Protocol Type Term Source REF
+Study Protocol Description
+Study Protocol URI
+Study Protocol Version
+Study Protocol Parameters Name
+Study Protocol Parameters Name Term Accession Number
+Study Protocol Parameters Name Term Source REF
+Study Protocol Components Name
+Study Protocol Components Type
+Study Protocol Components Type Term Accession Number
+Study Protocol Components Type Term Source REF
+STUDY CONTACTS
+Study Person Last Name	Kim	McQuillen
+Study Person First Name	Jungho H.	John
+Study Person Mid Initials		
+Study Person Email	kimjh@umd.edu	john.b.mcquillen@nasa.gov
+Study Person Phone		
+Study Person Fax		
+Study Person Address		
+Study Person Affiliation	University of Maryland	NASA GRC
+Study Person Roles	Principal Investigator (PI)	Project Scientist
+Study Person Roles Term Accession Number	Principal Investigator (PI)	Project Scientist
+Study Person Roles Term Source REF		
+Comment[Study Person REF]		
