@@ -13,7 +13,7 @@ Un panel de control que vigila cada zona del hábitat (módulo de mando, laborat
 - Cada zona muestra su **riesgo de combustión sostenida** si algo prende, calculado en cada lectura con las pruebas reales de PSI más parecidas a sus condiciones y a su material principal.
 - Las alertas se agrupan en los tres pilares: **prevenir** (O₂ fuera de consigna, subida de riesgo), **detectar** (señal temprana de CO, humo o calor; ventilación detenida, que en microgravedad impide que el humo llegue a los detectores) y **extinguir** (cortar la ventilación, diluir el O₂ hasta el umbral que dan los datos, agente recomendado).
 - Hábitats: base lunar (8.2 psi, 34 % O₂, 0.17 g), rover presurizado lunar (10.2 psi, 30 % O₂), estación espacial (aire, 0 g) y base en Marte.
-- Botones para simular incidentes: fuga de O₂ de un traje en la esclusa, fallo de ventilación en dormitorios y cable sobrecalentado en soporte vital.
+- 8 incidentes simulados: fuga de O₂ de un traje en la esclusa, fallo de ventilación en dormitorios, cable sobrecalentado en soporte vital, cortocircuito en una pantalla del módulo de mando, grasa sobrecalentada en la cocina, combustión latente en el almacén, microfuga de presión en el laboratorio y fallo del regulador de O₂ en todo el hábitat.
 
 Las lecturas de los sensores son **simuladas** (no hay datos de sensores reales en PSI). El riesgo y las recomendaciones salen de los datos reales.
 

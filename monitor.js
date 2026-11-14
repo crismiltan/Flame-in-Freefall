@@ -54,11 +54,19 @@ const ZONES = [
   { id: "esclusa", name: "Esclusa", fuel: "nomex", what: "trajes y tejidos de Nomex", flow: 6, x: 660, y: 250, w: 120, h: 150 },
 ];
 
+// apply: cambia la consigna de los sensores. fire: foco térmico que crece con el tiempo (s desde que empieza).
 const INCIDENTS = [
-  { id: "o2leak", zone: "esclusa", label: "Fuga de O₂ de un traje en la esclusa" },
-  { id: "ventfail", zone: "dorm", label: "Fallo de ventilación en dormitorios" },
-  { id: "overheat", zone: "soporte", label: "Cable sobrecalentado en soporte vital" },
+  { id: "o2leak", zone: "esclusa", label: "Fuga de O₂ de un traje en la esclusa", apply: (T, H) => { T.o2 = Math.min(40, H.o2 + 6); } },
+  { id: "ventfail", zone: "dorm", label: "Fallo de ventilación en dormitorios", apply: (T) => { T.flow = 0; } },
+  { id: "overheat", zone: "soporte", label: "Cable sobrecalentado en soporte vital", fire: { t: 1.6, tMax: 95, co: 0.08, coMax: 400, sm: 0.25, smMax: 900 } },
+  { id: "short", zone: "mando", label: "Cortocircuito en una pantalla del módulo de mando", fire: { t: 2.2, tMax: 110, co: 0.1, coMax: 450, sm: 0.35, smMax: 1000 } },
+  { id: "galley", zone: "cocina", label: "Grasa sobrecalentada en la cocina", fire: { t: 3, tMax: 140, co: 0.05, coMax: 300, sm: 0.6, smMax: 1200 } },
+  { id: "smolder", zone: "almacen", label: "Combustión latente en el almacén", fire: { t: 0.15, tMax: 35, co: 0.02, coMax: 120, sm: 0.012, smMax: 70 } },
+  // Con una fuga, el control repone O2 para mantener su presión parcial: baja la presión y sube el % de O2.
+  { id: "depress", zone: "lab", label: "Microfuga de presión en el laboratorio", apply: (T, H) => { T.p = H.p * 0.82; T.o2 = Math.min(40, H.o2 / 0.82); } },
+  { id: "o2reg", zone: "all", label: "Fallo del regulador de O₂ (todo el hábitat)", apply: (T, H) => { T.o2 = H.o2 + 2.5; } },
 ];
+const incZone = (inc) => inc.zone === "all" ? "Todo el hábitat" : ZONES.find((z) => z.id === inc.zone).name;
 
 // Umbrales de la demo (configurables). El CO mediano de las pruebas de BASS-II con llama fue de ~45 ppm.
 const TH = { coWarn: 15, coAlarm: 50, smokeWarn: 35, smokeAlarm: 150, tWarn: 45, tAlarm: 70, o2Dev: 1.5, riskJump: 0.15 };
@@ -100,15 +108,17 @@ function step() {
   M.t += 1;
   ZONES.forEach((z) => {
     const Z = M.zones[z.id], s = Z.s;
-    let o2T = H.o2, flowT = z.flow, tT = 22, coT = 1, smokeT = 5;
-    if (M.active.has("o2leak") && z.id === "esclusa") o2T = Math.min(40, H.o2 + 6);
-    if (M.active.has("ventfail") && z.id === "dorm") flowT = 0;
-    if (M.active.has("overheat") && z.id === "soporte") {
-      Z.heat = (Z.heat || 0) + 1;
-      tT = Math.min(95, 22 + Z.heat * 1.6); coT = Math.min(400, Z.heat * Z.heat * 0.08); smokeT = Math.min(900, 5 + Z.heat * Z.heat * 0.25);
-    } else if (z.id === "soporte") Z.heat = 0;
+    const T = { o2: H.o2, p: H.p, flow: z.flow, temp: 22, co: 1, smoke: 5 };
+    const incs = INCIDENTS.filter((i) => M.active.has(i.id) && (i.zone === z.id || i.zone === "all"));
+    incs.forEach((i) => i.apply && i.apply(T, H));
+    const f = incs.find((i) => i.fire)?.fire;
+    if (f) {
+      const h = Z.heat = (Z.heat || 0) + 1;
+      T.temp = Math.min(f.tMax, 22 + h * f.t); T.co = Math.min(f.coMax, 1 + h * h * f.co); T.smoke = Math.min(f.smMax, 5 + h * h * f.sm);
+    } else Z.heat = 0;
+    let o2T = T.o2, flowT = T.flow, tT = T.temp, coT = T.co, smokeT = T.smoke;
     s.o2 = Math.max(0, approach(s.o2, o2T, 0.12) + rnd(0.05));
-    s.p = approach(s.p, H.p, 0.2) + rnd(0.1);
+    s.p = approach(s.p, T.p, 0.2) + rnd(0.1);
     s.flow = Math.max(0, approach(s.flow, flowT, 0.3) + rnd(0.2));
     s.temp = approach(s.temp, tT, 0.25) + rnd(0.15);
     s.co = Math.max(0, approach(s.co, coT, 0.3) + rnd(0.3));
@@ -134,6 +144,9 @@ function classify(z, Z) {
   if (s.o2 > H.o2 + TH.o2Dev)
     msgs.push({ lvl: "warn", pillar: "Prevenir", text: `O₂ en ${fmt(s.o2)} %, por encima de la consigna (${fmt(H.o2)} %).`,
       act: `Cerrar el suministro de O₂ del módulo y diluir con N₂. Riesgo de combustión sostenida: ${pct(Z.base)} en consigna, ${pct(E.risk)} ahora.` });
+  if (s.p < H.p - 5)
+    msgs.push({ lvl: "warn", pillar: "Prevenir", text: `Presión bajando: ${fmt(s.p)} kPa (consigna ${fmt(H.p)} kPa).`,
+      act: "Posible fuga. Cerrar la escotilla del módulo. Si el sistema repone O₂ para mantener la presión parcial, el % de O₂ sube y con él el riesgo de incendio." });
   if (z.flow > 2 && s.flow < 1)
     msgs.push({ lvl: "warn", pillar: "Detectar", text: `Ventilación detenida (${fmt(s.flow)} cm/s).`,
       act: H.g === 0 ? "En microgravedad el humo no llegará a los detectores. Revisar la zona con un sensor portátil. Sin flujo, las llamas tienden a apagarse (BASS-II), pero el CO se acumula." : "Con gravedad la flotación mantiene algo de flujo. Restablecer la ventilación y revisar la zona." });
@@ -201,8 +214,8 @@ function initMonitor() {
     const id = b.dataset.i;
     if (id === "reset") { $("mIncidents").querySelectorAll(".on").forEach((x) => x.classList.remove("on")); resetZones(); renderMonitor(); return; }
     const inc = INCIDENTS.find((i) => i.id === id);
-    if (M.active.has(id)) { M.active.delete(id); b.classList.remove("on"); log("info", ZONES.find((z) => z.id === inc.zone).name, `Fin del incidente simulado: ${inc.label}.`); }
-    else { M.active.add(id); b.classList.add("on"); M.sel = inc.zone; log("info", ZONES.find((z) => z.id === inc.zone).name, `Incidente simulado: ${inc.label}.`); }
+    if (M.active.has(id)) { M.active.delete(id); b.classList.remove("on"); log("info", incZone(inc), `Fin del incidente simulado: ${inc.label}.`); }
+    else { M.active.add(id); b.classList.add("on"); if (inc.zone !== "all") M.sel = inc.zone; log("info", incZone(inc), `Incidente simulado: ${inc.label}.`); }
     renderMonitor();
   }));
   resetZones();

@@ -138,3 +138,5 @@ table.compact td, table.compact th { font-size: .85rem; vertical-align: top; }
 td.mok { color: var(--low); font-weight: 600; }
 td.mburn { color: var(--high); font-weight: 600; }
 .matline { margin-top: .4rem; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.top { justify-content: flex-start; padding: .6rem max(16px, calc((100% - 1200px) / 2 + 16px)); }
