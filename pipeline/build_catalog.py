@@ -220,7 +220,7 @@ def efield():
 
 
 PSI_IDS = {"SAFFIRE": ["PSI-98", "PSI-99", "PSI-100"], "BASS-II": ["PSI-25"], "FLEX": ["PSI-69"],
-           "SAME": ["PSI-101"], "E-FIELD": ["PSI-22"]}
+           "SAME": ["PSI-101"], "E-FIELD": ["PSI-22"], "BASS": ["PSI-26"], "CFI-G": ["PSI-159"]}
 META_FIELDS = {"Study Title": "title", "Comment[Investigation Acronym]": "acronym",
                "Comment[Approach]": "approach", "Comment[Hypothesis]": "hypothesis",
                "Comment[Objective]": "objective", "Comment[Research Impacts]": "research_impacts",
