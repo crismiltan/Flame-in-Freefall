@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flame in Freefall</title>
+<meta name="description" content="Simulador de riesgo de incendio en hábitats espaciales basado en datos de combustión en microgravedad de NASA PSI.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <span class="logo" aria-hidden="true">🔥</span>
+    <div>
+      <h1>Flame in Freefall</h1>
+      <p class="sub">Prevenir, detectar y extinguir incendios en hábitats espaciales con datos reales de la NASA</p>
+    </div>
+  </div>
+  <nav class="tabs" role="tablist">
+    <button role="tab" class="tab active" data-tab="sim">Simulador</button>
+    <button role="tab" class="tab" data-tab="exp">Experimentos</button>
+    <button role="tab" class="tab" data-tab="about">Método</button>
+  </nav>
+</header>
+
+<main>
+<section id="sim" class="panel active">
+  <form id="scenario" class="card inputs" onsubmit="return false">
+    <h2>1. Define el escenario</h2>
+    <label>Entorno
+      <select id="env"></select>
+    </label>
+    <p id="envNote" class="hint"></p>
+    <label>Material o combustible
+      <select id="fuel"></select>
+    </label>
+    <label>Oxígeno: <b id="o2v"></b> %
+      <input type="range" id="o2" min="10" max="40" step="0.5">
+    </label>
+    <label>Presión: <b id="pv"></b> kPa
+      <input type="range" id="p" min="40" max="310" step="1">
+    </label>
+    <label>Ventilación forzada: <b id="flowv"></b> cm/s
+      <input type="range" id="flow" min="0" max="30" step="0.5">
+    </label>
+    <label>Gravedad
+      <select id="g">
+        <option value="0">Microgravedad (0 g)</option>
+        <option value="0.165">Luna (0.17 g)</option>
+        <option value="0.38">Marte (0.38 g)</option>
+        <option value="1">Tierra (1 g)</option>
+      </select>
+    </label>
+    <p id="gNote" class="hint"></p>
+  </form>
+
+  <div class="results">
+    <div class="verdict card" id="verdict"></div>
+    <div class="pillars">
+      <article class="card pillar" id="prevent"></article>
+      <article class="card pillar" id="detect"></article>
+      <article class="card pillar" id="extinguish"></article>
+    </div>
+    <div class="card">
+      <h3>Dónde cae tu escenario dentro de los datos</h3>
+      <div id="chart" class="chartwrap"></div>
+      <div id="legend" class="legend"></div>
+    </div>
+    <div class="card">
+      <h3>Evidencia: las pruebas más parecidas</h3>
+      <div class="tablewrap"><table id="evidence"></table></div>
+    </div>
+  </div>
+</section>
+
+<section id="exp" class="panel">
+  <div class="card">
+    <h2>Ranking de relevancia para hábitats</h2>
+    <p class="hint">Ordenado por relevancia para naves, estaciones y bases (1 a 5). Se excluyen motores y propelentes. Los resúmenes los ha generado IA a partir de los metadatos de PSI.</p>
+    <div id="ranking" class="ranking"></div>
+  </div>
+  <div class="card">
+    <h2>Comparación entre experimentos</h2>
+    <div class="tablewrap"><table id="compare"></table></div>
+  </div>
+</section>
+
+<section id="about" class="panel">
+  <div class="card prose" id="method"></div>
+</section>
+</main>
+
+<footer>Datos: NASA Physical Science Informatics (psi.nasa.gov). Demo para NASA Space Apps Challenge 2026. No es una herramienta certificada de seguridad.</footer>
+<script src="app.js"></script>
+</body>
+</html>
