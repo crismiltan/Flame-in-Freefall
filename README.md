@@ -1,10 +1,10 @@
 # Flame in Freefall
 
-Simulador web para **prevenir, detectar y extinguir** incendios en hábitats espaciales (ISS, cápsulas de exploración, Luna y Marte), basado en 857 pruebas reales de combustión en microgravedad de [NASA Physical Science Informatics](https://psi.nasa.gov/).
+Simulador web para **prevenir**, **detectar** y **extinguir** incendios en hábitats espaciales (ISS, cápsulas de exploración, Luna y Marte), basado en 857 pruebas reales de combustión en microgravedad de [NASA Physical Science Informatics](https://psi.nasa.gov/).
 
 Proyecto para el reto *Flame in Freefall* del NASA Space Apps Challenge 2026.
 
-## Qué hace
+## ¿Qué hace?
 
 1. Eliges un entorno y un material (tejido de algodón, PMMA, Nomex, silicona, combustibles líquidos o gases), o ajustas a mano O₂, presión, ventilación y gravedad.
 2. La herramienta busca las 15 pruebas más parecidas del catálogo y calcula el riesgo de que el fuego se mantenga.
