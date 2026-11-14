@@ -269,6 +269,10 @@ function renderExperiments() {
     rows.map(([k, fn]) => `<tr><th>${k}</th>${sorted.map((e) => `<td>${fn(e)}</td>`).join("")}</tr>`).join("");
   $("hwgroups").innerHTML = `<tr><th>Equipo</th><th>En el catálogo</th><th>Otras en PSI</th></tr>` +
     HW_GROUPS.map(([h, a, b]) => `<tr><td>${h}</td><td>${a}</td><td>${b}</td></tr>`).join("");
+  const cols = [["ISS", 21], ["Marte", 26.5], ["Rover", 30], ["Luna", 34]];
+  const cell = (st) => st === "ok" ? `<td class="mok">se apaga</td>` : st === "burn" ? `<td class="mburn">arde</td>` : `<td class="hint">sin dato</td>`;
+  $("materials").innerHTML = `<tr><th>Material</th><th>Tipo</th><th>Se apaga solo hasta</th>${cols.map(([n, o]) => `<th>${n} ${o} %</th>`).join("")}</tr>` +
+    MATERIALS.map((m) => `<tr><td>${m.name}</td><td>${m.type}</td><td>${mocText(m)}</td>${cols.map(([, o]) => cell(matAt(m, o))).join("")}</tr>`).join("");
 }
 
 

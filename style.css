@@ -134,3 +134,7 @@ table.compact td, table.compact th { font-size: .85rem; vertical-align: top; }
 .plink { font-size: .8rem; font-weight: 600; padding: .2rem .6rem; border-radius: 999px; border: 1px solid var(--accent); text-decoration: none; }
 .plink:hover { background: var(--accent-soft); }
 [hidden] { display: none !important; }
+
+td.mok { color: var(--low); font-weight: 600; }
+td.mburn { color: var(--high); font-weight: 600; }
+.matline { margin-top: .4rem; }

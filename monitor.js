@@ -9,6 +9,41 @@ const HABITATS = {
 };
 
 // Zonas del plano (viewBox 800×420) con el material combustible dominante y su ventilación nominal.
+// Umbrales de O2 de materiales de cabina (NASA WSTF, Hirsch et al., NTRS 20070018178, Tabla 2).
+// Ensayo NASA-STD-6001 Test 1 en tierra (1 g, aire en reposo) a 70,1 kPa. moc: O2 máximo (%) al que se apaga solo.
+// lt: "< valor" (ardió en 30 %), gt: "> valor" (no ardió en 40 %).
+const MATERIALS = [
+  ["Lexan 6006", "Plástico rígido", 30, "lt"], ["Lexan F-6000", "Plástico rígido", 39], ["Kydex 100", "Plástico rígido", 33],
+  ["Ultem 1668", "Plástico rígido", 39], ["Ultem 2300", "Plástico rígido", 42], ["Ultem 2310", "Plástico rígido", 44],
+  ["Ultem CRS5301", "Plástico rígido", 44], ["SYGEF (PVDF)", "Plástico rígido", 34], ["Torlon 4203", "Plástico rígido", 40, "gt"],
+  ["P1700 (polisulfona)", "Plástico rígido", 29], ["Ryton R-4-06", "Plástico rígido", 40, "gt"],
+  ["Nomex HT90-40, 1 capa", "Tejido", 30, "lt"], ["Nomex HT90-40, 2 capas (15°)", "Tejido", 36], ["Armalon TG4060", "Tejido", 40, "gt"],
+  ["Grafito/epoxi HMF 5-322", "Composite", 99.5, "gt"], ["Bismaleimida/grafito", "Composite", 99.5, "gt"], ["PEEK con vidrio", "Composite", 45],
+  ["Poliimida/vidrio FL 74-24", "Composite", 99.5, "gt"], ["Laminado de cobre 307404", "Composite", 40, "gt"],
+  ["Grafito/epoxi CTD-528", "Composite", 30, "lt"], ["Grafito/epoxi CTD-112P", "Composite", 30, "lt"], ["Melamina/vidrio G-9", "Composite", 36],
+  ["Zotek F30 (espuma)", "Espuma", 45], ["Solimide AC-530 (espuma)", "Espuma", 33],
+].map(([name, type, moc, q]) => ({ name, type, moc, q }));
+const mocText = (m) => (m.q === "lt" ? "< " : m.q === "gt" ? "> " : "") + m.moc + " %";
+// "ok" se apaga sola, "burn" arde, "?" sin datos a ese O2
+const matAt = (m, o2) => m.q === "lt" ? (o2 >= m.moc ? "burn" : "?") : m.q === "gt" ? (o2 <= m.moc ? "ok" : "?") : (o2 <= m.moc ? "ok" : "burn");
+// Material del ensayo que corresponde a cada zona y alternativa que aguanta más O2
+const ZONE_MAT = {
+  esclusa: { now: "Nomex HT90-40, 1 capa", alt: ["Armalon TG4060"] },
+  mando: { alt: ["Lexan F-6000", "Ultem 1668"] }, lab: { alt: ["Lexan F-6000", "Ultem 1668"] },
+};
+function matLine(zid, o2) {
+  const zm = ZONE_MAT[zid]; if (!zm) return "";
+  const get = (n) => MATERIALS.find((m) => m.name === n);
+  const alts = zm.alt.map(get).filter((m) => matAt(m, o2) === "ok").map((m) => `${m.name} (${mocText(m)})`);
+  let t = "";
+  if (zm.now) { const m = get(zm.now), st = matAt(m, o2);
+    t = st === "burn" ? `<b>${m.name} arde con ${fmt(o2, 1)} % de O₂</b> en el ensayo de tierra (${m.q === "lt" ? `ya ardió con ${m.moc} %` : `se apaga solo hasta ${mocText(m)}`}).` :
+        st === "ok" ? `${m.name} se apaga solo con este O₂ en el ensayo de tierra.` : `${m.name}: sin ensayo a este O₂.`; }
+  else t = "El PMMA no está en el ensayo de materiales a O₂ alto.";
+  if (alts.length) t += ` Alternativas que se apagan solas: ${alts.join(", ")}.`;
+  return `<p class="hint matline">Material (NASA WSTF, 1 g): ${t}</p>`;
+}
+
 const ZONES = [
   { id: "mando", name: "Módulo de mando", fuel: "pmma", what: "paneles y pantallas de PMMA", flow: 8, x: 20, y: 20, w: 230, h: 150 },
   { id: "lab", name: "Laboratorio", fuel: "pmma", what: "equipos y carcasas de PMMA", flow: 10, x: 270, y: 20, w: 230, h: 150 },
@@ -151,6 +186,7 @@ function renderMonitor() {
     <span class="chip lvl-${lc}">${lt}</span></div>
     <div class="tiles">${SENSORS.map((S) => `<div class="tile"><span class="tl">${S.label}</span><b>${fmt(Z.s[S.k], S.d)}</b> <span class="tu">${S.unit}</span>${spark(Z.hist, S.k)}</div>`).join("")}</div>
     <p class="riskline">Probabilidad de incendio sostenido (prende y se mantiene): <b>${pct(Z.risk)}</b> (normal ${pct(Z.base)}), según las ${Z.E.r.near.length} pruebas PSI más parecidas.</p>
+    ${matLine(z.id, HABITATS[M.hab].o2)}
     ${Z.msgs.length ? Z.msgs.map((m) => `<div class="action lvl-${LVL[m.lvl][1]}"><p><b>${m.pillar}:</b> ${m.text}</p><p>${m.act}</p></div>`).join("") : `<div class="action lvl-low"><p><b>Sin incidencias.</b> Todas las lecturas están dentro de los márgenes.</p></div>`}`;
   // Registro
   $("mLog").innerHTML = M.log.map((l) => `<tr><td>${l.time}</td><td><span class="dot" style="background:var(--${LVL[l.lvl][1]})"></span>${LVL[l.lvl][0]}</td><td>${l.zone}</td><td>${l.text}</td></tr>`).join("");

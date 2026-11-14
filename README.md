@@ -45,6 +45,12 @@ Las lecturas de los sensores son **simuladas** (no hay datos de sensores reales 
 
 Las tablas originales están en `pipeline/raw/`. `python pipeline/build_catalog.py` regenera el catálogo unificado (`tests.csv`, `tests.json`, `experiments.json`). Las decisiones de limpieza están en `pipeline/README.md`.
 
+### Materiales a O₂ alto (ensayo en tierra)
+
+`data/materials_moc.csv` recoge la Tabla 2 de Hirsch et al., *Oxygen Concentration Flammability Thresholds of Selected Aerospace Materials Considered for the Constellation Program* (NASA WSTF, [NTRS 20070018178](https://ntrs.nasa.gov/citations/20070018178)). Da el O₂ máximo al que se apagan solos 24 materiales de cabina, medido a 70,1 kPa con el ensayo NASA-STD-6001 Test 1. La pestaña Experimentos lo muestra frente al O₂ de cada hábitat, y el Monitor lo usa para avisar del material de cada zona y proponer alternativas.
+
+No entra en el motor de riesgo, por tres motivos: es un ensayo en 1 g sin flujo, son materiales distintos a los de PSI y solo da un umbral por material, no pruebas individuales.
+
 ## Precisión del motor
 
 Validación cruzada "dejando una fuera" sobre las 592 pruebas con resultado conocido: cada prueba se predice con las demás (`node pipeline/eval/validacion_cruzada.js`).
