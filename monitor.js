@@ -161,7 +161,7 @@ function log(lvl, zone, text) {
   M.log.unshift({ time: `${mm}:${ss}`, lvl, zone, text }); M.log = M.log.slice(0, 40);
 }
 
-const LVL = { ok: ["Normal", "low"], warn: ["Warning", "mid"], alarm: ["Alarm", "high"], info: ["Info", "noign"] };
+const LVL = { ok: ["Normal", "ok"], warn: ["Warning", "mid"], alarm: ["Alarm", "high"], info: ["Info", "noign"] };
 
 function spark(hist, k) {
   if (hist.length < 2) return "";
@@ -175,7 +175,7 @@ function renderMonitor() {
   $("mClock").textContent = `T+${mm}:${ss}`;
   const counts = { ok: 0, warn: 0, alarm: 0 };
   ZONES.forEach((z) => counts[M.zones[z.id].level]++);
-  $("mSummary").innerHTML = `<span class="chip lvl-low">${counts.ok} normal</span><span class="chip lvl-mid">${counts.warn} warning</span><span class="chip lvl-high">${counts.alarm} alarm</span>`;
+  $("mSummary").innerHTML = `<span class="chip lvl-ok">${counts.ok} normal</span><span class="chip lvl-mid">${counts.warn} warning</span><span class="chip lvl-high">${counts.alarm} alarm</span>`;
   // Map
   let svg = `<rect x="20" y="180" width="760" height="60" rx="8" class="corridor"/><text x="400" y="216" text-anchor="middle" class="zlabel muted">Corridor</text>`;
   ZONES.forEach((z) => {
@@ -183,7 +183,7 @@ function renderMonitor() {
     svg += `<g class="zone ${z.id === M.sel ? "sel" : ""}" data-z="${z.id}" tabindex="0" role="button" aria-label="${z.name}: ${lt}">
       <rect x="${z.x}" y="${z.y}" width="${z.w}" height="${z.h}" rx="10" style="fill:var(--${lc}-bg);stroke:var(--${lc})"/>
       <text x="${z.x + 14}" y="${z.y + 30}" class="zlabel">${z.name}</text>
-      <text x="${z.x + 14}" y="${z.y + 62}" class="zrisk" style="fill:var(--${lc})">${pct(Z.risk)}</text>
+      <text x="${z.x + 14}" y="${z.y + 62}" class="zrisk" style="fill:var(--${Z.level === "ok" ? "ink" : lc})">${pct(Z.risk)}</text>
       <text x="${z.x + 14}" y="${z.y + 86}" class="zsub">fire probability</text>
       <text x="${z.x + 14}" y="${z.y + z.h - 16}" class="zstate" style="fill:var(--${lc})">● ${lt}</text></g>`;
   });
@@ -199,7 +199,7 @@ function renderMonitor() {
     <div class="tiles">${SENSORS.map((S) => `<div class="tile"><span class="tl">${S.label}</span><b>${fmt(Z.s[S.k], S.d)}</b> <span class="tu">${S.unit}</span>${spark(Z.hist, S.k)}</div>`).join("")}</div>
     <p class="riskline">Sustained fire probability (ignites and keeps burning): <b>${pct(Z.risk)}</b> (normal ${pct(Z.base)}), based on the ${Z.E.r.near.length} closest PSI tests.</p>
     ${matLine(z.id, HABITATS[M.hab].o2)}
-    ${Z.msgs.length ? Z.msgs.map((m) => `<div class="action lvl-${LVL[m.lvl][1]}"><p><b>${m.pillar}:</b> ${m.text}</p><p>${m.act}</p></div>`).join("") : `<div class="action lvl-low"><p><b>No issues.</b> All readings are within limits.</p></div>`}`;
+    ${Z.msgs.length ? Z.msgs.map((m) => `<div class="action lvl-${LVL[m.lvl][1]}"><p><b>${m.pillar}:</b> ${m.text}</p><p>${m.act}</p></div>`).join("") : `<div class="action lvl-ok"><p><b>No issues.</b> All readings are within limits.</p></div>`}`;
   // Log
   $("mLog").innerHTML = M.log.map((l) => `<tr><td>${l.time}</td><td><span class="dot" style="background:var(--${LVL[l.lvl][1]})"></span>${LVL[l.lvl][0]}</td><td>${l.zone}</td><td>${l.text}</td></tr>`).join("");
 }

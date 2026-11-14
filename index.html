@@ -11,9 +11,9 @@
 <header class="top">
   <h1 class="sr-only">Flame in Freefall</h1>
   <nav class="tabs" role="tablist">
-    <button role="tab" class="tab active" data-tab="mon">Monitor</button>
-    <button role="tab" class="tab" data-tab="sim">Simulator</button>
     <button role="tab" class="tab" data-tab="exp">Experiments</button>
+    <button role="tab" class="tab" data-tab="sim">Simulator</button>
+    <button role="tab" class="tab active" data-tab="mon">Monitor</button>
   </nav>
 </header>
 
@@ -23,7 +23,6 @@
     <label>Habitat <select id="mHab"></select></label>
     <span id="mClock" class="clock">T+00:00</span>
     <span class="badge">SIMULATED DATA</span>
-    <div id="mSummary" class="msum"></div>
   </div>
   <div class="card">
     <h2>Simulate an incident</h2>
@@ -31,7 +30,7 @@
     <div id="mIncidents" class="incidents"></div>
   </div>
   <div class="mgrid">
-    <div class="card"><h2>Habitat map</h2><div id="mMap" class="map"></div></div>
+    <div class="card"><div class="mhead"><h2>Habitat map</h2><div id="mSummary" class="msum"></div></div><div id="mMap" class="map"></div></div>
     <div class="card" id="mDetail"></div>
   </div>
   <div class="card">
@@ -95,6 +94,12 @@
 <section id="exp" class="panel">
   <div class="card">
     <h2>The most useful experiments for habitats</h2>
+    <div class="filters" id="expFilter" role="group" aria-label="Filter by pillar">
+      <button type="button" class="fbtn on" data-f="">All</button>
+      <button type="button" class="fbtn" data-f="prevencion">🛡️ Prevention</button>
+      <button type="button" class="fbtn" data-f="deteccion">🔎 Detection</button>
+      <button type="button" class="fbtn" data-f="extincion">🧯 Extinction</button>
+    </div>
     <p class="hint">★ = relevance for spacecraft, stations and bases. AI-generated summaries based on PSI.</p>
     <div id="ranking" class="ranking"></div>
   </div>

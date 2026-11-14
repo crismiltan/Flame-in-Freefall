@@ -250,11 +250,13 @@ function psiLinks(e) {
   return (PSI_NO_DOI[e.id] || []).map(([id, t]) => ({ url: "https://psi.nasa.gov/", label: `Search ${id} on PSI`, title: `${id} · ${t}` }));
 }
 const rng = (a, b) => Math.round(a) === Math.round(b) ? fmt(a, 0) : `${fmt(a, 0)}–${fmt(b, 0)}`;
+let EXP_FILTER = "";
 function renderExperiments() {
   const counts = {};
   TESTS.forEach((t) => { counts[t.experiment_group] = (counts[t.experiment_group] || 0) + 1; });
-  const sorted = [...EXPS].sort((a, b) => b.habitat_relevance - a.habitat_relevance);
-  $("ranking").innerHTML = sorted.map((e, i) => {
+  const all = [...EXPS].sort((a, b) => b.habitat_relevance - a.habitat_relevance);
+  const sorted = EXP_FILTER ? all.filter((e) => e.pillars.includes(EXP_FILTER)) : all;
+  $("ranking").innerHTML = sorted.map((e) => { const i = all.indexOf(e);
     const md = e.psi_metadata || [];
     return `<div class="rank"><h3>${i + 1}. ${e.id} <span class="stars" title="Relevance for habitats">${"★".repeat(e.habitat_relevance)}${"☆".repeat(5 - e.habitat_relevance)}</span></h3>
       <p>${SUMMARIES[e.id] || e.summary}</p>
@@ -298,6 +300,11 @@ async function init() {
   document.querySelectorAll(".tab").forEach((b) => b.addEventListener("click", () => {
     document.querySelectorAll(".tab").forEach((x) => x.classList.toggle("active", x === b));
     document.querySelectorAll(".panel").forEach((p) => p.classList.toggle("active", p.id === b.dataset.tab));
+  }));
+  document.querySelectorAll("#expFilter .fbtn").forEach((b) => b.addEventListener("click", () => {
+    EXP_FILTER = b.dataset.f;
+    document.querySelectorAll("#expFilter .fbtn").forEach((x) => x.classList.toggle("on", x === b));
+    renderExperiments();
   }));
   renderExperiments(); applyEnv();
   if (window.initMonitor) initMonitor();
