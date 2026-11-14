@@ -227,6 +227,13 @@ function drawChart(E, s) {
   $("legend").innerHTML = [["burn", "Sigue ardiendo"], ["ext", "Se apaga"], ["noign", "No prende"]].map(([c, l]) => `<span><span class="dot" style="background:var(--${c})"></span>${l}</span>`).join("") + `<span>✕ Tu escenario</span>`;
 }
 
+// Enlaces a cada investigación en NASA PSI (DOI de los metadatos; si no hay, portal de PSI con su identificador).
+const PSI_NO_DOI = { "BASS": [["PSI-26", "Burning and Suppression of Solids"]], "CFI-G": [["PSI-159", "Cool Flames Investigation with Gases"]] };
+function psiLinks(e) {
+  const md = e.psi_metadata || [];
+  if (md.length) return md.map((m) => ({ url: `https://doi.org/${m.doi}`, label: md.length > 1 ? (m.acronym || m.psi_id) : "Ver en NASA PSI", title: `${m.psi_id} · ${m.title}` }));
+  return (PSI_NO_DOI[e.id] || []).map(([id, t]) => ({ url: "https://psi.nasa.gov/", label: `Buscar ${id} en PSI`, title: `${id} · ${t}` }));
+}
 const rng = (a, b) => Math.round(a) === Math.round(b) ? fmt(a, 0) : `${fmt(a, 0)}–${fmt(b, 0)}`;
 function renderExperiments() {
   const counts = {};
@@ -237,7 +244,8 @@ function renderExperiments() {
     return `<div class="rank"><h3>${i + 1}. ${e.id} <span class="stars" title="Relevancia para hábitats">${"★".repeat(e.habitat_relevance)}${"☆".repeat(5 - e.habitat_relevance)}</span></h3>
       <p>${SUMMARIES[e.id] || e.summary}</p>
       <p class="hint">Sirve para: <b>${DETAILS[e.id]?.equip || acc(e.pillars.join(", "))}</b></p>
-      <p class="src">${counts[e.id] || 0} pruebas · ${md.length ? md.map((m) => `<a href="https://doi.org/${m.doi}" target="_blank" rel="noopener">${m.psi_id}</a>`).join(" ") : "PSI"}</p></div>`;
+      <p class="links">${psiLinks(e).map((l) => `<a class="plink" href="${l.url}" target="_blank" rel="noopener" title="${l.title}">${l.label} ↗</a>`).join("")}</p>
+      <p class="src">${counts[e.id] || 0} pruebas</p></div>`;
   }).join("");
   const rows = [["Combustible", (e) => acc(e.fuel_state)], ["Pruebas", (e) => counts[e.id] || 0],
     ["O₂ (%)", (e) => e.o2_min != null ? rng(e.o2_min, e.o2_max) : "—"],
