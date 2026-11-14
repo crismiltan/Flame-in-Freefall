@@ -258,21 +258,6 @@ function renderExperiments() {
     HW_GROUPS.map(([h, a, b]) => `<tr><td>${h}</td><td>${a}</td><td>${b}</td></tr>`).join("");
 }
 
-function renderMethod() {
-  $("method").innerHTML = `<h2>Cómo funciona</h2>
-  <p>La herramienta une <b>${TESTS.length} pruebas</b> de 7 experimentos de combustión de la NASA (Saffire I–III, BASS, BASS-II, FLEX, SAME-R, CFI-G y ACME E-FIELD) descargadas de Physical Science Informatics, en una tabla común con O₂, presión, flujo, combustible y resultado.</p>
-  <ol>
-    <li><b>Pruebas parecidas:</b> para tu escenario busca las 15 pruebas más cercanas del mismo material (o del mismo tipo de combustible si hay pocas), midiendo la distancia en O₂, presión y flujo.</li>
-    <li><b>Riesgo:</b> es la proporción ponderada de esas pruebas en las que la llama siguió ardiendo.</li>
-    <li><b>Umbral de O₂:</b> se baja el O₂ en pasos de 0,5 % hasta que el riesgo cae por debajo del 25 %.</li>
-    <li><b>Gravedad parcial:</b> no hay datos de combustión en la Luna ni en Marte. Se estima el flujo de flotación de una llama pequeña como v ≈ √(g·L) con L = 1 cm (≈13 cm/s en la Luna y ≈19 cm/s en Marte) y se suma a la ventilación. Es una cota, no una medida; LUCI y FM2 aportarán datos reales. El mismo enfoque de escalar con la gravedad, separando el régimen dominado por la flotación del dominado por la tensión superficial, lo usa el experimento de ebullición MABE (PSI-81, Raj y Kim).</li>
-    <li><b>Fuera de rango:</b> si el O₂ supera lo ensayado para ese material, se usa la tendencia de todas las pruebas con O₂ parecido y se avisa.</li>
-  </ol>
-  <p><b>Atmósferas:</b> los trajes usan 100 % de O₂ a 4.3 psi. La base lunar y los rovers presurizados usarán un punto intermedio (30 % de O₂ o más, a 10.2 psi o menos) para acortar la prerrespiración, lo que hace los materiales mucho más inflamables. Por eso el monitor incluye la base lunar y el rover.</p>
-  <p><b>Fuera de alcance:</b> los motores cohete y los propelentes. A esas velocidades la combustión no depende de la gravedad y PSI no los cubre.</p>
-  <p><b>IA:</b> los resúmenes de cada experimento y la clasificación por pilares y relevancia los ha generado un modelo de IA (Claude) a partir de los metadatos y las tablas de PSI, y se han revisado.</p>
-  <p><b>Limitaciones:</b> la presión de la ISS se asume en 101,3 kPa; algunos resultados de BASS-II se deducen de notas de texto libre; los sólidos solo se han ensayado hasta ~22 % de O₂. No es una herramienta certificada.</p>`;
-}
 
 function applyEnv() {
   const e = ENVS.find((x) => x.id === $("env").value);
@@ -294,7 +279,7 @@ async function init() {
     document.querySelectorAll(".tab").forEach((x) => x.classList.toggle("active", x === b));
     document.querySelectorAll(".panel").forEach((p) => p.classList.toggle("active", p.id === b.dataset.tab));
   }));
-  renderExperiments(); renderMethod(); applyEnv();
+  renderExperiments(); applyEnv();
   if (window.initMonitor) initMonitor();
 }
 init();
