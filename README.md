@@ -45,6 +45,18 @@ Las lecturas de los sensores son **simuladas** (no hay datos de sensores reales 
 
 Las tablas originales están en `pipeline/raw/`. `python pipeline/build_catalog.py` regenera el catálogo unificado (`tests.csv`, `tests.json`, `experiments.json`). Las decisiones de limpieza están en `pipeline/README.md`.
 
+## Precisión del motor
+
+Validación cruzada "dejando una fuera" sobre las 592 pruebas con resultado conocido: cada prueba se predice con las demás (`node pipeline/eval/validacion_cruzada.js`).
+
+| Método | Aciertos | Error de probabilidad (Brier, menor es mejor) |
+| --- | --- | --- |
+| Motor (15 pruebas más parecidas) | 80 % | 0,131 |
+| Regresión logística (comparación) | 80 % | 0,143 |
+| Decir siempre "no se mantiene" | 60 % | 0,241 |
+
+Las pruebas de una misma campaña se parecen mucho entre sí, así que la cifra real fuera de los datos ensayados será menor. BRE, FLEX-2, SPICE y CFI se muestran como contexto: sus tablas de PSI no indican si cada fuego se mantuvo.
+
 ## Ejecutar en local
 
 ```bash

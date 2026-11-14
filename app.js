@@ -43,6 +43,10 @@ const SUMMARIES = {
   "BASS": "Inventario de materiales de cabina quemados en la ISS.",
   "E-FIELD": "Llamas con campo eléctrico: imitan la flotación de la gravedad parcial.",
   "CFI-G": "Llamas frías, casi invisibles, con mucho oxígeno.",
+  "BRE": "Imita plásticos ardiendo: con 34 % de O₂ siguieron sin ventilación; con 21 % se apagaron.",
+  "FLEX-2": "Gotas de combustibles reales y mezclas, de 17 a 30 % de O₂.",
+  "SPICE": "Cuándo una llama de gas empieza a soltar hollín (humo).",
+  "CFI": "Gotas con llamas frías de dodecano a varias presiones.",
 };
 
 // Ficha por experimento (fuente: metadatos ISA-Tab de PSI y tablas experimentales).
@@ -54,11 +58,15 @@ const DETAILS = {
   "SAME": { varied: "Material, temperatura", sensors: "Detectores, contadores de partículas", equip: "Detectores de humo" },
   "CFI-G": { varied: "Gas, O₂, presión", sensors: "Cámaras, radiómetros", equip: "Detección de llamas frías" },
   "E-FIELD": { varied: "Campo eléctrico, caudal", sensors: "Corriente iónica, láser (PLIF)", equip: "Modelos de gravedad parcial" },
+  "BRE": { varied: "O₂, presión, gas, quemador", sensors: "Flujo de calor, cámaras", equip: "Extinción con O₂ alto", unit: "llamas" },
+  "FLEX-2": { varied: "Combustible, O₂, presión, flujo", sensors: "Cámaras de alta velocidad", equip: "Extintores y modelos", unit: "combustibles" },
+  "SPICE": { varied: "Gas, quemador, caudal, aire", sensors: "Cámaras, radiometría", equip: "Detección de humo y hollín", unit: "llamas" },
+  "CFI": { varied: "Mezcla, presión, helio", sensors: "Cámaras UV, radiómetros", equip: "Detección de llamas frías", unit: "pruebas" },
 };
 const HW_GROUPS = [
-  ["CIR · ACME", "CFI-G, E-FIELD", "BRE"],
-  ["CIR · MDCA (gotas)", "FLEX", "FLEX-2, CFI"],
-  ["MSG · túnel de SPICE", "BASS, BASS-II", "SPICE, SLICE"],
+  ["CIR · ACME", "CFI-G, E-FIELD, BRE", "Resto de ACME"],
+  ["CIR · MDCA (gotas)", "FLEX, FLEX-2, CFI", "—"],
+  ["MSG · túnel de SPICE", "BASS, BASS-II, SPICE", "SLICE"],
   ["Módulo Saffire (Cygnus)", "SAFFIRE", "Saffire IV–VI"],
   ["Hardware SAME", "SAME", "DAFT, DAFT-2"],
 ];
@@ -196,9 +204,10 @@ function render() {
   </ul>`;
 
   const dil = diluentStats(s.o2);
-  const best = dil.filter((d) => d.ext !== null).sort((a, b) => b.ext - a.ext)[0];
+  const best = dil.filter((d) => d.ext).sort((a, b) => b.ext - a.ext)[0];
   $("extinguish").innerHTML = `<h3>🧯 Extinguir</h3><ul>
     ${solid ? `<li><b>Cortar la ventilación</b>${s.g > 0 ? " (menos eficaz con gravedad)" : ""}<span class="tag">BASS-II</span></li>` : ""}
+    ${s.o2 > 25 ? `<li>Con este O₂ <b>no basta con cortar el aire</b>: las llamas siguen sin flujo<span class="tag">BRE</span></li>` : ""}
     <li><b>Diluir con N₂</b>${E.threshold !== null ? ` hasta ~${fmt(E.threshold)} % O₂` : ""}</li>
     ${best ? `<li>Agente: <b>${best.k.replace("Con ", "").replace("Solo ", "")}</b> (${pct(best.ext)} de extinción)<span class="tag">FLEX</span></li>` : ""}
   </ul>`;
@@ -245,9 +254,9 @@ function renderExperiments() {
       <p>${SUMMARIES[e.id] || e.summary}</p>
       <p class="hint">Sirve para: <b>${DETAILS[e.id]?.equip || acc(e.pillars.join(", "))}</b></p>
       <p class="links">${psiLinks(e).map((l) => `<a class="plink" href="${l.url}" target="_blank" rel="noopener" title="${l.title}">${l.label} ↗</a>`).join("")}</p>
-      <p class="src">${counts[e.id] || 0} pruebas</p></div>`;
+      <p class="src">${counts[e.id] || e.n_tests || 0} ${DETAILS[e.id]?.unit || "pruebas"}${e.per_test === false ? " · contexto, sin resultado por prueba" : ""}</p></div>`;
   }).join("");
-  const rows = [["Combustible", (e) => acc(e.fuel_state)], ["Pruebas", (e) => counts[e.id] || 0],
+  const rows = [["Combustible", (e) => acc(e.fuel_state)], ["Pruebas", (e) => `${counts[e.id] || e.n_tests || 0}${e.per_test === false ? "*" : ""}`],
     ["O₂ (%)", (e) => e.o2_min != null ? rng(e.o2_min, e.o2_max) : "—"],
     ["Presión (kPa)", (e) => e.p_min_kpa != null ? rng(e.p_min_kpa, e.p_max_kpa) : "—"],
     ["Flujo (cm/s)", (e) => e.flow_max ? `≤ ${fmt(e.flow_max, 0)}` : "reposo"],

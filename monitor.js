@@ -92,7 +92,7 @@ function classify(z, Z) {
   const msgs = [];
   if (s.co >= TH.coAlarm || s.smoke >= TH.smokeAlarm || s.temp >= TH.tAlarm)
     msgs.push({ lvl: "alarm", pillar: "Extinguir", text: `Posible fuego: CO ${fmt(s.co, 0)} ppm, humo ${fmt(s.smoke, 0)} µg/m³, ${fmt(s.temp)} °C.`,
-      act: `Cortar la ventilación de ${z.name.toLowerCase()} y aislar el módulo (16 de 19 extinciones de BASS-II llegaron al reducir el flujo). ${E.threshold !== null ? `Bajar el O₂ con N₂ hasta ~${fmt(E.threshold)} %.` : "Bajar el O₂ con N₂."} Agente: CO₂ o helio (FLEX).` });
+      act: `Cortar la ventilación de ${z.name.toLowerCase()} y aislar el módulo (16 de 19 extinciones de BASS-II llegaron al reducir el flujo). ${E.threshold !== null ? `Bajar el O₂ con N₂ hasta ~${fmt(E.threshold)} %.` : "Bajar el O₂ con N₂."} Agente: CO₂ o helio (FLEX).${H.o2 > 25 ? " Ojo: con este O₂ cortar el aire no basta, las llamas siguen sin flujo (BRE)." : ""}` });
   else if (s.co >= TH.coWarn || s.smoke >= TH.smokeWarn || s.temp >= TH.tWarn)
     msgs.push({ lvl: "warn", pillar: "Detectar", text: `Señal temprana: CO ${fmt(s.co, 0)} ppm, humo ${fmt(s.smoke, 0)} µg/m³, ${fmt(s.temp)} °C.`,
       act: "Posible combustión latente o sobrecalentamiento. Cortar la alimentación eléctrica del equipo y enviar a un tripulante con sensor portátil." });
