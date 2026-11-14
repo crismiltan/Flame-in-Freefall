@@ -7,6 +7,7 @@ vm.createContext(ctx);
 vm.runInContext(src + '\nthis.api = { knn, pool, cls, FUELS, set: (t) => { TESTS = t; } };', ctx);
 const api = ctx.api;
 const TESTS = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'tests.json'), 'utf8'));
+TESTS.forEach((t) => { const m = /d0=([\d.]+)/.exec(t.notes || ''); t._d0 = m ? +m[1] : null; });
 api.set(TESTS);
 let rows = [];
 for (const f of api.FUELS) {
@@ -14,7 +15,7 @@ for (const f of api.FUELS) {
   P.tests.forEach((t, i) => {
     if (t.o2_pct == null || !api.cls(t.outcome)) return;
     const rest = P.tests.filter((_, j) => j !== i);
-    const s = { fuel: f, o2: t.o2_pct, p: t.pressure_kpa || 101.3, flow: t.flow_cm_s || 0, flowEff: t.flow_cm_s || 0, g: 0 };
+    const s = { fuel: f, o2: t.o2_pct, p: t.pressure_kpa || 101.3, flow: t.flow_cm_s || 0, flowEff: t.flow_cm_s || 0, g: 0, d0: f.state === 'liquido' ? t._d0 : undefined };
     const r = api.knn(rest, s);
     const y = api.cls(t.outcome) === 'burn' ? 1 : 0;
     rows.push({ f: f.id, own: P.own, key: t.experiment + '|' + t.test_id, y, p: r.burn });

@@ -51,11 +51,12 @@ Validación cruzada "dejando una fuera" sobre las 592 pruebas con resultado cono
 
 | Método | Aciertos | Error de probabilidad (Brier, menor es mejor) |
 | --- | --- | --- |
-| Motor (15 pruebas más parecidas) | 80 % | 0,131 |
+| Motor con tamaño de gota (actual) | 81 % | 0,120 |
+| Motor sin tamaño de gota (versión anterior) | 80 % | 0,131 |
 | Regresión logística (comparación) | 80 % | 0,143 |
 | Decir siempre "no se mantiene" | 60 % | 0,241 |
 
-Las pruebas de una misma campaña se parecen mucho entre sí, así que la cifra real fuera de los datos ensayados será menor. BRE, FLEX-2, SPICE y CFI se muestran como contexto: sus tablas de PSI no indican si cada fuego se mantuvo.
+Las pruebas de una misma campaña se parecen mucho entre sí. Con una validación más estricta, que deja fuera todas las pruebas del mismo día, el motor actual acierta el 81 % (el anterior, el 78 %). BRE, FLEX-2, SPICE y CFI se muestran como contexto: sus tablas de PSI no indican si cada fuego se mantuvo.
 
 ## Ejecutar en local
 

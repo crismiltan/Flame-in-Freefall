@@ -99,7 +99,8 @@ function knn(tests, s, k = 15) {
   const solid = s.fuel.state === "solido";
   const scored = tests.map((t) => {
     const d = Math.hypot((t.o2_pct - s.o2) / 2, Math.log((t.pressure_kpa || 101.3) / s.p) / 0.25,
-      solid && t.flow_cm_s != null ? (t.flow_cm_s - s.flowEff) / 4 : 0);
+      solid && t.flow_cm_s != null ? (t.flow_cm_s - s.flowEff) / 4 : 0,
+      s.d0 && t._d0 ? (t._d0 - s.d0) / 0.5 : 0); // tamaño de gota (FLEX): 0,5 mm pesa como 2 puntos de O₂
     return { t, d };
   }).sort((a, b) => a.d - b.d).slice(0, Math.min(k, tests.length));
   const w = { burn: 0, ext: 0, noign: 0 }; let tot = 0;
@@ -154,6 +155,9 @@ function render() {
     fuel: FUELS.find((f) => f.id === $("fuel").value),
     o2: +$("o2").value, p: +$("p").value, flow: +$("flow").value, g: +$("g").value,
   };
+  const liquid = s.fuel.state === "liquido";
+  $("d0wrap").hidden = !liquid; $("d0v").textContent = fmt(+$("d0").value);
+  if (liquid) s.d0 = +$("d0").value;
   s.flowEff = s.flow + buoyantFlow(s.g);
   $("o2v").textContent = fmt(s.o2); $("pv").textContent = fmt(s.p, 0); $("flowv").textContent = fmt(s.flow);
   $("gNote").textContent = s.g > 0 ? `Flujo efectivo estimado: ${fmt(s.flowEff)} cm/s (ventilación + flotación).` : "";
@@ -277,11 +281,12 @@ function applyEnv() {
 
 async function init() {
   [TESTS, EXPS] = await Promise.all([fetch("data/tests.json").then((r) => r.json()), fetch("data/experiments.json").then((r) => r.json())]);
+  TESTS.forEach((t) => { const m = /d0=([\d.]+)/.exec(t.notes || ""); t._d0 = m ? +m[1] : null; });
   $("env").innerHTML = ENVS.map((e) => `<option value="${e.id}">${e.label}</option>`).join("");
   $("fuel").innerHTML = FUELS.map((f) => `<option value="${f.id}">${f.label}</option>`).join("");
   $("env").addEventListener("change", applyEnv);
-  ["fuel", "o2", "p", "flow", "g"].forEach((id) => $(id).addEventListener("input", () => {
-    if (id !== "fuel") $("env").value = "custom", $("envNote").textContent = ENVS.at(-1).note;
+  ["fuel", "o2", "p", "flow", "g", "d0"].forEach((id) => $(id).addEventListener("input", () => {
+    if (id !== "fuel" && id !== "d0") $("env").value = "custom", $("envNote").textContent = ENVS.at(-1).note;
     render();
   }));
   document.querySelectorAll(".tab").forEach((b) => b.addEventListener("click", () => {
