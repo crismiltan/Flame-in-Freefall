@@ -220,7 +220,8 @@ def efield():
 
 
 PSI_IDS = {"SAFFIRE": ["PSI-98", "PSI-99", "PSI-100"], "BASS-II": ["PSI-25"], "FLEX": ["PSI-69"],
-           "SAME": ["PSI-101"], "E-FIELD": ["PSI-22"]}
+           "SAME": ["PSI-101"], "E-FIELD": ["PSI-22"], "BASS": ["PSI-26"], "CFI-G": ["PSI-159"],
+           "BRE": ["PSI-20"], "CFI": ["PSI-39"], "FLEX-2": ["PSI-68"], "SPICE": ["PSI-107"]}
 META_FIELDS = {"Study Title": "title", "Comment[Investigation Acronym]": "acronym",
                "Comment[Approach]": "approach", "Comment[Hypothesis]": "hypothesis",
                "Comment[Objective]": "objective", "Comment[Research Impacts]": "research_impacts",
@@ -281,6 +282,27 @@ EXPERIMENTS = [
      "fuel_state": "gas", "pillars": ["prevencion"], "habitat_relevance": 3,
      "earth_application": "Seguridad en motores y procesos con llamas frias",
      "summary": "Llamas esfericas de etano, propano y butano con O2 de 18-40% y 0.5-3 bar; deteccion de llamas frias."},
+    # Sin resultado por prueba en su tabla de PSI: entran en el ranking y la comparacion, no en el motor de riesgo.
+    {"id": "BRE", "name": "ACME Burning Rate Emulator", "platform": "ISS", "hardware": "Combustion Integrated Rack (CIR) / ACME",
+     "fuel_state": "gas (emula sólidos)", "pillars": ["prevencion", "extincion"], "habitat_relevance": 4, "per_test": False,
+     "earth_application": "Seleccion de materiales con el cono calorimetrico (NASA Test 2)",
+     "summary": "Quemador poroso que imita plasticos como PMMA y nylon. Con 34 % de O2 las llamas siguieron ardiendo sin ventilacion; con 21 % se apagaron solas.",
+     "n_tests": 194, "o2_min": 21.0, "o2_max": 40.0, "p_min_kpa": None, "p_max_kpa": None, "flow_max": 0.0},
+    {"id": "FLEX-2", "name": "Flame Extinguishment Experiment 2", "platform": "ISS", "hardware": "Combustion Integrated Rack (CIR) / MDCA",
+     "fuel_state": "liquido", "pillars": ["extincion"], "habitat_relevance": 3, "per_test": False,
+     "earth_application": "Modelos de combustion de combustibles reales y mezclas",
+     "summary": "Gotas de 8 combustibles y mezclas (octano, heptano, decano, etanol...) con O2 de 17-30 % y 0.5-3 atm.",
+     "n_tests": 8, "o2_min": 17.0, "o2_max": 30.0, "p_min_kpa": 50.7, "p_max_kpa": 304.0, "flow_max": 5.0},
+    {"id": "SPICE", "name": "Smoke Point In Co-flow Experiment", "platform": "ISS", "hardware": "Microgravity Science Glovebox (MSG)",
+     "fuel_state": "gas", "pillars": ["deteccion"], "habitat_relevance": 3, "per_test": False,
+     "earth_application": "Formacion de hollin y humo en llamas de gas",
+     "summary": "Punto de humo de llamas de etileno, propano, propileno y metano con aire en coflujo de 5 a 65 cm/s.",
+     "n_tests": 435, "o2_min": 21.0, "o2_max": 21.0, "p_min_kpa": 101.3, "p_max_kpa": 101.3, "flow_max": 65.0},
+    {"id": "CFI", "name": "Cool Flames Investigation", "platform": "ISS", "hardware": "Combustion Integrated Rack (CIR) / MDCA",
+     "fuel_state": "liquido", "pillars": ["deteccion"], "habitat_relevance": 2, "per_test": False,
+     "earth_application": "Motores mas eficientes y combustibles nuevos",
+     "summary": "Gotas de dodecano y mezclas con llamas frias, a 17-21 % de O2 y 0.5-5 atm, con y sin helio.",
+     "n_tests": 79, "o2_min": 17.0, "o2_max": 21.0, "p_min_kpa": 50.7, "p_max_kpa": 506.6, "flow_max": 0.0},
 ]
 
 

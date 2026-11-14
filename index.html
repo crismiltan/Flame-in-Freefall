@@ -4,27 +4,43 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Flame in Freefall</title>
-<meta name="description" content="Simulador de riesgo de incendio en hábitats espaciales basado en datos de combustión en microgravedad de NASA PSI.">
+<meta name="description" content="Monitor y simulador de riesgo de incendio en hábitats espaciales basado en datos de combustión en microgravedad de NASA PSI.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="top">
-  <div class="brand">
-    <span class="logo" aria-hidden="true">🔥</span>
-    <div>
-      <h1>Flame in Freefall</h1>
-      <p class="sub">Prevenir, detectar y extinguir incendios en hábitats espaciales con datos reales de la NASA</p>
-    </div>
-  </div>
+  <h1 class="sr-only">Flame in Freefall</h1>
   <nav class="tabs" role="tablist">
-    <button role="tab" class="tab active" data-tab="sim">Simulador</button>
+    <button role="tab" class="tab active" data-tab="mon">Monitor</button>
+    <button role="tab" class="tab" data-tab="sim">Simulador</button>
     <button role="tab" class="tab" data-tab="exp">Experimentos</button>
-    <button role="tab" class="tab" data-tab="about">Método</button>
   </nav>
 </header>
 
 <main>
-<section id="sim" class="panel active">
+<section id="mon" class="panel active">
+  <div class="card mbar">
+    <label>Hábitat <select id="mHab"></select></label>
+    <span id="mClock" class="clock">T+00:00</span>
+    <span class="badge">DATOS SIMULADOS</span>
+    <div id="mSummary" class="msum"></div>
+  </div>
+  <div class="card">
+    <h2>Simular un incidente</h2>
+    <p class="hint">Los sensores son simulados. El riesgo de cada zona se calcula con las pruebas reales de PSI más parecidas a sus condiciones.</p>
+    <div id="mIncidents" class="incidents"></div>
+  </div>
+  <div class="mgrid">
+    <div class="card"><h2>Plano del hábitat</h2><div id="mMap" class="map"></div></div>
+    <div class="card" id="mDetail"></div>
+  </div>
+  <div class="card">
+    <h2>Registro de eventos</h2>
+    <div class="tablewrap"><table class="log"><thead><tr><th>Hora</th><th>Nivel</th><th>Zona</th><th>Evento</th></tr></thead><tbody id="mLog"></tbody></table></div>
+  </div>
+</section>
+
+<section id="sim" class="panel">
   <form id="scenario" class="card inputs" onsubmit="return false">
     <h2>1. Define el escenario</h2>
     <label>Entorno
@@ -42,6 +58,9 @@
     </label>
     <label>Ventilación forzada: <b id="flowv"></b> cm/s
       <input type="range" id="flow" min="0" max="30" step="0.5">
+    </label>
+    <label id="d0wrap" hidden>Tamaño de la gota: <b id="d0v"></b> mm
+      <input type="range" id="d0" min="1" max="5" step="0.1" value="3">
     </label>
     <label>Gravedad
       <select id="g">
@@ -75,22 +94,39 @@
 
 <section id="exp" class="panel">
   <div class="card">
-    <h2>Ranking de relevancia para hábitats</h2>
-    <p class="hint">Ordenado por relevancia para naves, estaciones y bases (1 a 5). Se excluyen motores y propelentes. Los resúmenes los ha generado IA a partir de los metadatos de PSI.</p>
+    <h2>Los experimentos más útiles para hábitats</h2>
+    <p class="hint">★ = relevancia para naves, estaciones y bases. Resúmenes generados con IA a partir de PSI.</p>
     <div id="ranking" class="ranking"></div>
   </div>
   <div class="card">
-    <h2>Comparación entre experimentos</h2>
-    <div class="tablewrap"><table id="compare"></table></div>
+    <h2>Comparación rápida</h2>
+    <div class="tablewrap"><table id="compare" class="compact"></table></div>
+    <p class="hint">* Su tabla de PSI no indica si cada fuego se mantuvo, así que no entran en el cálculo de riesgo; se usan como contexto.</p>
+  </div>
+  <div class="card">
+    <h2>¿Qué material aguanta el O₂ del hábitat?</h2>
+    <p class="hint">Ensayo de NASA en tierra (1 g, 70 kPa): O₂ máximo al que cada material se apaga solo. Sirve para elegir materiales; no sustituye a los datos de microgravedad.</p>
+    <div class="tablewrap"><table id="materials" class="compact"></table></div>
+    <p class="links"><a class="plink" href="https://ntrs.nasa.gov/citations/20070018178" target="_blank" rel="noopener">Informe NASA (NTRS 20070018178)</a></p>
+  </div>
+  <div class="two">
+    <div class="card">
+      <h2>Mismo equipo, fáciles de comparar</h2>
+      <div class="tablewrap"><table id="hwgroups" class="compact"></table></div>
+    </div>
+    <div class="card">
+      <h2>Datos y aplicaciones</h2>
+      <p><a class="btn" href="data/tests.csv" download>Datos CSV</a> <a class="btn" href="data/tests.json" download>Datos JSON</a></p>
+      <p class="hint">857 pruebas en formato común para modelos de inflamabilidad.</p>
+      <p><b>En la Tierra:</b> extintores de agua nebulizada, detectores de humo y equipo de bomberos. También submarinos, minas y aviones.</p>
+    </div>
   </div>
 </section>
 
-<section id="about" class="panel">
-  <div class="card prose" id="method"></div>
-</section>
 </main>
 
 <footer>Datos: NASA Physical Science Informatics (psi.nasa.gov). Demo para NASA Space Apps Challenge 2026. No es una herramienta certificada de seguridad.</footer>
+<script src="monitor.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

@@ -1,0 +1,25 @@
+material,tipo,moc_o2_pct,calificador,presion_kpa,gravedad,fuente
+Lexan 6006,Plástico rígido,30,<,70.1,1 g,NTRS 20070018178 Tabla 2
+Lexan F-6000,Plástico rígido,39,,70.1,1 g,NTRS 20070018178 Tabla 2
+Kydex 100,Plástico rígido,33,,70.1,1 g,NTRS 20070018178 Tabla 2
+Ultem 1668,Plástico rígido,39,,70.1,1 g,NTRS 20070018178 Tabla 2
+Ultem 2300,Plástico rígido,42,,70.1,1 g,NTRS 20070018178 Tabla 2
+Ultem 2310,Plástico rígido,44,,70.1,1 g,NTRS 20070018178 Tabla 2
+Ultem CRS5301,Plástico rígido,44,,70.1,1 g,NTRS 20070018178 Tabla 2
+SYGEF (PVDF),Plástico rígido,34,,70.1,1 g,NTRS 20070018178 Tabla 2
+Torlon 4203,Plástico rígido,40,>,70.1,1 g,NTRS 20070018178 Tabla 2
+P1700 (polisulfona),Plástico rígido,29,,70.1,1 g,NTRS 20070018178 Tabla 2
+Ryton R-4-06,Plástico rígido,40,>,70.1,1 g,NTRS 20070018178 Tabla 2
+"Nomex HT90-40, 1 capa",Tejido,30,<,70.1,1 g,NTRS 20070018178 Tabla 2
+"Nomex HT90-40, 2 capas (15°)",Tejido,36,,70.1,1 g,NTRS 20070018178 Tabla 2
+Armalon TG4060,Tejido,40,>,70.1,1 g,NTRS 20070018178 Tabla 2
+Grafito/epoxi HMF 5-322,Composite,99.5,>,70.1,1 g,NTRS 20070018178 Tabla 2
+Bismaleimida/grafito,Composite,99.5,>,70.1,1 g,NTRS 20070018178 Tabla 2
+PEEK con vidrio,Composite,45,,70.1,1 g,NTRS 20070018178 Tabla 2
+Poliimida/vidrio FL 74-24,Composite,99.5,>,70.1,1 g,NTRS 20070018178 Tabla 2
+Laminado de cobre 307404,Composite,40,>,70.1,1 g,NTRS 20070018178 Tabla 2
+Grafito/epoxi CTD-528,Composite,30,<,70.1,1 g,NTRS 20070018178 Tabla 2
+Grafito/epoxi CTD-112P,Composite,30,<,70.1,1 g,NTRS 20070018178 Tabla 2
+Melamina/vidrio G-9,Composite,36,,70.1,1 g,NTRS 20070018178 Tabla 2
+Zotek F30 (espuma),Espuma,45,,70.1,1 g,NTRS 20070018178 Tabla 2
+Solimide AC-530 (espuma),Espuma,33,,70.1,1 g,NTRS 20070018178 Tabla 2
