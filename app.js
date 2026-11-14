@@ -36,64 +36,31 @@ const OUTCOME_ES = {
   "autoextincion": "se apaga sola", "sin ignicion": "no prende",
 };
 const SUMMARIES = {
-  "SAFFIRE": "Los únicos incendios a gran escala hechos en el espacio: muestras de tejido de casi un metro ardieron dentro de una nave de carga Cygnus vacía, tras desacoplarse de la ISS. Mostraron que el tejido de algodón se propaga por completo con flujos de 20 a 30 cm/s y que la silicona fina apenas arde, lo que pone a prueba los ensayos de materiales que la NASA hace en la Tierra.",
-  "BASS-II": "Más de 120 pruebas con varillas, láminas y tejidos dentro de un túnel de viento en la ISS. Variando el flujo y bajando el oxígeno con nitrógeno, encontraron los límites en los que las llamas se apagan: casi siempre al reducir la ventilación hacia cero, y a veces por soplado. Concluyen que con buena ventilación un material puede arder igual o mejor en microgravedad que en la Tierra.",
-  "FLEX": "Gotas de metanol y heptano ardiendo sin gravedad para medir el índice límite de oxígeno y la eficacia de supresores como el CO₂ y el helio, a presiones de 0.7 a 3 atm. Es la base cuantitativa para elegir agentes de extinción sin halones.",
-  "SAME": "Midió el humo de materiales de cabina (Kapton, silicona, Teflón, Pyrell y algodón) calentados sin llama. La hipótesis era que en microgravedad las partículas de humo crecen más, lo que puede hacer que algunos detectores no suenen. Comparó detectores de ionización, DustTrak y el instrumento M-pass.",
-  "BASS": "Primera campaña del túnel de combustión en la Microgravity Science Glovebox: esferas, placas, varillas y velas de PMMA, algodón, Nomex, Ultem y cera. Su tabla pública solo trae el material de cada prueba, así que aquí sirve como inventario de qué materiales se han ensayado.",
-  "E-FIELD": "Llamas de metano y etileno controladas con un campo eléctrico de hasta 10 kV. El viento iónico que genera puede imitar o cancelar la flotación, lo que la convierte en un análogo útil para pensar en gravedad parcial. Según PSI, no se diseñó para aplicaciones espaciales.",
-  "CFI-G": "Llamas esféricas de etano, propano y butano con hasta un 40 % de oxígeno y entre 0.5 y 3 bar. Detectó llamas frías, que arden a baja temperatura y son difíciles de ver y de detectar. Es el conjunto con más oxígeno del catálogo.",
+  "SAFFIRE": "Los únicos incendios grandes hechos en el espacio, dentro de una nave Cygnus vacía.",
+  "BASS-II": "Más de 120 llamas en un túnel de viento en la ISS para hallar cuándo se apagan.",
+  "FLEX": "Gotas de combustible ardiendo para medir qué gases las apagan mejor.",
+  "SAME": "Cómo es el humo sin gravedad y si los detectores lo ven.",
+  "BASS": "Inventario de materiales de cabina quemados en la ISS.",
+  "E-FIELD": "Llamas con campo eléctrico: imitan la flotación de la gravedad parcial.",
+  "CFI-G": "Llamas frías, casi invisibles, con mucho oxígeno.",
 };
 
 // Ficha por experimento (fuente: metadatos ISA-Tab de PSI y tablas experimentales).
 const DETAILS = {
-  "SAFFIRE": { obj: "Propagación de llama e inflamabilidad de materiales a gran escala en microgravedad.",
-    sample: "Láminas de tejido SIBAL de hasta 94 × 40 cm (I y III); tarjeta con 9 muestras de 5 × 29 cm de SIBAL, silicona, PMMA y PMMA con Nomex (II).",
-    varied: "Material, tamaño de muestra, flujo (20 o 30 cm/s) y sentido del flujo (concurrente u opuesto).", same: "Aire de la nave (~21 % O₂, 1 atm).",
-    sensors: "Dos cámaras, termopares (flujo, llama y penacho), dos radiómetros, sensores de presión, O₂ y CO₂, dos anemómetros.",
-    equip: "Normas de selección de materiales de cabina y diseño de sistemas de detección y supresión para naves." },
-  "BASS-II": { obj: "Ignición, crecimiento, propagación y límites de extinción de sólidos en flujos lentos; puente con la norma NASA-STD-6001 Test 1.",
-    sample: "Varillas, secciones esféricas, placas y películas de PMMA, y láminas de tejido.",
-    varied: "O₂ (diluido con N₂ en el volumen de trabajo), velocidad y sentido del flujo, geometría de la muestra.", same: "Presión de cabina, túnel de flujo de la MSG (hasta 40 cm/s).",
-    sensors: "Vídeo en color de la MSG; CO final en algunas pruebas.",
-    equip: "Control de ventilación como medida de extinción; modelos de detección y supresión (citado en PSI)." },
-  "BASS": { obj: "Primera campaña de combustión de sólidos en el túnel de flujo de la MSG.",
-    sample: "Esferas, placas, varillas y velas de PMMA, algodón, Nomex, Ultem y cera.",
-    varied: "Material, geometría y flujo.", same: "Aire de cabina de la ISS.",
-    sensors: "Vídeo de la MSG.", equip: "Inventario de materiales ensayados para la selección de materiales." },
-  "FLEX": { obj: "Límites de inflamabilidad de combustibles líquidos y eficacia de supresores gaseosos (CO₂, He, SF₆).",
-    sample: "Gotas aisladas de metanol y heptano de varios milímetros, en el MDCA.",
-    varied: "O₂, presión (0.7–3 atm) y diluyente (N₂, CO₂, He).", same: "Ambiente en reposo (sin flujo forzado).",
-    sensors: "Imágenes de la gota y de la llama, radiometría, hollín y perfiles de temperatura.",
-    equip: "Extintores sin halones y agentes gaseosos; base para los extintores de agua nebulizada." },
-  "SAME": { obj: "Tamaño de las partículas de humo en microgravedad para diseñar detectores.",
-    sample: "Kapton, silicona, Teflón, Pyrell, algodón y mecha de lámpara, calentados sin llama.",
-    varied: "Material, temperatura de calentamiento y tiempo de envejecimiento del humo.", same: "Hardware SAME y aire de cabina.",
-    sensors: "Detectores de ionización y fotoeléctricos, contador P-Trak, DustTrak y precipitador térmico (TEM).",
-    equip: "Detectores de humo de próxima generación. El mismo instrumento se usó para medir polvo en DAFT y DAFT-2." },
-  "CFI-G": { obj: "Llamas frías de combustibles gaseosos a alta concentración de oxígeno.",
-    sample: "Quemador esférico poroso; llamas \"al revés\": la mezcla O₂-N₂ (hasta 85 % de O₂ según el reto) sale del quemador hacia el combustible.",
-    varied: "Combustible (etano, propano, butano), O₂ y presión (0.5–3 bar).", same: "Hardware ACME en el CIR.",
-    sensors: "Cámaras, radiómetros y termopares.", equip: "Detección de combustión a baja temperatura, difícil de ver." },
-  "E-FIELD": { obj: "Efecto de un campo eléctrico en llamas de difusión laminares; análogo de gravedad parcial.",
-    sample: "Quemador de coflujo con metano o etileno.",
-    varied: "Tensión del campo (hasta 10 kV) y caudal de combustible.", same: "Hardware ACME en el CIR.",
-    sensors: "Corriente quimio-iónica, OH y CO PLIF, cámaras.", equip: "Indirecta: modelos de llama con flotación variable." },
+  "SAFFIRE": { varied: "Material, tamaño, flujo", sensors: "Cámaras, termopares, O₂/CO₂", equip: "Selección de materiales" },
+  "BASS-II": { varied: "O₂, flujo, forma", sensors: "Vídeo, CO", equip: "Control de ventilación" },
+  "BASS": { varied: "Material, forma", sensors: "Vídeo", equip: "Selección de materiales" },
+  "FLEX": { varied: "O₂, presión, gas inerte", sensors: "Vídeo, radiómetros", equip: "Extintores sin halones" },
+  "SAME": { varied: "Material, temperatura", sensors: "Detectores, contadores de partículas", equip: "Detectores de humo" },
+  "CFI-G": { varied: "Gas, O₂, presión", sensors: "Cámaras, radiómetros", equip: "Detección de llamas frías" },
+  "E-FIELD": { varied: "Campo eléctrico, caudal", sensors: "Corriente iónica, láser (PLIF)", equip: "Modelos de gravedad parcial" },
 };
 const HW_GROUPS = [
-  { hw: "Combustion Integrated Rack (CIR) · hardware modular ACME", inv: ["CFI-G", "E-FIELD"], others: "BRE (inflamabilidad en atmósfera en reposo, con gases) y el resto de los seis experimentos ACME." },
-  { hw: "CIR · Multi-user Droplet Combustion Apparatus (MDCA)", inv: ["FLEX"], others: "FLEX-2 y Cool Flames Investigation (CFI)." },
-  { hw: "Microgravity Science Glovebox (MSG) · túnel de flujo de SPICE", inv: ["BASS", "BASS-II"], others: "SPICE y SLICE (llamas de gas)." },
-  { hw: "Módulo Saffire en Cygnus", inv: ["SAFFIRE"], others: "Saffire IV–VI (aún no cargados)." },
-  { hw: "Hardware SAME (detectores y contadores de partículas)", inv: ["SAME"], others: "DAFT y DAFT-2 usaron el mismo instrumento para medir polvo." },
-];
-const OTHER_INV = [
-  ["BRE (ACME)", "Inflamabilidad de materiales en atmósfera en reposo según sus propiedades, usando gases que emulan el sólido."],
-  ["FLEX-2 y CFI", "Gotas de combustible en el MDCA: llamas frías y mezclas de combustibles."],
-  ["SPICE y SLICE", "Llamas de gas en el túnel de la MSG: punto de humo y despegue de la llama."],
-  ["DAFT y DAFT-2", "Medida de polvo y aerosoles con el instrumento de humo de SAME."],
-  ["Saffire IV–VI y MIST", "Más incendios a gran escala y supresión con agua nebulizada."],
-  ["LUCI y FM2 (futuros)", "Primeros datos de combustión en gravedad lunar."],
+  ["CIR · ACME", "CFI-G, E-FIELD", "BRE"],
+  ["CIR · MDCA (gotas)", "FLEX", "FLEX-2, CFI"],
+  ["MSG · túnel de SPICE", "BASS, BASS-II", "SPICE, SLICE"],
+  ["Módulo Saffire (Cygnus)", "SAFFIRE", "Saffire IV–VI"],
+  ["Hardware SAME", "SAME", "DAFT, DAFT-2"],
 ];
 
 let TESTS = [], EXPS = [];
@@ -191,44 +158,49 @@ function render() {
   const ppO2 = s.o2 * s.p / 100;
   const lvl = E.risk >= 0.66 ? "high" : E.risk >= 0.33 ? "mid" : "low";
   const lvlTxt = { high: "ALTO", mid: "MEDIO", low: "BAJO" }[lvl];
+  // Probabilidad conjunta: P(prende y se mantiene) = P(prende) × P(se mantiene | prende)
+  const pIgn = Math.max(1 - E.r.noign, E.risk), pSus = pIgn > 0 ? Math.min(1, E.risk / pIgn) : 0;
+  const out = [];
+  if (E.flags.some((f) => f.startsWith("El O₂"))) out.push("O₂");
+  if (E.flags.some((f) => f.startsWith("La presión"))) out.push("presión");
+  if (s.g > 0) out.push("gravedad");
 
   $("verdict").className = `verdict card lvl-${lvl}`;
   $("verdict").innerHTML = `<div class="big">${pct(E.risk)}</div><div>
-    <p><b>Riesgo ${lvlTxt}</b> de que un fuego de ${s.fuel.label.toLowerCase()} se mantenga encendido.</p>
-    <p class="hint">Basado en las ${E.r.near.length} pruebas más parecidas${E.P.own ? " del mismo material" : " del mismo tipo de combustible"}${E.P.tests.length < 10 ? " (muestra muy pequeña: tómalo como orientativo)" : ""}.
-    Presión parcial de O₂: ${fmt(ppO2)} kPa (aire a nivel del mar: 21,2 kPa).</p>
-    ${E.flags.map((f) => `<div class="warn">⚠ ${f}</div>`).join("")}
-    ${bounds}
-    ${E.trend ? `<p class="hint">Fuera de rango se usa la tendencia de ${E.trend.n} pruebas de cualquier combustible con O₂ cercano: ${pct(E.trend.p)} siguen ardiendo.</p>` : ""}
+    <p><b>Probabilidad total de incendio sostenido · riesgo ${lvlTxt}</b></p>
+    <p class="formula">Prende <b>${pct(pIgn)}</b> × se mantiene si prende <b>${pct(pSus)}</b></p>
+    <p class="hint">${s.fuel.label} · ${E.r.near.length} pruebas PSI parecidas${E.P.tests.length < 10 ? " · muestra pequeña" : ""}${E.threshold !== null ? ` · seguro por debajo de ${fmt(E.threshold)} % O₂` : ""}</p>
+    ${out.length ? `<div class="warn">⚠ Fuera de lo ensayado: ${out.join(", ")}. Resultado orientativo.</div>` : ""}
+    <details class="more"><summary>Detalles</summary>
+      <p class="hint">Presión parcial de O₂: ${fmt(ppO2)} kPa (aire: 21,2 kPa).</p>
+      ${E.flags.map((f) => `<p class="hint">• ${f}</p>`).join("")}
+      ${bounds}
+      ${E.trend ? `<p class="hint">• Fuera de rango se usa la tendencia de ${E.trend.n} pruebas con O₂ cercano: ${pct(E.trend.p)} siguen ardiendo.</p>` : ""}
+    </details>
   </div>`;
 
-  // PREVENIR
   const solid = s.fuel.state === "solido";
   $("prevent").innerHTML = `<h3>🛡️ Prevenir</h3><ul>
-    <li>Probabilidad de que prenda y se mantenga: <b>${pct(E.r.burn)}</b>; se apaga sola: ${pct(E.r.ext)}; no prende: ${pct(E.r.noign)}.</li>
-    <li>${E.threshold !== null ? `Mantener el O₂ por debajo de <b>${fmt(E.threshold)} %</b> reduce la probabilidad de combustión sostenida a menos del 25 %.` : "Dentro de los datos no hay un nivel de O₂ que baje el riesgo por debajo del 25 %."}</li>
-    ${s.o2 > 25 ? `<li>Con más del 25 % de O₂, solo el 8 % de las gotas de FLEX se apagaron solas, frente al 94 % por debajo del 15 %.<span class="tag">FLEX</span></li>` : ""}
-    ${solid ? `<li>En Saffire, el tejido de algodón ardió por completo a 20–30 cm/s y la silicona fina apenas ardió: <b>elegir materiales tipo silicona o Nomex</b> en lugar de algodón.<span class="tag">Saffire</span></li>` : ""}
-    ${solid ? `<li>En BASS-II no hubo ignición con 13,6 % de O₂ y se observaron extinciones a partir de ~21 % al bajar el flujo.<span class="tag">BASS-II</span></li>` : ""}
+    <li>${E.threshold !== null ? `O₂ por debajo de <b>${fmt(E.threshold)} %</b>` : "<b>Bajar el O₂</b>: no hay umbral seguro en los datos"}</li>
+    ${solid ? `<li><b>Silicona o Nomex</b> en vez de algodón<span class="tag">Saffire</span></li>` : ""}
+    ${s.o2 > 25 ? `<li>Con más del 25 % de O₂ casi nada se apaga solo<span class="tag">FLEX</span></li>` : ""}
   </ul>`;
 
-  // DETECTAR
   const co = E.r.near.map(({ t }) => t.co_final_ppm).filter((x) => x != null && x >= 0).sort((a, b) => a - b);
   const coMed = co.length ? co[Math.floor(co.length / 2)] : null;
   $("detect").innerHTML = `<h3>🔎 Detectar</h3><ul>
-    <li>En microgravedad el humo no sube: los sensores deben ir en la <b>trayectoria de la ventilación</b>. ${s.flowEff < 2 ? "<b>Con tan poco flujo el humo se queda junto al foco y la detección se retrasa.</b>" : ""}</li>
-    <li>SAME-R planteó que en microgravedad las partículas de humo crecen más y son menos numerosas, lo que puede hacer que un detector no salte. Conviene un <b>detector multisensor</b> (partículas + CO + CO₂) en vez de uno solo de ionización.<span class="tag">SAME</span></li>
-    ${coMed !== null ? `<li>El CO final mediano en las pruebas parecidas fue de <b>${fmt(coMed, 0)} ppm</b>: el CO es una señal temprana útil.<span class="tag">BASS-II</span></li>` : `<li>Medir CO y CO₂ en continuo, como hicieron Saffire y BASS-II con sensores de estado sólido.</li>`}
-    ${s.fuel.id === "gas" ? `<li>CFI-G observó <b>llamas frías</b>, casi invisibles y de baja temperatura: los detectores de llama ópticos pueden no verlas.<span class="tag">CFI-G</span></li>` : ""}
+    <li>Sensores <b>en la corriente de ventilación</b>: el humo no sube${s.flowEff < 2 ? " (con este flujo, la detección se retrasa)" : ""}</li>
+    <li><b>Multisensor</b>: partículas + CO + CO₂<span class="tag">SAME</span></li>
+    ${coMed !== null ? `<li>Alerta temprana por CO (~${fmt(coMed, 0)} ppm en pruebas parecidas)<span class="tag">BASS-II</span></li>` : ""}
+    ${s.fuel.id === "gas" ? `<li>Ojo con las <b>llamas frías</b>: casi invisibles<span class="tag">CFI-G</span></li>` : ""}
   </ul>`;
 
-  // EXTINGUIR
   const dil = diluentStats(s.o2);
+  const best = dil.filter((d) => d.ext !== null).sort((a, b) => b.ext - a.ext)[0];
   $("extinguish").innerHTML = `<h3>🧯 Extinguir</h3><ul>
-    ${solid ? `<li><b>Cortar la ventilación</b>: en BASS-II, 16 extinciones llegaron al reducir el flujo hacia 0 desde ~5 cm/s, y 3 por soplado al subirlo a 10 cm/s con ~17 % de O₂.<span class="tag">BASS-II</span></li>` : ""}
-    ${s.g > 0 ? `<li>Con gravedad, cortar la ventilación no elimina la flotación (~${fmt(buoyantFlow(s.g))} cm/s), así que esta táctica pierde eficacia.</li>` : ""}
-    <li>${E.threshold !== null ? `<b>Bajar el O₂</b> con nitrógeno hasta ~${fmt(E.threshold)} % apaga la mayoría de los casos parecidos.` : "Bajar el O₂ con nitrógeno ayuda, pero los datos no muestran un umbral claro para este escenario."}</li>
-    ${dil.length ? `<li>Probabilidad de extinción de gotas de FLEX con O₂ cercano según el diluyente: ${dil.map((d) => `${d.k} <b>${pct(d.ext)}</b> (${d.n})`).join(", ")}.<span class="tag">FLEX</span></li>` : ""}
+    ${solid ? `<li><b>Cortar la ventilación</b>${s.g > 0 ? " (menos eficaz con gravedad)" : ""}<span class="tag">BASS-II</span></li>` : ""}
+    <li><b>Diluir con N₂</b>${E.threshold !== null ? ` hasta ~${fmt(E.threshold)} % O₂` : ""}</li>
+    ${best ? `<li>Agente: <b>${best.k.replace("Con ", "").replace("Solo ", "")}</b> (${pct(best.ext)} de extinción)<span class="tag">FLEX</span></li>` : ""}
   </ul>`;
 
   drawChart(E, s);
@@ -255,33 +227,27 @@ function drawChart(E, s) {
   $("legend").innerHTML = [["burn", "Sigue ardiendo"], ["ext", "Se apaga"], ["noign", "No prende"]].map(([c, l]) => `<span><span class="dot" style="background:var(--${c})"></span>${l}</span>`).join("") + `<span>✕ Tu escenario</span>`;
 }
 
+const rng = (a, b) => Math.round(a) === Math.round(b) ? fmt(a, 0) : `${fmt(a, 0)}–${fmt(b, 0)}`;
 function renderExperiments() {
   const counts = {};
   TESTS.forEach((t) => { counts[t.experiment_group] = (counts[t.experiment_group] || 0) + 1; });
   const sorted = [...EXPS].sort((a, b) => b.habitat_relevance - a.habitat_relevance);
   $("ranking").innerHTML = sorted.map((e, i) => {
     const md = e.psi_metadata || [];
-    const pubs = md.reduce((n, m) => n + (m.publications || []).length, 0);
-    return `<div class="rank"><h3>${i + 1}. ${e.id} <span class="stars">${"★".repeat(e.habitat_relevance)}${"☆".repeat(5 - e.habitat_relevance)}</span></h3>
-      <p class="hint">${e.name}</p>
+    return `<div class="rank"><h3>${i + 1}. ${e.id} <span class="stars" title="Relevancia para hábitats">${"★".repeat(e.habitat_relevance)}${"☆".repeat(5 - e.habitat_relevance)}</span></h3>
       <p>${SUMMARIES[e.id] || e.summary}</p>
-      <p><b>Pilares:</b> ${acc(e.pillars.join(", "))} · <b>Hardware:</b> ${acc(e.hardware)}</p>
-      ${DETAILS[e.id] ? `<p><b>Informa a:</b> ${DETAILS[e.id].equip}</p>` : ""}
-      <p><b>En la Tierra:</b> ${acc(e.earth_application)}</p>
-      <p class="src">${counts[e.id] || 0} pruebas · ${pubs} publicaciones · ${md.length ? md.map((m) => `<a href="https://doi.org/${m.doi}" target="_blank" rel="noopener">${m.psi_id}</a>`).join(" ") : "sin metadatos PSI cargados"}</p></div>`;
+      <p class="hint">Sirve para: <b>${DETAILS[e.id]?.equip || acc(e.pillars.join(", "))}</b></p>
+      <p class="src">${counts[e.id] || 0} pruebas · ${md.length ? md.map((m) => `<a href="https://doi.org/${m.doi}" target="_blank" rel="noopener">${m.psi_id}</a>`).join(" ") : "PSI"}</p></div>`;
   }).join("");
-  const rows = [["Plataforma", (e) => acc(e.platform)], ["Hardware", (e) => acc(e.hardware)], ["Combustible", (e) => acc(e.fuel_state)],
-    ["Pruebas", (e) => counts[e.id] || 0], ["O₂ (%)", (e) => e.o2_min != null ? `${fmt(e.o2_min)}–${fmt(e.o2_max)}` : "n.d."],
-    ["Presión (kPa)", (e) => e.p_min_kpa != null ? `${fmt(e.p_min_kpa, 0)}–${fmt(e.p_max_kpa, 0)}` : "n.d."],
-    ["Flujo máx. (cm/s)", (e) => e.flow_max != null ? fmt(e.flow_max) : "quiescente"], ["Pilares", (e) => acc(e.pillars.join(", "))],
-    ["Objetivo", (e) => DETAILS[e.id]?.obj || ""], ["Muestras y quemadores", (e) => DETAILS[e.id]?.sample || ""],
-    ["Qué variaba", (e) => DETAILS[e.id]?.varied || ""], ["Qué se mantenía", (e) => DETAILS[e.id]?.same || ""],
-    ["Sensores y medidas", (e) => DETAILS[e.id]?.sensors || ""], ["Equipos que informa", (e) => DETAILS[e.id]?.equip || ""],
-    ["Relevancia hábitat", (e) => `${e.habitat_relevance}/5`]];
+  const rows = [["Combustible", (e) => acc(e.fuel_state)], ["Pruebas", (e) => counts[e.id] || 0],
+    ["O₂ (%)", (e) => e.o2_min != null ? rng(e.o2_min, e.o2_max) : "—"],
+    ["Presión (kPa)", (e) => e.p_min_kpa != null ? rng(e.p_min_kpa, e.p_max_kpa) : "—"],
+    ["Flujo (cm/s)", (e) => e.flow_max ? `≤ ${fmt(e.flow_max, 0)}` : "reposo"],
+    ["Qué varía", (e) => DETAILS[e.id]?.varied || ""], ["Sensores", (e) => DETAILS[e.id]?.sensors || ""]];
   $("compare").innerHTML = `<tr><th></th>${sorted.map((e) => `<th>${e.id}</th>`).join("")}</tr>` +
     rows.map(([k, fn]) => `<tr><th>${k}</th>${sorted.map((e) => `<td>${fn(e)}</td>`).join("")}</tr>`).join("");
-  $("hwgroups").innerHTML = HW_GROUPS.map((g) => `<div class="rank"><h3>${g.hw}</h3><p><b>En el catálogo:</b> ${g.inv.join(", ")}</p><p class="hint">También: ${g.others}</p></div>`).join("");
-  $("others").innerHTML = OTHER_INV.map(([n, d]) => `<li><b>${n}:</b> ${d}</li>`).join("");
+  $("hwgroups").innerHTML = `<tr><th>Equipo</th><th>En el catálogo</th><th>Otras en PSI</th></tr>` +
+    HW_GROUPS.map(([h, a, b]) => `<tr><td>${h}</td><td>${a}</td><td>${b}</td></tr>`).join("");
 }
 
 function renderMethod() {

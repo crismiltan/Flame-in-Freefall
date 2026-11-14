@@ -19,15 +19,15 @@ Las lecturas de los sensores son **simuladas** (no hay datos de sensores reales 
 
 ### Experimentos
 
-- Ranking de relevancia para hábitats y qué equipos de seguridad de próxima generación informa cada investigación.
-- Comparación de objetivos, muestras y quemadores (forma y tamaño), condiciones, qué variaba y qué se mantenía, y sensores.
-- Investigaciones que comparten hardware (CIR/ACME, CIR/MDCA, MSG/túnel de SPICE, Saffire, SAME) y otras investigaciones de PSI candidatas.
+- Ranking de relevancia para hábitats, con un resumen de una línea y el equipo de seguridad que informa cada investigación.
+- Comparación rápida de condiciones, qué variaba y sensores.
+- Investigaciones que comparten hardware (CIR/ACME, CIR/MDCA, MSG/túnel de SPICE, Saffire, SAME) y otras de PSI candidatas.
 - Descarga del catálogo unificado (CSV y JSON) para modelado predictivo, y aplicaciones en la Tierra.
 
 ### Simulador de escenarios
 
 1. Eliges un entorno y un material (tejido de algodón, PMMA, Nomex, silicona, combustibles líquidos o gases), o ajustas a mano O₂, presión, ventilación y gravedad.
-2. La herramienta busca las 15 pruebas más parecidas del catálogo y calcula el riesgo de que el fuego se mantenga.
+2. La herramienta busca las 15 pruebas más parecidas del catálogo y calcula la probabilidad total de incendio sostenido: P(prende) × P(se mantiene si prende).
 3. Da recomendaciones en tres pilares: **prevenir** (umbral de O₂, materiales), **detectar** (sensores, humo en microgravedad, CO) y **extinguir** (ventilación, O₂, CO₂ frente a helio).
 4. Muestra las pruebas en las que se basa, un ranking de relevancia de los experimentos y una comparación entre ellos.
 

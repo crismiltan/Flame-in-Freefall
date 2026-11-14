@@ -137,7 +137,7 @@ function renderMonitor() {
       <rect x="${z.x}" y="${z.y}" width="${z.w}" height="${z.h}" rx="10" style="fill:var(--${lc}-bg);stroke:var(--${lc})"/>
       <text x="${z.x + 14}" y="${z.y + 30}" class="zlabel">${z.name}</text>
       <text x="${z.x + 14}" y="${z.y + 62}" class="zrisk" style="fill:var(--${lc})">${pct(Z.risk)}</text>
-      <text x="${z.x + 14}" y="${z.y + 86}" class="zsub">riesgo si prende</text>
+      <text x="${z.x + 14}" y="${z.y + 86}" class="zsub">prob. de incendio</text>
       <text x="${z.x + 14}" y="${z.y + z.h - 16}" class="zstate" style="fill:var(--${lc})">● ${lt}</text></g>`;
   });
   $("mMap").innerHTML = `<svg viewBox="0 0 800 420" role="img" aria-label="Plano del hábitat">${svg}</svg>`;
@@ -150,7 +150,7 @@ function renderMonitor() {
   $("mDetail").innerHTML = `<div class="dhead"><div><h3>${z.name}</h3><p class="hint">Combustible principal: ${z.what}.</p></div>
     <span class="chip lvl-${lc}">${lt}</span></div>
     <div class="tiles">${SENSORS.map((S) => `<div class="tile"><span class="tl">${S.label}</span><b>${fmt(Z.s[S.k], S.d)}</b> <span class="tu">${S.unit}</span>${spark(Z.hist, S.k)}</div>`).join("")}</div>
-    <p class="riskline">Riesgo de combustión sostenida si algo prende: <b>${pct(Z.risk)}</b> (normal ${pct(Z.base)}), según las ${Z.E.r.near.length} pruebas PSI más parecidas.</p>
+    <p class="riskline">Probabilidad de incendio sostenido (prende y se mantiene): <b>${pct(Z.risk)}</b> (normal ${pct(Z.base)}), según las ${Z.E.r.near.length} pruebas PSI más parecidas.</p>
     ${Z.msgs.length ? Z.msgs.map((m) => `<div class="action lvl-${LVL[m.lvl][1]}"><p><b>${m.pillar}:</b> ${m.text}</p><p>${m.act}</p></div>`).join("") : `<div class="action lvl-low"><p><b>Sin incidencias.</b> Todas las lecturas están dentro de los márgenes.</p></div>`}`;
   // Registro
   $("mLog").innerHTML = M.log.map((l) => `<tr><td>${l.time}</td><td><span class="dot" style="background:var(--${LVL[l.lvl][1]})"></span>${LVL[l.lvl][0]}</td><td>${l.zone}</td><td>${l.text}</td></tr>`).join("");

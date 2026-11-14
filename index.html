@@ -98,38 +98,25 @@
 
 <section id="exp" class="panel">
   <div class="card">
-    <h2>Ranking de relevancia para hábitats</h2>
-    <p class="hint">Ordenado por relevancia para naves, estaciones y bases (1 a 5). Se excluyen motores y propelentes. Los resúmenes los ha generado IA a partir de los metadatos de PSI.</p>
+    <h2>Los experimentos más útiles para hábitats</h2>
+    <p class="hint">★ = relevancia para naves, estaciones y bases. Resúmenes generados con IA a partir de PSI.</p>
     <div id="ranking" class="ranking"></div>
   </div>
   <div class="card">
-    <h2>Comparación entre experimentos</h2>
-    <div class="tablewrap"><table id="compare"></table></div>
+    <h2>Comparación rápida</h2>
+    <div class="tablewrap"><table id="compare" class="compact"></table></div>
   </div>
-  <div class="card">
-    <h2>Investigaciones que comparten hardware</h2>
-    <p class="hint">Experimentos hechos con el mismo equipo son más fáciles de comparar entre sí.</p>
-    <div id="hwgroups" class="ranking"></div>
-  </div>
-  <div class="card">
-    <h2>Otras investigaciones de PSI relevantes</h2>
-    <p class="hint">Aún no están en el catálogo. Son candidatas para ampliarlo.</p>
-    <ul id="others" class="plain"></ul>
-  </div>
-  <div class="card">
-    <h2>Datos para modelado predictivo</h2>
-    <p>El catálogo unificado reúne las 857 pruebas en un formato común, listo para entrenar o validar modelos de inflamabilidad.</p>
-    <p><a class="btn" href="data/tests.csv" download>Descargar CSV</a> <a class="btn" href="data/tests.json" download>Descargar JSON</a></p>
-    <p class="hint">Columnas: experimento, prueba, fecha, combustible, estado (sólido, líquido o gas), geometría, O₂ (%), presión (kPa), flujo (cm/s), sentido del flujo, diluyente, resultado, tiempo de combustión (s), métrica principal y su valor, CO final (ppm) y notas. El script que lo genera está en <code>pipeline/</code> del repositorio.</p>
-  </div>
-  <div class="card">
-    <h2>Aplicaciones en la Tierra</h2>
-    <ul class="plain">
-      <li><b>Extintores de agua nebulizada:</b> desarrollados para la ISS y ya usados en tierra. FLEX aporta datos de supresión sin halones.</li>
-      <li><b>Detección de humo:</b> SAME y SAME-R estudian cómo cambian las partículas de humo y cómo responden los detectores.</li>
-      <li><b>Equipo de bomberos:</b> la tecnología de la NASA mejoró la ropa protectora y las botellas de aire.</li>
-      <li><b>Espacios cerrados:</b> submarinos, minas y aviones comparten con las naves la ventilación forzada y la dificultad de evacuar.</li>
-    </ul>
+  <div class="two">
+    <div class="card">
+      <h2>Mismo equipo, fáciles de comparar</h2>
+      <div class="tablewrap"><table id="hwgroups" class="compact"></table></div>
+    </div>
+    <div class="card">
+      <h2>Datos y aplicaciones</h2>
+      <p><a class="btn" href="data/tests.csv" download>Datos CSV</a> <a class="btn" href="data/tests.json" download>Datos JSON</a></p>
+      <p class="hint">857 pruebas en formato común para modelos de inflamabilidad.</p>
+      <p><b>En la Tierra:</b> extintores de agua nebulizada, detectores de humo y equipo de bomberos. También submarinos, minas y aviones.</p>
+    </div>
   </div>
 </section>
 
