@@ -194,7 +194,7 @@ function render() {
   </div>`;
 
   const solid = s.fuel.state === "solido";
-  $("prevent").innerHTML = `<h3>🛡️ Prevent</h3><ul>
+  $("prevent").innerHTML = `<h3>Prevent</h3><ul>
     <li>${E.threshold !== null ? `O₂ below <b>${fmt(E.threshold)}%</b>` : "<b>Lower the O₂</b>: no safe threshold in the data"}</li>
     ${solid ? `<li><b>Silicone or Nomex</b> instead of cotton<span class="tag">Saffire</span></li>` : ""}
     ${s.o2 > 25 ? `<li>Above 25% O₂ almost nothing self-extinguishes<span class="tag">FLEX</span></li>` : ""}
@@ -202,7 +202,7 @@ function render() {
 
   const co = E.r.near.map(({ t }) => t.co_final_ppm).filter((x) => x != null && x >= 0).sort((a, b) => a - b);
   const coMed = co.length ? co[Math.floor(co.length / 2)] : null;
-  $("detect").innerHTML = `<h3>🔎 Detect</h3><ul>
+  $("detect").innerHTML = `<h3>Detect</h3><ul>
     <li>Sensors <b>in the ventilation stream</b>: smoke does not rise${s.flowEff < 2 ? " (with this flow, detection is delayed)" : ""}</li>
     <li><b>Multisensor</b>: particles + CO + CO₂<span class="tag">SAME</span></li>
     ${coMed !== null ? `<li>Early CO warning (~${fmt(coMed, 0)} ppm in similar tests)<span class="tag">BASS-II</span></li>` : ""}
@@ -211,7 +211,7 @@ function render() {
 
   const dil = diluentStats(s.o2);
   const best = dil.filter((d) => d.ext).sort((a, b) => b.ext - a.ext)[0];
-  $("extinguish").innerHTML = `<h3>🧯 Extinguish</h3><ul>
+  $("extinguish").innerHTML = `<h3>Extinguish</h3><ul>
     ${solid ? `<li><b>Shut off ventilation</b>${s.g > 0 ? " (less effective with gravity)" : ""}<span class="tag">BASS-II</span></li>` : ""}
     ${s.o2 > 25 ? `<li>At this O₂ <b>cutting the airflow is not enough</b>: flames persist without flow<span class="tag">BRE</span></li>` : ""}
     <li><b>Dilute with N₂</b>${E.threshold !== null ? ` to ~${fmt(E.threshold)}% O₂` : ""}</li>
