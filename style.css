@@ -220,3 +220,8 @@ body:not(.on-intro) footer { color: #9aa3b5; }
 .card > h3 { font-size: 1.15rem; margin-bottom: .9rem; }
 .mhead { margin-bottom: 1rem; }
 .card > * + h2 { margin-top: 1.6rem; }
+/* Same size for previous and next; outlined download buttons; reset sits lower */
+.pagebtn { font-size: 1.05rem; padding: .8rem 1.5rem; }
+.btn { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+.btn:hover { background: var(--accent-soft); }
+.incident.reset { align-self: flex-end; margin-top: .9rem; }
