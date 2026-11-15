@@ -71,11 +71,11 @@ Tests from the same campaign are very similar to each other. With a stricter val
 ## Run locally
 
 ```bash
-python -m http.server 8000
+python3 serve.py
 # open http://localhost:8000
 ```
 
-It is a static website with no external dependencies, published with GitHub Pages.
+It is a static website with no external dependencies, published with GitHub Pages. `serve.py` works like `python3 -m http.server`, but sends any invalid address back to the home page (on GitHub Pages, `404.html` does the same).
 
 ## License
 
