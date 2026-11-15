@@ -318,6 +318,9 @@ async function init() {
     document.querySelectorAll("#expFilter .fbtn").forEach((x) => x.classList.toggle("on", x === b));
     renderExperiments();
   }));
+  document.querySelectorAll("[data-go]").forEach((b) => b.addEventListener("click", () => {
+    document.querySelector(`.tab[data-tab="${b.dataset.go}"]`).click(); window.scrollTo(0, 0);
+  }));
   renderExperiments(); applyEnv();
   if (window.initMonitor) initMonitor();
 }

@@ -3,22 +3,54 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Flame in Freefall</title>
+<title>VESTA · Flame in Freefall</title>
 <meta name="description" content="Fire risk monitor and simulator for space habitats, based on NASA PSI microgravity combustion data.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="top">
-  <h1 class="sr-only">Flame in Freefall</h1>
+  <h1 class="sr-only">VESTA</h1>
   <nav class="tabs" role="tablist">
+    <button role="tab" class="tab active" data-tab="intro">Introduction</button>
     <button role="tab" class="tab" data-tab="exp">Experiments</button>
     <button role="tab" class="tab" data-tab="sim">Simulator</button>
-    <button role="tab" class="tab active" data-tab="mon">Monitor</button>
+    <button role="tab" class="tab" data-tab="mon">Monitor</button>
   </nav>
 </header>
 
 <main>
-<section id="mon" class="panel active">
+<section id="intro" class="panel active">
+  <div class="hero" style="--hero-img: url('https://images-assets.nasa.gov/image/sts111-373-018/sts111-373-018~medium.jpg')">
+    <div class="hero-text">
+      <p class="eyebrow">NASA Space Apps Challenge 2026 · Flame in Freefall</p>
+      <h2 class="hero-title">VESTA</h2>
+      <p class="hero-sub">Vigilance for Extraterrestrial Safety and Thermal Alerts</p>
+      <p class="hero-lead">In space, fire doesn't rise. Smoke drifts, flames hide, and a spark in a high-oxygen habitat can become deadly in seconds. VESTA turns real NASA microgravity combustion experiments into a live monitor for every module: it estimates the chance that a fire ignites and keeps burning, warns crews before it happens, and tells them how to put it out.</p>
+      <div class="hero-cta">
+        <button type="button" class="cta primary" data-go="mon">Open the monitor</button>
+        <button type="button" class="cta" data-go="sim">Try the simulator</button>
+        <button type="button" class="cta" data-go="exp">See the experiments</button>
+      </div>
+    </div>
+  </div>
+  <div class="stats">
+    <div class="card stat"><b>857</b><span>real tests from NASA PSI</span></div>
+    <div class="card stat"><b>11</b><span>ISS and spacecraft experiments</span></div>
+    <div class="card stat"><b>81%</b><span>of held-out tests predicted correctly</span></div>
+  </div>
+  <div class="two">
+    <figure class="card photo">
+      <img src="https://images-assets.nasa.gov/image/GRC-1998-C-00485/GRC-1998-C-00485~medium.jpg" alt="A candle flame on Earth, tall and teardrop-shaped, next to a round, dim blue candle flame in microgravity" loading="lazy" onerror="this.closest('figure').hidden = true">
+      <figcaption>The same candle on Earth (left) and in microgravity (right). Without buoyancy the flame turns round, dim and hard to see. <span class="credit">NASA Glenn Research Center</span></figcaption>
+    </figure>
+    <figure class="card photo">
+      <img src="https://images-assets.nasa.gov/image/sts050-232-011/sts050-232-011~medium.jpg" alt="A candle flame burning inside a glovebox aboard the Space Shuttle Columbia" loading="lazy" onerror="this.closest('figure').hidden = true">
+      <figcaption>Candle flame experiment aboard Space Shuttle Columbia (STS-50, 1992). <span class="credit">NASA JSC</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="mon" class="panel">
   <div class="card mbar">
     <label>Habitat <select id="mHab"></select></label>
     <span id="mClock" class="clock">T+00:00</span>
