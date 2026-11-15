@@ -68,6 +68,15 @@ Leave-one-out cross-validation over the 592 tests with a known outcome: each tes
 
 Tests from the same campaign are very similar to each other. With a stricter validation that leaves out every test from the same day, the current engine is right 81% of the time (the previous one, 78%). BRE, FLEX-2, SPICE and CFI are shown as context: their PSI tables do not say whether each fire was sustained.
 
+## Use of AI (Super Intelligence) tools
+
+In line with the NASA Space Apps rules, we state where SI tools were used:
+
+- **Code:** the web app (`index.html`, `style.css`, `app.js`, `monitor.js`), the local server (`serve.py`) and the data pipeline (`pipeline/`) were written with the help of Claude (Anthropic), an AI assistant, under the team's direction and review.
+- **Data:** the raw tables are real NASA PSI and NASA WSTF data, not generated. The cleaning, unification and the risk engine were built with AI assistance; the unified catalog (`data/`) is the output of that AI-assisted pipeline.
+- **Text:** the interface text and this README were drafted with AI assistance and edited by the team.
+- **Images:** `images/stars.png` and `images/stars-soft.png` (star backgrounds) were produced by AI-written code. `images/flame.jpg` was provided by the team. No NASA logos or branding are used.
+
 ## Run locally
 
 ```bash
