@@ -206,3 +206,17 @@ body:not(.on-intro) #intro { display: none; }
 body:not(.on-intro) { background: #0a0e1a url("images/stars-soft.png") repeat; }
 body:not(.on-intro) main { background: var(--bg); min-height: calc(100vh - 57px); }
 body:not(.on-intro) footer { color: #9aa3b5; }
+
+/* Icons, neutral experiment links, small download buttons */
+.ico { width: 1em; height: 1em; vertical-align: -.15em; margin-right: .35em; flex: none; }
+.plink { display: inline-flex; align-items: center; color: var(--ink); border-color: var(--line); background: var(--surface); }
+.plink:hover { background: var(--bg); border-color: var(--muted); }
+.btn { display: inline-flex; align-items: center; font-size: .82rem; padding: .3rem .7rem; border-radius: 6px; }
+/* Next button bigger and highlighted */
+.pagebtn.next { background: var(--accent); color: #fff; font-size: 1.05rem; padding: .8rem 1.5rem; box-shadow: 0 4px 14px rgba(28,100,200,.35); }
+.pagebtn.next:hover { filter: brightness(1.1); }
+/* Card titles larger and further from their content */
+.card > h2, .card > .mhead h2, .card > div > h2 { font-size: 1.3rem; margin-bottom: 1rem; }
+.card > h3 { font-size: 1.15rem; margin-bottom: .9rem; }
+.mhead { margin-bottom: 1rem; }
+.card > * + h2 { margin-top: 1.6rem; }

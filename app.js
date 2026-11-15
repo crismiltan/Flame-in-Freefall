@@ -261,6 +261,7 @@ function psiLinks(e) {
   if (md.length) return md.map((m) => ({ url: `https://doi.org/${m.doi}`, label: md.length > 1 ? (m.acronym || m.psi_id) : "View on NASA PSI", title: `${m.psi_id} · ${m.title}` }));
   return (PSI_NO_DOI[e.id] || []).map(([id, t]) => ({ url: "https://psi.nasa.gov/", label: `Search ${id} on PSI`, title: `${id} · ${t}` }));
 }
+const ICON_LINK = '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 const rng = (a, b) => Math.round(a) === Math.round(b) ? fmt(a, 0) : `${fmt(a, 0)}–${fmt(b, 0)}`;
 let EXP_FILTER = "";
 function renderExperiments() {
@@ -273,7 +274,7 @@ function renderExperiments() {
     return `<div class="rank"><h3>${i + 1}. ${e.id} <span class="stars" title="Relevance for habitats">${"★".repeat(e.habitat_relevance)}${"☆".repeat(5 - e.habitat_relevance)}</span></h3>
       <p>${SUMMARIES[e.id] || e.summary}</p>
       <p class="hint">Useful for: <b>${DETAILS[e.id]?.equip || acc(e.pillars.join(", "))}</b></p>
-      <p class="links">${psiLinks(e).map((l) => `<a class="plink" href="${l.url}" target="_blank" rel="noopener" title="${l.title}">${l.label} ↗</a>`).join("")}</p>
+      <p class="links">${psiLinks(e).map((l) => `<a class="plink" href="${l.url}" target="_blank" rel="noopener" title="${l.title}">${ICON_LINK}${l.label}</a>`).join("")}</p>
       <p class="src">${counts[e.id] || e.n_tests || 0} ${DETAILS[e.id]?.unit || "tests"}${e.per_test === false ? " · context, no per-test outcome" : ""}</p></div>`;
   }).join("");
   const rows = [["Fuel", (e) => FSTATE[e.fuel_state] || e.fuel_state], ["Tests", (e) => `${counts[e.id] || e.n_tests || 0}${e.per_test === false ? "*" : ""}`],
