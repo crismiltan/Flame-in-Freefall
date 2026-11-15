@@ -1,4 +1,4 @@
-# VESTA · Flame in Freefall
+# VESTA 
 
 **VESTA** (*Vigilance for Extraterrestrial Safety and Thermal Alerts*) is a web monitor and simulator to **prevent**, **detect** and **extinguish** fires in space habitats (ISS, exploration capsules, the Moon and Mars), based on 857 real microgravity combustion tests from [NASA Physical Science Informatics](https://psi.nasa.gov/).
 
