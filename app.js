@@ -329,6 +329,11 @@ async function init() {
   $("home").addEventListener("click", () => go("intro"));
   $("prevBtn").addEventListener("click", () => go($("prevBtn").dataset.to));
   $("nextBtn").addEventListener("click", () => go($("nextBtn").dataset.to));
+  document.querySelectorAll("#expFilter .fbtn").forEach((b) => b.addEventListener("click", () => {
+    EXP_FILTER = b.dataset.f;
+    document.querySelectorAll("#expFilter .fbtn").forEach((x) => x.classList.toggle("on", x === b));
+    renderExperiments();
+  }));
   go("intro");
   renderExperiments(); applyEnv();
   if (window.initMonitor) initMonitor();
