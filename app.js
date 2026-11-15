@@ -299,6 +299,22 @@ function applyEnv() {
   render();
 }
 
+// Navigation: full-screen introduction, then one section at a time with previous/next buttons.
+const PAGES = [["exp", "Experiments"], ["sim", "Simulator"], ["mon", "Monitor"]];
+function go(id) {
+  document.body.classList.toggle("on-intro", id === "intro");
+  document.querySelectorAll(".panel").forEach((p) => p.classList.toggle("active", p.id === id));
+  const i = PAGES.findIndex(([p]) => p === id);
+  if (i >= 0) {
+    $("pageName").textContent = PAGES[i][1];
+    const prev = PAGES[i - 1], next = PAGES[i + 1];
+    $("prevBtn").hidden = !prev; $("nextBtn").hidden = !next;
+    if (prev) { $("prevBtn").textContent = `← ${prev[1]}`; $("prevBtn").dataset.to = prev[0]; }
+    if (next) { $("nextBtn").textContent = `${next[1]} →`; $("nextBtn").dataset.to = next[0]; }
+  }
+  window.scrollTo(0, 0);
+}
+
 async function init() {
   [TESTS, EXPS] = await Promise.all([fetch("data/tests.json").then((r) => r.json()), fetch("data/experiments.json").then((r) => r.json())]);
   TESTS.forEach((t) => { const m = /d0=([\d.]+)/.exec(t.notes || ""); t._d0 = m ? +m[1] : null; });
@@ -309,18 +325,11 @@ async function init() {
     if (id !== "fuel" && id !== "d0") $("env").value = "custom", $("envNote").textContent = ENVS.at(-1).note;
     render();
   }));
-  document.querySelectorAll(".tab").forEach((b) => b.addEventListener("click", () => {
-    document.querySelectorAll(".tab").forEach((x) => x.classList.toggle("active", x === b));
-    document.querySelectorAll(".panel").forEach((p) => p.classList.toggle("active", p.id === b.dataset.tab));
-  }));
-  document.querySelectorAll("#expFilter .fbtn").forEach((b) => b.addEventListener("click", () => {
-    EXP_FILTER = b.dataset.f;
-    document.querySelectorAll("#expFilter .fbtn").forEach((x) => x.classList.toggle("on", x === b));
-    renderExperiments();
-  }));
-  document.querySelectorAll("[data-go]").forEach((b) => b.addEventListener("click", () => {
-    document.querySelector(`.tab[data-tab="${b.dataset.go}"]`).click(); window.scrollTo(0, 0);
-  }));
+  document.querySelectorAll("[data-go]").forEach((b) => b.addEventListener("click", () => go(b.dataset.go)));
+  $("home").addEventListener("click", () => go("intro"));
+  $("prevBtn").addEventListener("click", () => go($("prevBtn").dataset.to));
+  $("nextBtn").addEventListener("click", () => go($("nextBtn").dataset.to));
+  go("intro");
   renderExperiments(); applyEnv();
   if (window.initMonitor) initMonitor();
 }
