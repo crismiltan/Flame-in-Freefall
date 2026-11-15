@@ -4,6 +4,18 @@
 
 Project for the *Flame in Freefall* challenge of the NASA Space Apps Challenge 2026.
 
+## Latest version
+
+This version turns the demo into a complete, presentation-ready app:
+
+- **New introduction screen.** A full-screen landing page with the VESTA name, a short pitch, the key figures (857 real tests, 11 experiments) and a microgravity flame photo over a star field.
+- **Simpler navigation.** No sidebar: each section has previous/next buttons at the bottom, and the VESTA name at the top right returns to the introduction.
+- **Fully in English,** with a cleaner look: blue theme, subtle star background on wide screens, neutral zones when everything is normal (orange for warning, red for alarm).
+- **Monitor:** 8 simulated incidents (5 new: short circuit, galley grease fire, smoldering storage, slow pressure leak, O₂ regulator failure), pressure-drop alerts, and a material check per zone based on NASA's high-oxygen flammability thresholds.
+- **Experiments:** filter by prevention, detection or extinction, plus a table of which cabin materials self-extinguish at each habitat's O₂.
+- **Simulator:** the chart zooms to the tests used for the chosen material and widens only when the scenario falls outside them.
+- **Engine accuracy:** 81% in leave-one-out validation, now using droplet size for liquid fuels (see below).
+
 ## What it does
 
 The app opens on a full-screen introduction with buttons into its three sections. Inside each section, buttons at the bottom move to the previous or next one (Experiments → Simulator → Monitor), and the VESTA name at the top right goes back to the introduction.
