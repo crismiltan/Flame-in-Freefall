@@ -18,7 +18,7 @@ A control panel that watches every zone of the habitat (command module, laborato
 - Habitats: lunar base (8.2 psi, 34% O₂, 0.17 g), pressurized lunar rover (10.2 psi, 30% O₂), space station (air, 0 g) and Mars base.
 - 8 simulated incidents: suit O₂ leak in the airlock, ventilation failure in crew quarters, overheated cable in life support, short circuit in a command module screen, overheated grease in the galley, smoldering combustion in storage, slow pressure leak in the laboratory and O₂ regulator failure across the whole habitat.
 
-Sensor readings are **simulated** (PSI has no real sensor data). The risk and the recommendations come from the real data.
+The sensor readings are **simulated**: the demo generates normal values with some noise and changes them when you trigger an incident, because no real habitat is sending data and PSI has no station sensor logs. What VESTA does with those readings is based on real data: the fire probability is computed from the NASA combustion tests closest to each zone's conditions, and the recommendations come from those experiments. In a real habitat, the simulated sensors would simply be replaced by real ones.
 
 ### Experiments
 
