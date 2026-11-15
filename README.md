@@ -77,6 +77,12 @@ python -m http.server 8000
 
 It is a static website with no external dependencies, published with GitHub Pages.
 
+## License
+
+Original code and documentation are released under the [MIT License](LICENSE). That is an OSI-approved license, which NASA Space Apps requires for submitted solutions. Anyone may reuse, modify and share the project (including after the hackathon), provided the copyright notice stays with the code.
+
+NASA Physical Science Informatics tables, NTRS publications and other NASA materials remain the work of the U.S. Government / their original authors. They are **not** covered by this MIT license; cite the sources listed in this README and in the project submission.
+
 ## Limitations
 
 There is no combustion data in lunar or Martian gravity: the buoyant flow is estimated (v ≈ √(g·L)) and a warning is shown on screen. Solids were only tested up to ~22% O₂. This is not a certified safety tool.
