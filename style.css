@@ -202,3 +202,7 @@ body:not(.on-intro) #intro { display: none; }
 .photo figcaption { padding: .7rem 1rem .9rem; font-size: .88rem; }
 .credit { display: block; color: var(--muted); font-size: .76rem; margin-top: .2rem; }
 .inputs { top: 4.5rem; }
+/* Subtle star field filling the sides of the sections */
+body:not(.on-intro) { background: #0a0e1a url("images/stars-soft.png") repeat; }
+body:not(.on-intro) main { background: var(--bg); min-height: calc(100vh - 57px); }
+body:not(.on-intro) footer { color: #9aa3b5; }
